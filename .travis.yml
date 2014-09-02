@@ -6,3 +6,4 @@ env:
 
 script:
   - python push_to_s3.py
+  - echo "Complete"
