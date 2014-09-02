@@ -1,14 +1,10 @@
 language: python
-
 env:
   global:
-  - secure: ZWb2y+DlPlVCRhfc1sUgtAQiqCpJAdUmOK1uetehxmBUFJeFztbP08ZgQx19kSsdNhrDxAgIo+jExy6B/vj6EYU7/xPTxS/8pm0TXplTOsvSbu9QZutwoE9X3bN2JI0cuWhPMVaJTkFmSG21Lt4ktwGBEYhS/EV58EKRUUMhfJI=
-  - secure: h9aekxGsnnmw4KJYSBDCtjId6Jm+zqjSaPX1Jx7267VE5RWQKDIuMmMXYLz3cnr5LhYaIeAMntWphRTg7Pg7qx43/PcT+qDuM2Q0TOE4kXc2krHWxqu94UZWXxmLB+Pv+eHBEpnb2qu4HD3X9BiDlcdHQdl5XjPpc1JJ1mS9NGM=
-
-
+  - secure: IEaBoYLhLIyU/oLnWA3XL7Mk01pO8B3txe28JhdgrUgdQnfqAzwQ5oiLkFGGTprO2Z9h7ek1x6z+dPOZu0A++8pvctiUUD29H1gZ1gjpH4PpECpMNaGmRygUKboH/xBwb5S7/xUZn6yQCgA5U3WEqVUOtNOlNwvsASGXbhsZs20=
+  - secure: hFAEnk3GvXkdOPrW7RTi770TzXQGqE1vpZnz7jmizBQvUBpXPxPR8mUixSyyP3r1STRUbixZBKRtL8oQ7Wg7QzkWkSKUp79bjKVsiPN6ZIyCo/uR85jHncMjeA30nLVF05SEvoWWPCVqvFg+YhtFvfezyeVH0VKlfR/c/v6jQ6s=
 install:
 - pip install boto
-
 script:
 - python push_to_s3.py
 - echo "Complete"
