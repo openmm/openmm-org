@@ -1,7 +1,6 @@
 from __future__ import print_function
 import os
 import boto
-import simtk
 from boto.s3.key import Key
 
 # The secret key is available as a secure environment variable
