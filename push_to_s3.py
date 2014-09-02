@@ -5,7 +5,6 @@ from boto.s3.key import Key
 
 # The secret key is available as a secure environment variable
 # on travis-ci to push the build documentation to Amazon S3.
-print('env:', os.environ)
 AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
 AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
 BUCKET_NAME = 'openmm.org'
