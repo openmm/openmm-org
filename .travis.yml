@@ -2,13 +2,13 @@ language: python
 
 env:
   global:
-    # encrypted AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to push docs to s3
-      - secure: HlTG1tfY95WpldRgviEAbx0p7U2+xEkyEH3TqylRRD8Hvrl7bGsfrebLqI8H2pcxd5FxP5IFpmNNHhsNBYX8mXc+2DTNm7nmf4BapiuGf8o1loDGfUxyVkQBTr0gH7wuTwCFIyK2QAhHzqpA+xuIaJ20xV48UlQ1FUUdJP/WV6o=
-      - secure: bicp347iiaf3XP1GOJm9wlhTzyQERkB1B7wtj/jFeNWBZ3P30UPtMmPSxBZ8hG73zZ/ovHHMBo/iPpt3kpVu0KwaRQfaHm9l69evOb8Sm2EPpcJeSgkja0mlg0piJHnw6h1XLPEHFrfSXvgnQTJdIkq1kAJu8ky/ExuN3ApbqX0=
+  - secure: ZWb2y+DlPlVCRhfc1sUgtAQiqCpJAdUmOK1uetehxmBUFJeFztbP08ZgQx19kSsdNhrDxAgIo+jExy6B/vj6EYU7/xPTxS/8pm0TXplTOsvSbu9QZutwoE9X3bN2JI0cuWhPMVaJTkFmSG21Lt4ktwGBEYhS/EV58EKRUUMhfJI=
+  - secure: h9aekxGsnnmw4KJYSBDCtjId6Jm+zqjSaPX1Jx7267VE5RWQKDIuMmMXYLz3cnr5LhYaIeAMntWphRTg7Pg7qx43/PcT+qDuM2Q0TOE4kXc2krHWxqu94UZWXxmLB+Pv+eHBEpnb2qu4HD3X9BiDlcdHQdl5XjPpc1JJ1mS9NGM=
+
 
 install:
-  - pip install boto
+- pip install boto
 
 script:
-  - python push_to_s3.py
-  - echo "Complete"
+- python push_to_s3.py
+- echo "Complete"
