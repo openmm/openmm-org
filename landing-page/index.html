@@ -9,7 +9,6 @@
     <meta name="author" content="">
     
     <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css" rel="stylesheet">
-    <link href="css/prism.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
 
@@ -22,8 +21,6 @@
 
     <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="img/favicon.ico">
-
-    <script src="js/prism.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -59,27 +56,6 @@
           <p class="text-center lead">
             Extreme flexibility through custom forces and integrators. Extreme performance through GPU Acceleration, with optimizations for AMD, NVIDIA, and Intel Integrated GPUs. It's fast on CPUs too. <a href="about.html#benchmarks">See the benchmarks.</a>
           </p>
-        </div>
-      </div>
-      <hr>
-      <h3 class="text-center"> Insanely Easy to Use </h3>
-      <div class="row clearfix">
-        <div class="col-md-11 center-block" style="float: none;">
-<pre><code class="language-python">from simtk.openmm.app import *
-from simtk.openmm import *
-from simtk.unit import *
-from sys import stdout
-
-pdb = PDBFile('input.pdb')
-forcefield = ForceField('amber99sb.xml', 'tip3p.xml')
-system = forcefield.createSystem(pdb.topology, nonbondedMethod=PME, nonbondedCutoff=1*nanometer, constraints=HBonds)
-integrator = LangevinIntegrator(300*kelvin, 1/picosecond, 0.002*picoseconds)
-simulation = Simulation(pdb.topology, system, integrator)
-simulation.context.setPositions(pdb.positions)
-simulation.minimizeEnergy()
-simulation.reporters.append(PDBReporter('output.pdb', 1000))
-simulation.reporters.append(StateDataReporter(stdout, 1000, step=True, potentialEnergy=True, temperature=True))
-simulation.step(10000)</code></pre>
         </div>
       </div>
       <hr>

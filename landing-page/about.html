@@ -10,7 +10,8 @@
     
     <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/prism.css" rel="stylesheet">
+    <script src="js/prism.js"></script>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js">
@@ -62,6 +63,26 @@
           <p class="text-center lead">
             We strive to make our binaries as portable as possible. We've tested OpenMM on many flavors of Linux, OS X, and even Windows. 
           </p>
+        </div>
+      </div>
+      <h3 class="text-center page-header"> Get started quickly with the Python Wrapper </h3>
+      <div class="row clearfix">
+        <div class="col-md-11 center-block" style="float: none;">
+<pre><code class="language-python">from simtk.openmm.app import *
+from simtk.openmm import *
+from simtk.unit import *
+from sys import stdout
+
+pdb = PDBFile('input.pdb')
+forcefield = ForceField('amber99sb.xml', 'tip3p.xml')
+system = forcefield.createSystem(pdb.topology, nonbondedMethod=PME, nonbondedCutoff=1*nanometer, constraints=HBonds)
+integrator = LangevinIntegrator(300*kelvin, 1/picosecond, 0.002*picoseconds)
+simulation = Simulation(pdb.topology, system, integrator)
+simulation.context.setPositions(pdb.positions)
+simulation.minimizeEnergy()
+simulation.reporters.append(PDBReporter('output.pdb', 1000))
+simulation.reporters.append(StateDataReporter(stdout, 1000, step=True, potentialEnergy=True, temperature=True))
+simulation.step(10000)</code></pre>
         </div>
       </div>
       <div class="row clearfix">
