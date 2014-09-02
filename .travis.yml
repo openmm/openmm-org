@@ -7,6 +7,6 @@ env:
       - secure: bicp347iiaf3XP1GOJm9wlhTzyQERkB1B7wtj/jFeNWBZ3P30UPtMmPSxBZ8hG73zZ/ovHHMBo/iPpt3kpVu0KwaRQfaHm9l69evOb8Sm2EPpcJeSgkja0mlg0piJHnw6h1XLPEHFrfSXvgnQTJdIkq1kAJu8ky/ExuN3ApbqX0=
 
 script:
-  - sudo pip install python
+  - sudo pip install boto
   - python push_to_s3.py
   - echo "Complete"
