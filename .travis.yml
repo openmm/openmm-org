@@ -1,19 +1,22 @@
-env:
-  global:
-    - secure: IEaBoYLhLIyU/oLnWA3XL7Mk01pO8B3txe28JhdgrUgdQnfqAzwQ5oiLkFGGTprO2Z9h7ek1x6z+dPOZu0A++8pvctiUUD29H1gZ1gjpH4PpECpMNaGmRygUKboH/xBwb5S7/xUZn6yQCgA5U3WEqVUOtNOlNwvsASGXbhsZs20=
-    - secure: hFAEnk3GvXkdOPrW7RTi770TzXQGqE1vpZnz7jmizBQvUBpXPxPR8mUixSyyP3r1STRUbixZBKRtL8oQ7Wg7QzkWkSKUp79bjKVsiPN6ZIyCo/uR85jHncMjeA30nLVF05SEvoWWPCVqvFg+YhtFvfezyeVH0VKlfR/c/v6jQ6s=
 language: ruby
 sudo: false
+
+env:
+  global:
+  - secure: THXt8oCzrJBEV1W7SwBkjMVnHLe+cAtzOg9A4LyfWSva7OeqyY/bMrnXhf1r9Ssp324xuoupxsDqIop6nc5525cOKQv07dD6qGIAPjC6pbjInGJQjpbWMd86xb15MfxyAxS1mqEO1vr2tAjoITxSMrpaEXrlPpzzxKVmQspzQcU=
+  - secure: DomMIZE0q1PLJpNI6Tj39MaAWvQM5ak4oLD8vXgIPd5c8e0ano/jlvtqHLbyfsLE7ZddMEiIFGfm7hSbW9JkNDLoVVWA+fRPWem1OxgATEKF/n6jkl457wMfQjHcMtEngCtuPIqe6waVxJXm/GSSxefpmwhwBC4E1z3OvbGjVp0=
+
 script:
-    - echo "No build required. Just deployment"
+  - echo "No build required. Just deployment"
+
 deploy:
   provider: s3
   skip_cleanup: true
   local_dir: landing-page
   detect_encoding: true
-  secret_access_key: "$AWS_ACCESS_KEY_ID"
-  access_key_id: "$AWS_SECRET_ACCESS_KEY"
-  bucket: "openmm-staging"
+  access_key_id:  "$AWS_ACCESS_KEY_ID"
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+  bucket: openmm-staging
   endpoint: openmm-staging.s3-website-us-east-1.amazonaws.com
   on:
     branch: master
