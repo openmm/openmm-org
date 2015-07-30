@@ -16,7 +16,11 @@ deploy:
   detect_encoding: true
   access_key_id:  "$AWS_ACCESS_KEY_ID"
   secret_access_key: "$AWS_SECRET_ACCESS_KEY"
-  bucket: openmm-staging
-  endpoint: openmm-staging.s3-website-us-east-1.amazonaws.com
+  bucket: openmm.org
+  endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
+  # Debugging: modify the bucket / endpoint to point to a staging bucket
+  # so that you can view the result there
+  # bucket: openmm-staging
+  # endpoint: openmm-staging.s3-website-us-east-1.amazonaws.com
   on:
     branch: master
