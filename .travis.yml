@@ -18,6 +18,7 @@ deploy:
   secret_access_key: "$AWS_SECRET_ACCESS_KEY"
   bucket: openmm.org
   endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
+  region: us-west-1
   # Debugging: modify the bucket / endpoint to point to a staging bucket
   # so that you can view the result there
   # bucket: openmm-staging
