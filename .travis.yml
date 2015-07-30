@@ -1,4 +1,5 @@
 language: python
+sudo: false
 deploy:
   provider: s3
   secret_access_key:
