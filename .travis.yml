@@ -1,5 +1,7 @@
 language: python
 sudo: false
+script:
+    - echo "No build required. Just deployment"
 deploy:
   provider: s3
   secret_access_key:
