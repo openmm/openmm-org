@@ -1,10 +1,14 @@
 language: python
-env:
-  global:
-  - secure: IEaBoYLhLIyU/oLnWA3XL7Mk01pO8B3txe28JhdgrUgdQnfqAzwQ5oiLkFGGTprO2Z9h7ek1x6z+dPOZu0A++8pvctiUUD29H1gZ1gjpH4PpECpMNaGmRygUKboH/xBwb5S7/xUZn6yQCgA5U3WEqVUOtNOlNwvsASGXbhsZs20=
-  - secure: hFAEnk3GvXkdOPrW7RTi770TzXQGqE1vpZnz7jmizBQvUBpXPxPR8mUixSyyP3r1STRUbixZBKRtL8oQ7Wg7QzkWkSKUp79bjKVsiPN6ZIyCo/uR85jHncMjeA30nLVF05SEvoWWPCVqvFg+YhtFvfezyeVH0VKlfR/c/v6jQ6s=
-install:
-- pip install boto
+sudo: false
 script:
-- python push_to_s3.py
-- echo "Complete"
+    - echo "No build required. Just deployment"
+deploy:
+  provider: s3
+  secret_access_key:
+    secure: AsgDF0YzW6OqwsuqNJB7GAC595KY1/iDzu5nV839zUBTI99mmXY/oUMv2IeltHGpozCH3Szl5IcgZWgwd5ttrj8lfCSDpMbIepSsHm3J6qsh4qFZJ6g7VCjAe9AN0VWeDB1mDrWEHUcaFREIBmswn1Ixcpon1txYJCKzxYvtERs=
+  access_key_id:
+    secure: IBCQMRao7VJaFsnIb1Sjo90KsAdKvNMg913N5i7TJGdc9LKP3PiX7p2BSR1ZsuTHHZWWz7DYzo09/IpTInXRU1QAb8SlRLeneOUKHsH33Y2Gkq22EtXf+JbsAoVW7qoty039J67HZMOH/bSucTKNwgGRYW6YMdeiGrpTbyNMHes=
+  bucket: "openmm-staging"
+  skip_cleanup: true
+  local_dir: landing-page
+  detect_encoding: true
