@@ -1,11 +1,6 @@
 language: ruby
 sudo: false
 
-env:
-  global:
-  - secure: THXt8oCzrJBEV1W7SwBkjMVnHLe+cAtzOg9A4LyfWSva7OeqyY/bMrnXhf1r9Ssp324xuoupxsDqIop6nc5525cOKQv07dD6qGIAPjC6pbjInGJQjpbWMd86xb15MfxyAxS1mqEO1vr2tAjoITxSMrpaEXrlPpzzxKVmQspzQcU=
-  - secure: DomMIZE0q1PLJpNI6Tj39MaAWvQM5ak4oLD8vXgIPd5c8e0ano/jlvtqHLbyfsLE7ZddMEiIFGfm7hSbW9JkNDLoVVWA+fRPWem1OxgATEKF/n6jkl457wMfQjHcMtEngCtuPIqe6waVxJXm/GSSxefpmwhwBC4E1z3OvbGjVp0=
-
 script:
   - echo "No build required. Just deployment"
 
@@ -14,14 +9,12 @@ deploy:
   skip_cleanup: true
   local_dir: landing-page
   detect_encoding: true
-  access_key_id:  "$AWS_ACCESS_KEY_ID"
-  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+  access_key_id: 
+    secure: "EE6ntizUp/3AoziwoK36pdEnvQCB/tVI2uOzmJUL3NSI7kWueWRVEsL+zzpAV3kcy393lMFB6uEVWyvhix+OzYfhJx6GeYOQ92Y+aZG53D82zc3XXVbUXl+lP5PC1WT13UevQ3KybEH9TTCJBikTev/1tbqVqKOQC2Q6XrTzvac=" 
+  secret_access_key: 
+    secure: "SsjuBc4XqOi5ZPIckbXxikB8gLnBUzzxvNgAZc6KcuoG/fh5BoxFACytiYgg8yiyqzhpX34AQ1tfx5wSLQwlv/Izx8w/GBd85VgTdwNd1VGh0v1h/lhU+KF+xixYa/IlPG+9rCZ3XTWHnC8e7GZ1iH08evNbm/AfsZbW9HOA97s="
   bucket: openmm.org
   endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
   region: us-west-1
-  # Debugging: modify the bucket / endpoint to point to a staging bucket
-  # so that you can view the result there
-  # bucket: openmm-staging
-  # endpoint: openmm-staging.s3-website-us-east-1.amazonaws.com
   on:
     branch: master
