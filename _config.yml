@@ -4,4 +4,5 @@ exclude:
     - '/Gemfile'
     - '/Gemfile.lock'
     - '/jekyll.sh'
-    - 'LICENSE'
+    - '/.jekyll-metadata'
+    - '/LICENSE'
