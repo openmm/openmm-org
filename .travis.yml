@@ -10,12 +10,13 @@ script:
 - ls -ltr _site
 
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAJCXUDU2ZGB5Q4GJA
   secret_access_key:
     secure: lmMJVZFQONll1zksUaSh7otKEfji+fz0c1ACa/vhj42sgkJYHtrKYgoRajd8KxoT7xkfp6Ao1kuvRdw5olK0qeQGAtwtcPAPd3I1WdNJtMSaMMVdU/EGKt7ZW0dHFvzHGO29ZYJC4SUSNRvEQsNZLik1T6aqAOdDvWSE69rVCSg=
   bucket: openmm-org-preview
-  local-dir: _site
+  local_dir: _site
   acl: public_read
   on:
     repo: jchodera/openmm-org
