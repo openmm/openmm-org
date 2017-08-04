@@ -18,7 +18,5 @@ deploy:
   secret_access_key:
     secure: "SkmL4Bn0Rq1skExKaF6HPBSPBaM7zf6ZCQgt/XsJAi2ZkSSOdfpND/K9xDDc9TzGVlu2qK2EcLsWupavQJiL1OEwsy8rC42OCFOLXyt3Qc3kZ+TFot6wx1d+X9IPw4BqjW5UME7TksU/bCxHoVjbuEBjOCQQzdNNQuVkFKaxVk4="
   bucket: openmm-org-preview
-  endpoint: http://openmm-org-preview.s3-website-us-east-1.amazonaws.com
-  region: us-east-1
   on:
     branch: preview
