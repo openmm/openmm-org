@@ -1,22 +1,22 @@
 language: ruby
+
 rvm:
-  - 2.3.3
+- 2.3.3
+
 sudo: false
 
-# Travis will automatically run 'bundle install'
-
 script:
-  - bundle exec jekyll build
+- bundle exec jekyll build
 
 deploy:
   provider: s3
-  skip_cleanup: true
-  local_dir: _site
-  detect_encoding: true
   access_key_id:
-    secure: "rmEc9f9zcPEdb75SBL9dIIiP48LlI9gOjpFvvy20C/paBqpuJxWn2k27y4hnZMHgDa+4x2xGTPkzL4Jp/+URYWbrbPgLM9cuttruUY+8s0wP3GLEvvhfrtXMWn7pCdRQiQpx2MqOCdnf8rc67Gg8esBptnfQBBt3uU4BBps34VI="
+    secure: vnw8OYMSzgi51p9ABoQTnQjFMG974zX2KIDR0TVCj8YeR1LRiINWV1hEHZhDTEEzSFX4yIB7nilgku0Ajf2F1opTmDtCkelxXY88wsdKG82k6mw/dgoLbWi1ZuDMj8KbOWmcs76DZpjnMt4s487OHLccXxb5eeCCRKVTfCGdarc=
   secret_access_key:
-    secure: "SkmL4Bn0Rq1skExKaF6HPBSPBaM7zf6ZCQgt/XsJAi2ZkSSOdfpND/K9xDDc9TzGVlu2qK2EcLsWupavQJiL1OEwsy8rC42OCFOLXyt3Qc3kZ+TFot6wx1d+X9IPw4BqjW5UME7TksU/bCxHoVjbuEBjOCQQzdNNQuVkFKaxVk4="
+    secure: lmMJVZFQONll1zksUaSh7otKEfji+fz0c1ACa/vhj42sgkJYHtrKYgoRajd8KxoT7xkfp6Ao1kuvRdw5olK0qeQGAtwtcPAPd3I1WdNJtMSaMMVdU/EGKt7ZW0dHFvzHGO29ZYJC4SUSNRvEQsNZLik1T6aqAOdDvWSE69rVCSg=
   bucket: openmm-org-preview
+  local-dir: _site
+  acl: public_read
   on:
+    repo: jchodera/openmm-org
     branch: preview
