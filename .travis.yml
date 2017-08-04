@@ -16,7 +16,9 @@ deploy:
   secret_access_key:
     secure: lmMJVZFQONll1zksUaSh7otKEfji+fz0c1ACa/vhj42sgkJYHtrKYgoRajd8KxoT7xkfp6Ao1kuvRdw5olK0qeQGAtwtcPAPd3I1WdNJtMSaMMVdU/EGKt7ZW0dHFvzHGO29ZYJC4SUSNRvEQsNZLik1T6aqAOdDvWSE69rVCSg=
   bucket: openmm-org-preview
-  local_dir: _site
+  local-dir: _site
+  region: us-east-1
+  endpoint: "openmm-org-preview.s3-website-us-east-1.amazonaws.com"
   acl: public_read
   on:
     repo: jchodera/openmm-org
