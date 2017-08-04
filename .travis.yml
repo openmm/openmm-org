@@ -11,11 +11,9 @@ script:
 
 deploy:
   provider: s3
-  access_key_id:
-    secure: vnw8OYMSzgi51p9ABoQTnQjFMG974zX2KIDR0TVCj8YeR1LRiINWV1hEHZhDTEEzSFX4yIB7nilgku0Ajf2F1opTmDtCkelxXY88wsdKG82k6mw/dgoLbWi1ZuDMj8KbOWmcs76DZpjnMt4s487OHLccXxb5eeCCRKVTfCGdarc=
+  access_key_id: AKIAJCXUDU2ZGB5Q4GJA
   secret_access_key:
     secure: lmMJVZFQONll1zksUaSh7otKEfji+fz0c1ACa/vhj42sgkJYHtrKYgoRajd8KxoT7xkfp6Ao1kuvRdw5olK0qeQGAtwtcPAPd3I1WdNJtMSaMMVdU/EGKt7ZW0dHFvzHGO29ZYJC4SUSNRvEQsNZLik1T6aqAOdDvWSE69rVCSg=
-  skip_cleanup: true
   bucket: openmm-org-preview
   local-dir: _site
   acl: public_read
