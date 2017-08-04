@@ -3,7 +3,9 @@ OpenMM.org website
 
 [![Build Status](https://travis-ci.org/pandegroup/openmm-org.svg?branch=master)](https://travis-ci.org/pandegroup/openmm-org)
 
-This repository contains the code for the generation of the static openmm.org 
+Preview build: [![Preview Build Status](https://travis-ci.org/jchodera/openmm-org.svg?branch=preview)](https://travis-ci.org/jchodera/openmm-org)
+
+This repository contains the code for the generation of the static openmm.org
 website, available at http://openmm.org/. The site provides a description of the project
 and serves links to documentation, downloads, videos, etc. The development of the
 OpenMM project itself takes place at https://github.com/pandegroup/openmm
@@ -16,7 +18,7 @@ Writing a page
 --------------
 
 Each page should include Jekyll "front-matter" which describes the page.
-For example, 
+For example,
 
     ---
     title: OpenMM Documentation
@@ -27,7 +29,7 @@ sets the jekyll "layout" to `page` and sets the HTML title attribute
 to "OpenMM Documentation". We provide these layouts:
 
  - `page`: A basic bootstrap template. You're reponsible for almost everything
-   in the `<body>` tag. This layout includes css and js files, and appends a 
+   in the `<body>` tag. This layout includes css and js files, and appends a
    footer to the end of the body. If you're using this layout, you should be
    writing html. Historical note: This site used to be completely static
    (ie not generated). This layout comprised a minimal refactoring. You could
