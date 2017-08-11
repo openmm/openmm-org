@@ -1,8 +1,13 @@
 ---
 layout: nicepage
-title: Alchemical Free Energy Example
-lead: Optionally put a lead here
+title: Alchemical free energy example
+lead: A simple alchemical free energy calculation example for computing the free energy of inserting a Lennard-Jones particle in a Lennard-Jones fluid
 ---
+
+The script for this tutorial can be downloaded here:
+* [`alchemical-example.py`](files/alchemical-example.py)
+
+# Alchemical free energy example
 
 OpenMM's custom forces---which allow the programmer to express a potential algebraically, potentially with multiple parameters that can be adjusted on the fly---allow a great deal of flexibility and simplicity in encoding potentials while still achieving high performance on GPUs.
 One common use of this facility is to convert standard interactions (such as Lennard-Jones potentials) into alchemically-modified potentials for the purposes of computing free energy differences.
@@ -56,7 +61,6 @@ system.addForce(custom_force)
 ```
 We then create a [`LangevinIntegrator`](http://docs.openmm.org/7.1.0/api-python/generated/simtk.openmm.openmm.LangevinIntegrator.html#simtk.openmm.openmm.LangevinIntegrator) and [`Context`](http://docs.openmm.org/7.1.0/api-python/generated/simtk.openmm.openmm.Context.html#simtk.openmm.openmm.Context) to run the simulation, and run a series of simulations at different values of `lambda` by using [`context.setParameter()`](http://docs.openmm.org/7.1.0/api-python/generated/simtk.openmm.openmm.Context.html#simtk.openmm.openmm.Context.setParameter) to update the alchemical parameter on the fly.
 For each configuration sample that is collected, we can easily scan through the energy at different `lambda` values by simply alternating between `context.setParameter()` to update `lambda` and `context.getState()` to retrieve potential energies at the new alchemical state.
-
 ```python
 # Create a context
 integrator = openmm.LangevinIntegrator(temperature, collision_rate, timestep)
