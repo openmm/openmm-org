@@ -28,7 +28,7 @@ originally from [PDB ID: 3POG](http://www.rcsb.org/pdb/explore.do?structureId=3p
 option. Keep all the other default options (`Generate grid information for PME FFT automatically` and `NPT ensemble`.
 Click `Next Step`.
 
-![B2AR in membrane](b2ar_membrane.png "B2AR in membrane produced by CHARMM-GUI")
+![B2AR in membrane](b2ar_membrane.jpg "B2AR in membrane produced by CHARMM-GUI")
 
 ## Simulating the system in OpenMM
 
