@@ -4,14 +4,18 @@ title: Alchemical free energy example
 lead: A simple alchemical free energy calculation example for computing the free energy of inserting a Lennard-Jones particle in a Lennard-Jones fluid
 ---
 
+# Files
+
 The script for this tutorial can be downloaded here:
 * [`alchemical-example.py`](files/alchemical-example.py)
 
-# Alchemical free energy example
+# Theory
 
 OpenMM's custom forces---which allow the programmer to express a potential algebraically, potentially with multiple parameters that can be adjusted on the fly---allow a great deal of flexibility and simplicity in encoding potentials while still achieving high performance on GPUs.
 One common use of this facility is to convert standard interactions (such as Lennard-Jones potentials) into alchemically-modified potentials for the purposes of computing free energy differences.
 The alchemical free energy code [YANK](http://github.com/choderalab/yank), for example, uses a variety of custom forces to represent alchemically-modified potentials for [protein-ligand alchemical binding free energy calculations](http://dx.doi.org/10.1007/s10822-013-9689-8).
+
+# Alchemically-modified potentials
 
 As a simple example of how this is facilitated by custom forces, consider computing the chemical potential of liquid argon by estimating the free energy of alchemically annihilating a Lennard-Jones particle.
 First, we create a simple Lennard-Jones fluid to represent liquid argon at 120 K and 80 atm, which can be conveniently done using the `testsystems` module of the conda-installable [`openmmtools`](http://github.com/choderalab/openmmtools) package:
@@ -59,6 +63,9 @@ for index in range(system.getNumParticles()):
 custom_force.addInteractionGroup(alchemical_particles, chemical_particles)
 system.addForce(custom_force)
 ```
+
+# Simulating an alchemical free energy perturbation
+
 We then create a [`LangevinIntegrator`](http://docs.openmm.org/7.1.0/api-python/generated/simtk.openmm.openmm.LangevinIntegrator.html#simtk.openmm.openmm.LangevinIntegrator) and [`Context`](http://docs.openmm.org/7.1.0/api-python/generated/simtk.openmm.openmm.Context.html#simtk.openmm.openmm.Context) to run the simulation, and run a series of simulations at different values of `lambda` by using [`context.setParameter()`](http://docs.openmm.org/7.1.0/api-python/generated/simtk.openmm.openmm.Context.html#simtk.openmm.openmm.Context.setParameter) to update the alchemical parameter on the fly.
 For each configuration sample that is collected, we can easily scan through the energy at different `lambda` values by simply alternating between `context.setParameter()` to update `lambda` and `context.getState()` to retrieve potential energies at the new alchemical state.
 ```python
@@ -92,6 +99,9 @@ for k in range(nstates):
             u_kln[k,l,iteration] = context.getState(getEnergy=True).getPotentialEnergy() / kT
 
 ```
+
+# Analysis with MBAR
+
 Finally, the [multistate Bennett acceptance ratio (MBAR)](https://dx.doi.org/10.1063%2F1.2978177) is used to estimate the free energy of annihilating the particle using the conda-installable [`pymbar`](http://pymbar.org/) package.
 In order to estimate how much data must be discarded to equilibration, we use a scheme for [automated equilibration detection](http://dx.doi.org/10.1021/acs.jctc.5b00784) and subsequent extraction of decorrelated samples found in the [`pymbar.timeseries`](http://github.com/choderalab/pymbar) module.
 ```python
@@ -108,5 +118,9 @@ for k in range(nstates):
 mbar = MBAR(u_kln, N_k)
 [DeltaF_ij, dDeltaF_ij, Theta_ij] = mbar.getFreeEnergyDifferences()
 ```
-A downloadable version of this example is available at on [github](https://github.com/choderalab/openmm7tutorials/blob/master/alchemical-free-energy).
-A more fully featured toolkit for re-encoding standard OpenMM forces as alchemically-modified custom forces is available via the conda-installable [`alchemy`](https://github.com/choderalab/alchemy) package.
+
+# Where to find more
+
+* Full-featured factories for re-encoding standard OpenMM forces as alchemically-modified custom forces is available through the [`openmmtools.alchemy` module](http://openmmtools.readthedocs.io/en/latest/alchemy.html) of the [`openmmtools` package](https://github.com/choderalab/openmmtools).
+* The [YANK](http://getyank.org) package from the [Chodera lab](http://choderalab.org) provides a full-featured package for absolute alchemical free energy calculations for small molecule binding and transfer free energies.
+* The [Sire](http://siremol.org/) package from the [Michel research group](http://www.julienmichel.net/) provides a full-featured package for relative alchemical free energy calculations using reaction-field for small molecule binding and transfer free energies.
