@@ -1,12 +1,13 @@
 ---
 layout: nicepage
-title: Openmm 7 Tutorials
-lead: Tutorials using new features in OpenMM 7
+title: OpenMM 7 Cookbook and Tutorials
+lead: Tutorials and examples for quickly getting started with OpenMM
 ---
 
-## More stuff
-Other text can go here
-
- - [Alchemical Free Energy](alchemical-free-energy/)
- - [B2ar Membrane](b2ar_membrane/)
- - [HKMT Zinc](hkmt_zinc/)
+## OpenMM 7 Tutorials
+These tutorials are described in the [OpenMM 7 PLoS Computational Biology paper](http://dx.doi.org/10.1371/journal.pcbi.1005659):
+ - [Alchemical free energy calculations](alchemical-free-energy/)
+ - [Beta-2-adrenergic receptor (B2AR) membrane protein simulation with CHARMM](b2ar_membrane/)
+ - [Histone methyltransferase simulation with multisite Zn2+ structural ions](hkmt_zinc/)
+ - [Histone methyltransferase simulation with a multisite water model (TIP4P-Ew)](hkmt_water_channel/)
+ - [HSP90 with multisite Hg2+](hsp90_adp_mg/)
