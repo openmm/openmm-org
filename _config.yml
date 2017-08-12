@@ -1,0 +1,8 @@
+safe: True
+exclude:
+    - '/README.md'
+    - '/Gemfile'
+    - '/Gemfile.lock'
+    - '/jekyll.sh'
+    - '/.jekyll-metadata'
+    - '/LICENSE'

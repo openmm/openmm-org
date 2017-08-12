@@ -1,0 +1,185 @@
+---
+layout: page
+title: About OpenMM
+---
+
+<div class="jumbotron jumbtron-color">
+      <div class="container">
+      <div class="row clearfix">
+      <div class="col-md-10 column">
+       <!--  <a href="https://github.com/simtk/openmm"><img style="float: right; border: 0; z-index: 1000" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+         -->
+          <h1>About OpenMM</h1>
+          <p>
+            Backed by researchers and developers from Stanford University, MSKCC, and others around the world.
+          </p>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row clearfix">
+        <div class="col-md-4 column text-center">
+          <h3 class="text-center">Custom Forces</h3>
+          <p class="text-center lead">
+            Want a custom force between two atoms? No problem. Write your force expressions in string format, and OpenMM will generate blazing fast code to do just that. No more hand-writing GPU kernels.
+          </p>
+        </div>
+        <div class="col-md-4 column text-center">
+          <h3 class="text-center">Highly Optimized</h3>
+          <p class="text-center lead">
+            OpenMM is optimized for the latest generation of compute hardware, including AMD (via OpenCL) and NVIDIA (via CUDA) GPUs. We also heavily optimize for CPUs using intrinsics.
+          </p>
+        </div>
+        <div class="col-md-4 column text-center">
+          <h3 class="text-center">Portable</h3>
+          <p class="text-center lead">
+            We strive to make our binaries as portable as possible. We've tested OpenMM on many flavors of Linux, OS X, and even Windows.
+          </p>
+        </div>
+      </div>
+      <h3 class="text-center page-header"> Get started quickly with the Python Wrapper </h3>
+      <div class="row clearfix">
+        <div class="col-md-11 center-block" style="float: none;">
+<pre><code class="language-python">from simtk.openmm.app import *
+from simtk.openmm import *
+from simtk.unit import *
+from sys import stdout
+
+pdb = PDBFile('input.pdb')
+forcefield = ForceField('amber99sb.xml', 'tip3p.xml')
+system = forcefield.createSystem(pdb.topology, nonbondedMethod=PME, nonbondedCutoff=1*nanometer, constraints=HBonds)
+integrator = LangevinIntegrator(300*kelvin, 1/picosecond, 0.002*picoseconds)
+simulation = Simulation(pdb.topology, system, integrator)
+simulation.context.setPositions(pdb.positions)
+simulation.minimizeEnergy()
+simulation.reporters.append(PDBReporter('output.pdb', 1000))
+simulation.reporters.append(StateDataReporter(stdout, 1000, step=True, potentialEnergy=True, temperature=True))
+simulation.step(10000)</code></pre>
+        </div>
+
+      </div>
+      <h3 class="page-header text-center">Part of the Omnia Suite</h3>
+      <div class="lead text-center"> The cornerstone for the Omnia suite of tools for predictive biomolecular simulation.  <a href="http://www.omnia.md"> Learn more </a> </div>
+
+      <div class="row clearfix">
+        <h3 class="page-header text-center">Current Team</h3>
+        <div class="col-md-3 column text-center lead">
+          <h4><a href="http://pande.stanford.edu">Pande Lab</a></h4>
+          <ul class="list-group">
+            <li class="list-group-item-special">Vijay Pande</li>
+            <li class="list-group-item-special">Peter Eastman</li>
+            <li class="list-group-item-special">Matthew Harrigan</li>
+          </ul>
+        </div>
+        <div class="col-md-3 column text-center lead">
+          <h4><a href="http://www.choderalab.org">Chodera Lab</a></h4>
+          <ul class="list-group">
+            <li class="list-group-item-special">John Chodera</li>
+            <li class="list-group-item-special">Levi Naden</li>
+            <li class="list-group-item-special">Chaya Stern</li>
+            <li class="list-group-item-special">Rafal Wiewiora</li>
+            <li class="list-group-item-special">Andrea Rizzi</li>
+          </ul>
+        </div>
+        <div class="col-md-3 column text-center lead">
+          <h4><a href="https://www.lobos.nih.gov/">NIH</a></h4>
+          <ul class="list-group">
+            <li class="list-group-item-special">Bernard Brooks</li>
+            <li class="list-group-item-special">Andy Simmonett</li>
+          </ul>
+        </div>
+        <div class="col-md-3 column text-center lead">
+          <h4>Others</h4>
+          <ul class="list-group">
+            <li class="list-group-item-special">Jason Swails</li>
+            <li class="list-group-item-special">Robert McGibbon</li>
+            <li class="list-group-item-special">Yutong Zhao</li>
+            <li class="list-group-item-special">Kyle Beachamp</li>
+            <li class="list-group-item-special">Lee-Ping Wang</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row clearfix text-center">
+        <p class="lead"> If you publish papers using OpenMM, we kindly ask you cite the following to help feed hungry grad students:</p>
+        <cite title="publication">Peter Eastman, Jason Swails, John D. Chodera, Robert T. McGibbon, Yutong Zhao, Kyle A. Beauchamp, Lee-Ping Wang, Andrew C. Simmonett, Matthew P. Harrigan, Chaya D. Stern, Rafal P. Wiewiora, Bernard R. Brooks, Vijay S. Pande. OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics. PLoS Comput. Biol. 13:e1005659, 2017.</cite>
+        <!-- <cite title="publication">P. Eastman, M. S. Friedrichs, J. D. Chodera, R. J. Radmer, C. M. Bruns, J. P. Ku, K. A. Beauchamp, T. J. Lane, L.-P. Wang, D. Shukla, T. Tye, M. Houston, T. Stich, C. Klein, M. R. Shirts, and V. S. Pande. "OpenMM 4: A Reusable, Extensible, Hardware Independent Library for High Performance Molecular Simulation." J. Chem. Theor. Comput. 9(1):461-469. (2013)</cite> -->
+        <p> <a href="https://simtk.org/project/xml/publications.xml/?group_id=161"> More publications </a></p>
+      </div>
+    <div class="row clearfix">
+      <h3 class="text-center page-header">Built with OpenMM</h3>
+      <p class="lead text-center">Trusted and used by scientists around the world.</p>
+      <div class="col-md-2 column text-center"></div>
+      <div class="col-md-4 column text-center">
+        <ul class="list-group">
+          <a href="http://folding.stanford.edu" class="list-group-item lead">Folding<span style="color: red; font-weight: 500;">@</span>home</a>
+          <a href="http://www.charmm.org" class="list-group-item lead">CHARMM</a>
+          <a href="https://simtk.org/home/forcebalance" class="list-group-item lead">ForceBalance</a>
+          <a href="http://getyank.org" class="list-group-item lead">YANK</a>
+        </ul>
+      </div>
+      <div class="col-md-4 column text-center">
+        <ul class="list-group">
+          <a href="https://github.com/pandegroup/pdbfixer" class="list-group-item lead">PDBFixer</a>
+          <a href="http://www.gromacs.org/" class="list-group-item lead">GROMACS</a>
+          <a href="http://biomol.bme.utexas.edu/tinker-openmm/index.php/Main_Page" class="list-group-item lead">TINKER</a>
+          <a href="http://siremol.org" class="list-group-item lead">SireMol</a>
+        </ul>
+      </div>
+      <div class="col-md-2 column text-center"></div>
+    </div>
+    <div class="row clearfix">
+      <a name="benchmarks"></a>
+      <h3 class="text-center page-header">OpenMM 7.1 Benchmarks</h3>
+      <p class="text-center lead"> Performance measured in ns/day. <a href="http://wiki.simtk.org/openmm/BenchmarkOpenMMDHFR">Details.</a></p>
+      <div class="col-md-2 column"></div>
+      <div class="col-md-9 column text-center">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Simulation Type</th>
+          <th>CUDA (Titan X Pascal)</th>
+          <th>OpenCL (Titan X Pascal)</th>
+          <th>CPU (Xeon E5-2697 v4)</th>
+        </tr>
+        <tr>
+          <td>Implicit, 2 fs</td>
+          <td>863</td>
+          <td>665</td>
+          <td>19.8</td>
+        </tr>
+        <tr>
+          <td>Implicit, 5 fs HMR</td>
+          <td>1386</td>
+          <td>816</td>
+          <td>44.1</td>
+        </tr>
+        <tr>
+          <td>Explicit-RF, 2 fs</td>
+          <td>607</td>
+          <td>486</td>
+          <td>21.0</td>
+        </tr>
+        <tr>
+          <td>Explicit-RF, 5 fs HMR</td>
+          <td>1047</td>
+          <td>689</td>
+          <td>43.6</td>
+        </tr>
+        <tr>
+          <td>Explicit-PME, 2 fs</td>
+          <td>384</td>
+          <td>288</td>
+          <td>15.6</td>
+        </tr>
+        <tr>
+          <td>Explicit-PME, 5 fs HMR</td>
+          <td>762</td>
+          <td>430</td>
+          <td>34.8</td>
+        </tr>
+        </thead>
+      </table>
+      </div>
+</div></div>
