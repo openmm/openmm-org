@@ -57,6 +57,18 @@
 
 <body>
 
+{% if page.url != "/" %}
+<div class="container">
+<div class="row clearfix">
+<div class="col-md-2 column">
+<p class="text-left">
+<a href="{{ "/" | prepend: site.baseurl }}"><< Back</a>
+</p>
+</div>
+</div>
+</div>
+{% endif %}
+
 {{content}}
 
 <hr class="overfooter"/>
