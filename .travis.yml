@@ -10,6 +10,7 @@ script:
 - ls -ltr _site
 
 deploy:
+# Deploy master pandegroup branch to http://openmm.org
 - provider: s3
   skip_cleanup: true
   detect_encoding: true
@@ -24,7 +25,7 @@ deploy:
   on:
     repo: pandegroup/openmm-org
     branch: master
-
+# Deploy preview pandegroup branch to http://openmm.org/preview
 - provider: s3
   skip_cleanup: true
   detect_encoding: true
@@ -35,13 +36,13 @@ deploy:
   bucket: openmm.org
   local-dir: _site
   upload-dir: preview
-  region: us-east-1
-  endpoint: openmm-org-preview.s3-website-us-east-1.amazonaws.com
+  region: us-west-1
+  endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
   acl: public_read
   on:
     repo: pandegroup/openmm-org
     branch: preview
-
+# Deploy master jchodera branch to http://openmm-org-preview.s3-website-us-east-1.amazonaws.com
 - provider: s3
   skip_cleanup: true
   detect_encoding: true
@@ -52,10 +53,11 @@ deploy:
   local_dir: _site
   region: us-east-1
   endpoint: openmm-org-preview.s3-website-us-east-1.amazonaws.com
+  acl: public_read
   on:
     repo: jchodera/openmm-org
     branch: master
-
+# Deploy preview jchodera branch to http://openmm-org-preview.s3-website-us-east-1.amazonaws.com/preview
 - provider: s3
   skip_cleanup: true
   detect_encoding: true
