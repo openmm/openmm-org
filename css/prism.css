@@ -11,7 +11,7 @@ pre[class*="language-"] {
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     font-size-adjust: 1.5;
-    font-size: 16px;
+    font-size: 32px;
     direction: ltr;
     text-align: left;
     white-space: pre;
