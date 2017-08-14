@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+<div class="jumbotron jumbtron-color">
+  <div class="container">
+    <div class="row clearfix">
+      <div class="col-md-12 column">
+        <h1>{{page.title}}</h1>
+        {% if page.lead %}
+        {{page.lead | markdownify }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10" role="main">
+      {{content}}
+    </div>
+  </div>
+</div>
