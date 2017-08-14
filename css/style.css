@@ -31,12 +31,16 @@ pre {
 }
 
 .table {
-  font-size: 14px 
+  font-size: 14px
 }
 
 .list-group-item-special {
    border: 0px !important;
    list-style: none;
+}
+
+p {
+   font-size: 14px;
 }
 
 p.enlarge {
