@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.3.3
+- 2.4.5
 
 sudo: false
 
@@ -15,63 +15,30 @@ deploy:
   skip_cleanup: true
   detect_encoding: true
   access_key_id:
-    secure: "EE6ntizUp/3AoziwoK36pdEnvQCB/tVI2uOzmJUL3NSI7kWueWRVEsL+zzpAV3kcy393lMFB6uEVWyvhix+OzYfhJx6GeYOQ92Y+aZG53D82zc3XXVbUXl+lP5PC1WT13UevQ3KybEH9TTCJBikTev/1tbqVqKOQC2Q6XrTzvac="
+    secure: "NxSyvMW8cjFtyVAW+7oG8SnNefycdEIynbkiceBWWWSqXsukjBc0u0Xb/w1T5y035SWRpigTLtpNCK6VLWu6K7ZMc3WqfNStVjFarlbqB6QSoq8zTSCXwWN22zj/34vVCb9yOTXh2H8a35bF6Q7wWIdR0BM35B4mtQRrCEIUkYQ="
   secret_access_key:
-    secure: "SsjuBc4XqOi5ZPIckbXxikB8gLnBUzzxvNgAZc6KcuoG/fh5BoxFACytiYgg8yiyqzhpX34AQ1tfx5wSLQwlv/Izx8w/GBd85VgTdwNd1VGh0v1h/lhU+KF+xixYa/IlPG+9rCZ3XTWHnC8e7GZ1iH08evNbm/AfsZbW9HOA97s="
+    secure: "Qe5jLB3vsi+iyLGAQOYWkE/klLpggbRDHt72ohEmzJur6U/Li0eA4XwMEFyHApJg6bUanJFiEbs22XzBtI/qG9ys/69n4xfQxJq+wZjfvmO0WUSYQYdqJ+opo26wju/KUbmWlF48SKORW3oDnK7Oppbe2DmiVOINl/X02HRu72c="
   bucket: openmm.org
   local_dir: _site
   region: us-west-1
-  endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
   on:
-    repo: pandegroup/openmm-org
+    repo: openmm/openmm-org
     branch: master
 # Deploy preview pandegroup branch to http://openmm.org/preview
 - provider: s3
   skip_cleanup: true
   detect_encoding: true
   access_key_id:
-    secure: "EE6ntizUp/3AoziwoK36pdEnvQCB/tVI2uOzmJUL3NSI7kWueWRVEsL+zzpAV3kcy393lMFB6uEVWyvhix+OzYfhJx6GeYOQ92Y+aZG53D82zc3XXVbUXl+lP5PC1WT13UevQ3KybEH9TTCJBikTev/1tbqVqKOQC2Q6XrTzvac="
+    secure: "NxSyvMW8cjFtyVAW+7oG8SnNefycdEIynbkiceBWWWSqXsukjBc0u0Xb/w1T5y035SWRpigTLtpNCK6VLWu6K7ZMc3WqfNStVjFarlbqB6QSoq8zTSCXwWN22zj/34vVCb9yOTXh2H8a35bF6Q7wWIdR0BM35B4mtQRrCEIUkYQ="
   secret_access_key:
-    secure: "SsjuBc4XqOi5ZPIckbXxikB8gLnBUzzxvNgAZc6KcuoG/fh5BoxFACytiYgg8yiyqzhpX34AQ1tfx5wSLQwlv/Izx8w/GBd85VgTdwNd1VGh0v1h/lhU+KF+xixYa/IlPG+9rCZ3XTWHnC8e7GZ1iH08evNbm/AfsZbW9HOA97s="
+    secure: "Qe5jLB3vsi+iyLGAQOYWkE/klLpggbRDHt72ohEmzJur6U/Li0eA4XwMEFyHApJg6bUanJFiEbs22XzBtI/qG9ys/69n4xfQxJq+wZjfvmO0WUSYQYdqJ+opo26wju/KUbmWlF48SKORW3oDnK7Oppbe2DmiVOINl/X02HRu72c="
   bucket: openmm.org
   local-dir: _site
   upload-dir: preview
   region: us-west-1
-  endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
   acl: public_read
   on:
-    repo: pandegroup/openmm-org
-    branch: preview
-# Deploy master jchodera branch to http://openmm-org-preview.s3-website-us-east-1.amazonaws.com
-- provider: s3
-  skip_cleanup: true
-  detect_encoding: true
-  access_key_id: AKIAJCXUDU2ZGB5Q4GJA
-  secret_access_key:
-    secure: lmMJVZFQONll1zksUaSh7otKEfji+fz0c1ACa/vhj42sgkJYHtrKYgoRajd8KxoT7xkfp6Ao1kuvRdw5olK0qeQGAtwtcPAPd3I1WdNJtMSaMMVdU/EGKt7ZW0dHFvzHGO29ZYJC4SUSNRvEQsNZLik1T6aqAOdDvWSE69rVCSg=
-  bucket: openmm-org-preview
-  local_dir: _site
-  region: us-east-1
-  endpoint: openmm-org-preview.s3-website-us-east-1.amazonaws.com
-  acl: public_read
-  on:
-    repo: jchodera/openmm-org
-    branch: master
-# Deploy preview jchodera branch to http://openmm-org-preview.s3-website-us-east-1.amazonaws.com/preview
-- provider: s3
-  skip_cleanup: true
-  detect_encoding: true
-  access_key_id: AKIAJCXUDU2ZGB5Q4GJA
-  secret_access_key:
-    secure: lmMJVZFQONll1zksUaSh7otKEfji+fz0c1ACa/vhj42sgkJYHtrKYgoRajd8KxoT7xkfp6Ao1kuvRdw5olK0qeQGAtwtcPAPd3I1WdNJtMSaMMVdU/EGKt7ZW0dHFvzHGO29ZYJC4SUSNRvEQsNZLik1T6aqAOdDvWSE69rVCSg=
-  bucket: openmm-org-preview
-  local-dir: _site
-  upload-dir: preview
-  region: us-east-1
-  endpoint: openmm-org-preview.s3-website-us-east-1.amazonaws.com
-  acl: public_read
-  on:
-    repo: jchodera/openmm-org
+    repo: openmm/openmm-org
     branch: preview
 
 notifications:
