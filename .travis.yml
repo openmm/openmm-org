@@ -54,7 +54,7 @@ deploy:
   local-dir: _site
   upload-dir: preview
   region: us-west-1
-  endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
+  #endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
   acl: public_read
   on:
     repo: openmm/openmm-org
