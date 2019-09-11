@@ -23,7 +23,7 @@ deploy:
   region: us-west-1
   endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
   on:
-    repo: pandegroup/openmm-org
+    repo: openmm/openmm-org
     branch: master
 # Deploy preview pandegroup branch to http://openmm.org/preview
 - provider: s3
@@ -40,7 +40,7 @@ deploy:
   endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
   acl: public_read
   on:
-    repo: pandegroup/openmm-org
+    repo: openmm/openmm-org
     branch: preview
 
 notifications:
