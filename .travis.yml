@@ -44,17 +44,17 @@ deploy:
     branch: preview
 # Test preview deploy
 - provider: s3
-  skip_cleanup: true
-  detect_encoding: true
+  #skip_cleanup: true
+  #detect_encoding: true
   access_key_id:
     secure: "NxSyvMW8cjFtyVAW+7oG8SnNefycdEIynbkiceBWWWSqXsukjBc0u0Xb/w1T5y035SWRpigTLtpNCK6VLWu6K7ZMc3WqfNStVjFarlbqB6QSoq8zTSCXwWN22zj/34vVCb9yOTXh2H8a35bF6Q7wWIdR0BM35B4mtQRrCEIUkYQ="
   secret_access_key:
     secure: "Qe5jLB3vsi+iyLGAQOYWkE/klLpggbRDHt72ohEmzJur6U/Li0eA4XwMEFyHApJg6bUanJFiEbs22XzBtI/qG9ys/69n4xfQxJq+wZjfvmO0WUSYQYdqJ+opo26wju/KUbmWlF48SKORW3oDnK7Oppbe2DmiVOINl/X02HRu72c="
   bucket: openmm.org
-  local-dir: _site
+  #local-dir: _site
   upload-dir: preview
-  region: us-west-1
-  endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
+  #region: us-west-1
+  #endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
   acl: public_read
   on:
     repo: openmm/openmm-org
