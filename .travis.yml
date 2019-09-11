@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.3.3
+- 2.4.5
 
 sudo: false
 
@@ -51,10 +51,10 @@ deploy:
   secret_access_key:
     secure: "Qe5jLB3vsi+iyLGAQOYWkE/klLpggbRDHt72ohEmzJur6U/Li0eA4XwMEFyHApJg6bUanJFiEbs22XzBtI/qG9ys/69n4xfQxJq+wZjfvmO0WUSYQYdqJ+opo26wju/KUbmWlF48SKORW3oDnK7Oppbe2DmiVOINl/X02HRu72c="
   bucket: openmm.org
-  #local-dir: _site
+  local-dir: _site
   upload-dir: preview
-  #region: us-west-1
-  #endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
+  region: us-west-1
+  endpoint: openmm.org.s3-website-us-west-1.amazonaws.com
   acl: public_read
   on:
     repo: openmm/openmm-org
