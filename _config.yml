@@ -6,3 +6,4 @@ exclude:
     - '/jekyll.sh'
     - '/.jekyll-metadata'
     - '/LICENSE'
+    - '/vendor'
