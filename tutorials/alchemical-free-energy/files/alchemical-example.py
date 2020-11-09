@@ -32,7 +32,7 @@ for index in range(system.getNumParticles()):
     [charge, sigma, epsilon] = nbforce.getParticleParameters(index)
     custom_force.addParticle([sigma, epsilon])
     if index in alchemical_particles:
-        nbforce.setParticleParameters(index, charge*0, sigma, epsilon*0)
+        nbforce.setParticleParameters(index, charge*0, sigma, epsilon)
 custom_force.addInteractionGroup(alchemical_particles, chemical_particles)
 system.addForce(custom_force)
 
