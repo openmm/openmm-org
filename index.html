@@ -5,36 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://unpkg.com/vuetify@2.4.2/dist/vuetify.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/default.min.css" rel="stylesheet">
     <title>OpenMM</title>
   </head>
   <body>
     <div id="app">
       <v-app>
-          <v-card class="grey lighten-3">
-            <top></top>
-            <v-tabs v-model="tab" background-color="grey lighten-3" grow show-arrows>
-              <v-tab>Home</v-tab>
-              <v-tab>About</v-tab>
-              <v-tab>Performance</v-tab>
-              <v-tab>Installation</v-tab>
-              <v-tab>Documentation</v-tab>
-              <v-tab>Support</v-tab>
-              <v-tab>Resources</v-tab>
-              <v-tab>Tutorials</v-tab>
-            </v-tabs>
-          </v-card>
-          <v-content>
-            <v-tabs-items v-model="tab">
-              <v-tab-item><tab-home/></v-tab-item>
-              <v-tab-item><tab-about/></v-tab-item>
-            </v-tabs-items>
-          </v-content>
+        <v-card class="grey lighten-3">
+          <top></top>
+          <v-tabs v-model="tab" background-color="grey lighten-3" grow show-arrows>
+            <v-tab>Home</v-tab>
+            <v-tab>About</v-tab>
+            <v-tab>Performance</v-tab>
+            <v-tab>Installation</v-tab>
+            <v-tab>Documentation</v-tab>
+            <v-tab>Support</v-tab>
+            <v-tab>Resources</v-tab>
+            <v-tab>Tutorials</v-tab>
+          </v-tabs>
+        </v-card>
+        <v-content>
+          <v-tabs-items v-model="tab">
+            <v-tab-item><tab-home/></v-tab-item>
+            <v-tab-item><tab-about/></v-tab-item>
+          </v-tabs-items>
+        </v-content>
       </v-app>
     </div>
-    <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/vuetify@2.4.2"></script>
-    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/vuetify@2.4.2/dist/vuetify.min.js"></script>
+    <script src="https://unpkg.com/http-vue-loader@1.4.2/src/httpVueLoader.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
     <script type="text/javascript">
+      Vue.use(hljs.vuePlugin);
       new Vue({
         el: '#app',
         vuetify: new Vuetify(),
@@ -42,7 +45,6 @@
           'top': httpVueLoader('top.vue'),
           'tab-home': httpVueLoader('home.vue'),
           'tab-about': httpVueLoader('about.vue')
-
         },
         data: { tab: 0 }
       });
