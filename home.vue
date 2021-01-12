@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-row align="center" align-content="center">
-      <v-col cols=auto align="center">
+    <v-row align="center" justify="center">
+      <v-col cols=auto>
         <v-card flat>
           <v-card-title>
             Introduction to OpenMM
@@ -15,7 +15,7 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row align="center" justify="center">
       <v-col cols="auto">
         <v-card flat>
           <v-card-title>

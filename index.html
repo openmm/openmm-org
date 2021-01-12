@@ -16,6 +16,7 @@
           <v-tabs v-model="tab" background-color="grey lighten-3" grow show-arrows>
             <v-tab>Home</v-tab>
             <v-tab>About</v-tab>
+            <v-tab>Script builder</v-tab>
             <v-tab>Performance</v-tab>
             <v-tab>Installation</v-tab>
             <v-tab>Documentation</v-tab>
@@ -28,6 +29,7 @@
           <v-tabs-items v-model="tab">
             <v-tab-item><tab-home/></v-tab-item>
             <v-tab-item><tab-about/></v-tab-item>
+            <v-tab-item><tab-script-builder/></v-tab-item>
           </v-tabs-items>
         </v-content>
       </v-app>
@@ -44,7 +46,8 @@
         components: {
           'top': httpVueLoader('top.vue'),
           'tab-home': httpVueLoader('home.vue'),
-          'tab-about': httpVueLoader('about.vue')
+          'tab-about': httpVueLoader('about.vue'),
+          'tab-script-builder': httpVueLoader('script-builer.vue')
         },
         data: { tab: 0 }
       });
