@@ -1,7 +1,16 @@
----
-layout: page
-title: About OpenMM
----
+<template>
+<div>
+
+  <div>
+      <h3 class="text-center">Extreme Flexibility. Extreme Speed.</h3>
+      <div class="row clearfix">
+        <div class="col-md-12 column text-center">
+          <p class="text-center lead">
+            Extreme flexibility through custom forces and integrators. Extreme performance through GPU Acceleration, with optimizations for AMD, NVIDIA, and Intel Integrated GPUs. It's fast on CPUs too. <a href="about.html#benchmarks">See the benchmarks.</a>
+          </p>
+        </div>
+      </div>
+  </div>
 
 <div class="jumbotron jumbtron-color">
       <div class="container">
@@ -17,7 +26,6 @@ title: About OpenMM
       </div>
       </div>
     </div>
-
     <div class="container">
       <div class="row clearfix">
         <div class="col-md-4 column text-center">
@@ -213,3 +221,5 @@ simulation.step(10000)</code></pre>
       </table>
       </div>
 </div></div>
+</div>
+</template>

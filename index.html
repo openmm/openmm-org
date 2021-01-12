@@ -1,101 +1,51 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/http-vue-loader"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://unpkg.com/vuetify@2.4.2/dist/vuetify.min.css" rel="stylesheet">
+    <title>OpenMM</title>
   </head>
-
   <body>
-    <div id="my-app">
-      <my-component></my-component>
+    <div id="app">
+      <v-app>
+          <v-card class="grey lighten-3">
+            <top></top>
+            <v-tabs v-model="tab" background-color="grey lighten-3" grow show-arrows>
+              <v-tab>Home</v-tab>
+              <v-tab>About</v-tab>
+              <v-tab>Performance</v-tab>
+              <v-tab>Installation</v-tab>
+              <v-tab>Documentation</v-tab>
+              <v-tab>Support</v-tab>
+              <v-tab>Resources</v-tab>
+              <v-tab>Tutorials</v-tab>
+            </v-tabs>
+          </v-card>
+          <v-content>
+            <v-tabs-items v-model="tab">
+              <v-tab-item><tab-home/></v-tab-item>
+              <v-tab-item><tab-about/></v-tab-item>
+            </v-tabs-items>
+          </v-content>
+      </v-app>
     </div>
-
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuetify@2.4.2"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
     <script type="text/javascript">
       new Vue({
-        el: '#my-app',
+        el: '#app',
+        vuetify: new Vuetify(),
         components: {
-          'my-component': httpVueLoader('my-component.vue')
-        }
+          'top': httpVueLoader('top.vue'),
+          'tab-home': httpVueLoader('home.vue'),
+          'tab-about': httpVueLoader('about.vue')
+
+        },
+        data: { tab: 0 }
       });
     </script>
   </body>
 </html>
-
-<!-- ---
-layout: page
-title: OpenMM
----
-
-<div class="jumbotron jumbtron-color">
-      <div class="container">
-      <div class="row clearfix">
-      <div class="col-md-4 column">
-         <img class="img-responsive" src="img/logos/Icon.svg">
-      </div>
-      <div class="col-md-8 column">
-          <h1>OpenMM</h1>
-          <p>
-            A high performance toolkit for molecular simulation. Use it as a library, or as an application. We include extensive language bindings for Python, C, C++, and even Fortran. The code is open source and actively maintained on Github, licensed under MIT and LGPL. Part of the <a href="https://omniamd.squarespace.com">Omnia</a> suite of tools for predictive biomolecular simulation.
-          </p>
-          <p>
-            <a class="btn btn-primary btn-large" href="about.html">About</a>
-            <a class="btn btn-primary btn-large" href="https://simtk.org/forums/viewforum.php?f=161">Forum</a>
-            <a class="btn btn-primary btn-large" href="https://github.com/openmm/openmm">Github</a>
-          </p>
-      </div>
-      </div>
-      </div>
-    </div>
-    <div class="container">
-      <h3 class="text-center">Extreme Flexibility. Extreme Speed.</h3>
-      <div class="row clearfix">
-        <div class="col-md-12 column text-center">
-          <p class="text-center lead">
-            Extreme flexibility through custom forces and integrators. Extreme performance through GPU Acceleration, with optimizations for AMD, NVIDIA, and Intel Integrated GPUs. It's fast on CPUs too. <a href="about.html#benchmarks">See the benchmarks.</a>
-          </p>
-        </div>
-      </div>
-      <hr>
-      <div class="row clearfix">
-        <div class="col-md-2 column">
-          <h3>
-            <a href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm">Install</a>
-          </h3>
-          <p class="enlarge">
-            Install using the <a href="https://conda.io">conda</a> Python package manager that powers the <a href="https://omniamd.squarespace.com">Omnia ecosystem</a>.
-          </p>
-        </div>
-        <div class="col-md-2 column">
-          <h3>
-            <a href="documentation.html">Docs</a>
-          </h3>
-          <p class="enlarge">
-            For more information about the science, the code base, and the API behind OpenMM.
-          </p>
-        </div>
-        <div class="col-md-2 column">
-          <h3>
-            <a href="support.html">Support</a>
-          </h3>
-          <p class="enlarge">
-            For more information about filing bug reports, requesting new features, and other issues.
-          </p>
-        </div>
-        <div class="col-md-2 column">
-          <h3>
-            <a href="resources.html">Resources</a>
-          </h3>
-          <p class="enlarge">
-            Explore additional libraries and third-party tools built around OpenMM.
-          </p>
-        </div>
-        <div class="col-md-2 column">
-          <h3>
-            <a href="tutorials/index.html">Tutorials</a>
-          </h3>
-          <p class="enlarge">
-            Get started right away with OpenMM tutorials.
-          </p>
-        </div>
-      </div>
-    </div> -->
