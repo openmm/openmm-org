@@ -16,7 +16,6 @@
           <v-tabs v-model="tab" background-color="grey lighten-3" grow show-arrows>
             <v-tab>Home</v-tab>
             <v-tab>About</v-tab>
-            <v-tab>Script builder</v-tab>
             <v-tab>News</v-tab>
             <v-tab>Performance</v-tab>
             <v-tab>Installation</v-tab>
@@ -53,7 +52,6 @@
           'top': httpVueLoader('top.vue'),
           'tab-home': httpVueLoader('home.vue'),
           'tab-about': httpVueLoader('about.vue'),
-          'tab-script-builder': httpVueLoader('script-builer.vue')
         },
         data: { tab: 0 }
       });
