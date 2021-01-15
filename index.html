@@ -29,12 +29,13 @@
           <v-tabs-items v-model="tab">
             <v-tab-item><tab-home/></v-tab-item>
             <v-tab-item><tab-about/></v-tab-item>
-            <v-tab-item><tab-script-builder/></v-tab-item>
             <v-tab-item></v-tab-item>
           </v-tabs-items>
-          <v-container v-show="tab === 3">
-            <a class="twitter-timeline" href="https://twitter.com/openmm_toolkit?ref_src=twsrc%5Etfw">Tweets by openmm_toolkit</a>
-          </v-container>
+          <div v-show="tab === 2">
+            <v-container class="d-flex justify-center">
+              <a class="twitter-timeline" href="https://twitter.com/openmm_toolkit?ref_src=twsrc%5Etfw" width="600">Tweets by openmm_toolkit</a>
+            </v-container>
+          </div>
         </v-content>
       </v-app>
     </div>
