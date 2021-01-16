@@ -25,7 +25,7 @@
             <v-tab>Tutorials</v-tab>
           </v-tabs>
         </v-card>
-        <v-content>
+        <v-main>
           <v-tabs-items v-model="tab">
             <v-tab-item><tab-home/></v-tab-item>
             <v-tab-item><tab-about/></v-tab-item>
@@ -37,7 +37,12 @@
             <v-tab-item><tab-resources/></v-tab-item>
             <v-tab-item><tab-tutorials/></v-tab-item>
           </v-tabs-items>
-        </v-content>
+        </v-main>
+        <v-footer class="grey lighten-3" padless>
+          <v-container class="d-flex justify-center text--secondary">
+            Copyright © 2017-{{ new Date().getFullYear() }}, OpenMM team
+          </v-container>
+        </v-footer>
       </v-app>
     </div>
     <script src="https://unpkg.com/vue@2.6.12/dist/vue.min.js"></script>
