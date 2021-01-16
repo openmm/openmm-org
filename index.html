@@ -30,6 +30,12 @@
             <v-tab-item><tab-home/></v-tab-item>
             <v-tab-item><tab-about/></v-tab-item>
             <v-tab-item></v-tab-item>
+            <v-tab-item>Empty</v-tab-item>
+            <v-tab-item>Empty</v-tab-item>
+            <v-tab-item><tab-documenation/></v-tab-item>
+            <v-tab-item>Empty</v-tab-item>
+            <v-tab-item>Empty</v-tab-item>
+            <v-tab-item>Empty</v-tab-item>
           </v-tabs-items>
           <div v-show="tab === 2">
             <v-container class="d-flex justify-center">
@@ -53,6 +59,7 @@
           'top': httpVueLoader('top.vue'),
           'tab-home': httpVueLoader('home.vue'),
           'tab-about': httpVueLoader('about.vue'),
+          'tab-documenation': httpVueLoader('documentation.vue'),
         },
         data: { tab: 0 }
       });
