@@ -17,7 +17,7 @@
             <v-tab>Home</v-tab>
             <v-tab>About</v-tab>
             <v-tab>News</v-tab>
-            <v-tab>Performance</v-tab>
+            <v-tab>Benchmarks</v-tab>
             <v-tab>Installation</v-tab>
             <v-tab>Documentation</v-tab>
             <v-tab>Support</v-tab>
@@ -30,7 +30,7 @@
             <v-tab-item><tab-home/></v-tab-item>
             <v-tab-item><tab-about/></v-tab-item>
             <v-tab-item></v-tab-item>
-            <v-tab-item>Empty</v-tab-item>
+            <v-tab-item><tab-benchmarks/></v-tab-item>
             <v-tab-item>Empty</v-tab-item>
             <v-tab-item><tab-documenation/></v-tab-item>
             <v-tab-item><tab-support/></v-tab-item>
@@ -50,6 +50,7 @@
     <script src="https://unpkg.com/http-vue-loader@1.4.2/src/httpVueLoader.js"></script>
     <script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
     <script src="https://platform.twitter.com/widgets.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       Vue.use(hljs.vuePlugin);
       new Vue({
@@ -59,6 +60,7 @@
           'top': httpVueLoader('top.vue'),
           'tab-home': httpVueLoader('home.vue'),
           'tab-about': httpVueLoader('about.vue'),
+          'tab-benchmarks': httpVueLoader('benchmarks.vue'),
           'tab-documenation': httpVueLoader('documentation.vue'),
           'tab-support': httpVueLoader('support.vue'),
           'tab-resources': httpVueLoader('resources.vue'),
