@@ -33,8 +33,8 @@
             <v-tab-item>Empty</v-tab-item>
             <v-tab-item>Empty</v-tab-item>
             <v-tab-item><tab-documenation/></v-tab-item>
-            <v-tab-item>Empty</v-tab-item>
-            <v-tab-item>Empty</v-tab-item>
+            <v-tab-item><tab-support/></v-tab-item>
+            <v-tab-item><tab-resources/></v-tab-item>
             <v-tab-item>Empty</v-tab-item>
           </v-tabs-items>
           <div v-show="tab === 2">
@@ -60,6 +60,8 @@
           'tab-home': httpVueLoader('home.vue'),
           'tab-about': httpVueLoader('about.vue'),
           'tab-documenation': httpVueLoader('documentation.vue'),
+          'tab-support': httpVueLoader('support.vue'),
+          'tab-resources': httpVueLoader('resources.vue'),
         },
         data: { tab: 0 }
       });
