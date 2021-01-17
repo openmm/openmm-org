@@ -1,6 +1,6 @@
 <template>
   <v-container class="d-flex justify-center">
-    <a class="twitter-timeline" href="https://twitter.com/openmm_toolkit?ref_src=twsrc%5Etfw" width="600">Tweets by openmm_toolkit</a>
+    <a class="twitter-timeline" href="https://twitter.com/openmm_toolkit?ref_src=twsrc%5Etfw" width="600"></a>
   </v-container>
 </template>
 
