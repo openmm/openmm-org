@@ -1,143 +1,124 @@
 <template>
-  <v-container class="d-flex flex-wrap justify-center">
-    <v-card href="http://docs.openmm.org/latest/userguide/" target="blank" class="ma-4" width="300" hover>
-      <v-card-title>User Guide</v-card-title>
-      <v-card-text>
-        Start here if it's your first time using OpenMM. These documents will get you up and running simulations in short order.
-      </v-card-text>
-    </v-card>
-    <v-card href="http://docs.openmm.org/latest/developerguide/" target="blank" class="ma-4" width="300" hover>
-      <v-card-title>Developer Guide</v-card-title>
-      <v-card-text>
-        This section provides in-depth information on the code-base and how to contribute to the development of OpenMM itself.
-      </v-card-text>
-    </v-card>
-    <v-card href="http://docs.openmm.org/latest/api-python/" target="blank" class="ma-4" width="300" hover>
-      <v-card-title>Python API</v-card-title>
-      <v-card-text>
-        The Python API provides information about the classes and methods available to Python developers.
-      </v-card-text>
-    </v-card>
-    <v-card href="http://docs.openmm.org/latest/api-c++/" target="blank" class="ma-4" width="300" hover>
-      <v-card-title>C++ API</v-card-title>
-      <v-card-text>
-        The C++ API provides information about OpenMM's C++ interface.
-      </v-card-text>
-    </v-card>
-
-    <v-spacer/>
-
-    <div class="jumbotron jumbtron-color">
-      <div class="container">
-      <div class="row clearfix">
-      <div class="col-md-12 column">
-      <!--  <a href="https://github.com/simtk/openmm"><img style="float: right; border: 0; z-index: 1000" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
-        -->
-          <h1>Documentation</h1>
-          <p>Resources for finding your way around OpenMM.</p>
-      </div>
-      </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10" role="main">
-          <div>
-            <h2 class="page-header">Getting Started</h2>
-            <p class="lead"> The easiest way to get started is to familiarize yourself with the User Guide, which contains basics about installing OpenMM, making sure that it runs smoothly, and running a couple of example simulations. </p>
-            <div class="row clearfix">
-              <div class="col-md-3 column">
-                <h3>
-                  <a href="http://docs.openmm.org/latest/userguide/index.html">User Guide</a>
-                </h3>
-                <p class="enlarge">
-                  Start here if it's your first time using OpenMM. These documents will get you up and running simulations in short order.
-                </p>
-              </div>
-              <div class="col-md-3 column">
-                <h3>
-                  <a href="http://docs.openmm.org/latest/developerguide/index.html">Dev Guide</a>
-                </h3>
-                <p class="enlarge">
-                  This section provides in-depth information on the code-base and how to contribute to the development of OpenMM itself.
-                </p>
-              </div>
-              <div class="col-md-3 column">
-                <h3>
-                  <a href="http://docs.openmm.org/latest/api-python/index.html">Python API
-                  </a>
-                </h3>
-                <p class="enlarge">
-                  The Python API provides information about the classes and methods available to Python developers.
-                </p>
-              </div>
-              <div class="col-md-3 column">
-                <h3>
-                  <a href="http://docs.openmm.org/latest/api-c++/index.html">C++ API
-                  </a>
-                </h3>
-                <p class="enlarge">
-                  The C++ API provides information about OpenMM's C++ interface.
-                </p>
-              </div>
-            </div>
-
-            <h2 class="page-header">Workshop Videos</h2>
-            <p class="lead">Every year, we hold several OpenMM workshops at Stanford University. After you have successfully installed OpenMM, here are some introductory videos from previous workshops.</p>
-            <h4>Introduction to OpenMM</h4>
-            <iframe width="920" height="540" src="http://www.youtube.com/embed/hbQ_dfgWPc8" frameborder="0" allowfullscreen></iframe>
-            <h4>Running Simulations with OpenMM</h4>
-            <iframe width="920" height="540" src="https://www.youtube.com/embed/XZ0A_L_2pnI" frameborder="0" allowfullscreen></iframe>
-            <p class="text-center">
-              <a class="btn btn-primary btn-large" href="https://www.youtube.com/user/SimbiosOpenMM">More videos</a>
-            </p>
-
-            <h2 class="page-header">The Bleeding Edge</h2>
-            <p class="lead">Visit <a href="https://github.com/pandegroup/openmm">the OpenMM GitHub repo</a> to stay up to date with the latest development version of OpenMM.</p>
-            <h4>Development Snapshot Documentation</h4>
-            <div class="row clearfix">
-              <div class="col-md-3 column">
-                <h3>
-                  <a href="http://docs.openmm.org/development/userguide/index.html">User Guide</a>
-                </h3>
-                <p class="enlarge">
-                  Start here if it's your first time using OpenMM. These documents will get you up and running simulations in short order.
-                </p>
-              </div>
-              <div class="col-md-3 column">
-                <h3>
-                  <a href="http://docs.openmm.org/development/developerguide/index.html">Dev Guide</a>
-                </h3>
-                <p class="enlarge">
-                  This section provides in-depth information on the code-base and how to contribute to the development of OpenMM itself.
-                </p>
-              </div>
-              <div class="col-md-3 column">
-                <h3>
-                  <a href="http://docs.openmm.org/development/api-python/index.html">Python API
-                  </a>
-                </h3>
-                <p class="enlarge">
-                  The Python API provides information about the classes and methods available to Python developers.
-                </p>
-              </div>
-              <div class="col-md-3 column">
-                <h3>
-                  <a href="http://docs.openmm.org/development/api-c++/index.html">C++ API
-                  </a>
-                </h3>
-                <p class="enlarge">
-                  The C++ API provides information about OpenMM's C++ interface.
-                </p>
-              </div>
-            </div>
-
+  <div>
+    <v-container>
+      <v-card flat>
+        <v-card-title>Getting Started</v-card-title>
+        <v-card-text>
+           The easiest way to get started is to familiarize yourself with the User Guide, which contains basics about installing OpenMM, making sure that it runs smoothly, and running a couple of example simulations.
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container class="d-flex flex-wrap justify-center">
+      <v-card href="http://docs.openmm.org/latest/userguide/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>User Guide</v-card-title>
+        <v-card-text>
+          Start here if it's your first time using OpenMM. These documents will get you up and running simulations in short order.
+        </v-card-text>
+      </v-card>
+      <v-card href="http://docs.openmm.org/latest/developerguide/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Developer Guide</v-card-title>
+        <v-card-text>
+          This section provides in-depth information on the code-base and how to contribute to the development of OpenMM itself.
+        </v-card-text>
+      </v-card>
+      <v-card href="http://docs.openmm.org/latest/api-python/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Python API</v-card-title>
+        <v-card-text>
+          The Python API provides information about the classes and methods available to Python developers.
+        </v-card-text>
+      </v-card>
+      <v-card href="http://docs.openmm.org/latest/api-c++/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>C++ API</v-card-title>
+        <v-card-text>
+          The C++ API provides information about OpenMM's C++ interface.
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container>
+      <v-card flat>
+        <v-card-title>Workshop Videos</v-card-title>
+        <v-card-text>
+           Every year, we hold several OpenMM workshops at Stanford University. After you have successfully installed OpenMM, here are some introductory videos from previous workshops.
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container class="d-flex flex-wrap justify-center">
+      <v-card class="ma-4" width="300">
+        <v-card-title>OpenMM Workshop 2012</v-card-title>
+        <v-card-text>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGL4XGw8noUxYZ-JrAob4hpVGCAhKGesk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
-        </div>
-      </div>
-    </div>
-
-
-  </v-container>
+        </v-card-text>
+      </v-card>
+      <v-card class="ma-4" width="300">
+        <v-card-title>OpenMM Workshop 2013</v-card-title>
+        <v-card-text>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGL4XGw8noUzNX6x0Lko2-1juuy7cm8xO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </v-card-text>
+      </v-card>
+      <v-card class="ma-4" width="300">
+        <v-card-title>OpenMM Workshop 2014</v-card-title>
+        <v-card-text>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGL4XGw8noUwrh16gsC9H_D03fED3IcHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container>
+      <v-card flat>
+        <v-card-title>Bleeding Edge</v-card-title>
+        <v-card-text>
+           Visit the <a href="https://github.com/openmm/openmm">OpenMM repository</a> at GitHub to stay up to date with the latest development.
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container class="d-flex flex-wrap justify-center">
+      <v-card href="http://docs.openmm.org/development/userguide/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>User Guide (dev)</v-card-title>
+        <v-card-text>
+          Start here if it's your first time using OpenMM. These documents will get you up and running simulations in short order.
+        </v-card-text>
+      </v-card>
+      <v-card href="http://docs.openmm.org/development/developerguide/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Developer Guide (dev)</v-card-title>
+        <v-card-text>
+          This section provides in-depth information on the code-base and how to contribute to the development of OpenMM itself.
+        </v-card-text>
+      </v-card>
+      <v-card href="http://docs.openmm.org/development/api-python/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Python API (dev)</v-card-title>
+        <v-card-text>
+          The Python API provides information about the classes and methods available to Python developers.
+        </v-card-text>
+      </v-card>
+      <v-card href="http://docs.openmm.org/development/api-c++/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>C++ API (dev)</v-card-title>
+        <v-card-text>
+          The C++ API provides information about OpenMM's C++ interface.
+        </v-card-text>
+      </v-card>
+    </v-container>
+  </div>
 </template>
+
+<style scoped>
+  .video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+  }
+
+  .video-container iframe, .video-container object, .video-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+</style>
