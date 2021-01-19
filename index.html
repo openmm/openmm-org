@@ -19,11 +19,11 @@
             <v-tab>About</v-tab>
             <v-tab>News</v-tab>
             <v-tab>Benchmarks</v-tab>
-            <v-tab>Installation</v-tab>
             <v-tab>Documentation</v-tab>
             <v-tab>Support</v-tab>
             <v-tab>Resources</v-tab>
             <v-tab>Tutorials</v-tab>
+            <v-tab>People</v-tab>
           </v-tabs>
         </v-card>
         <v-main>
@@ -32,11 +32,11 @@
             <v-tab-item><tab-about/></v-tab-item>
             <v-tab-item><tab-news/></v-tab-item>
             <v-tab-item><tab-benchmarks/></v-tab-item>
-            <v-tab-item>Empty</v-tab-item>
             <v-tab-item><tab-documenation/></v-tab-item>
             <v-tab-item><tab-support/></v-tab-item>
             <v-tab-item><tab-resources/></v-tab-item>
             <v-tab-item><tab-tutorials/></v-tab-item>
+            <v-tab-item><tab-people/></v-tab-item>
           </v-tabs-items>
         </v-main>
         <v-footer class="grey lighten-3" padless>
@@ -67,7 +67,8 @@
           'tab-documenation': httpVueLoader('documentation.vue'),
           'tab-support': httpVueLoader('support.vue'),
           'tab-resources': httpVueLoader('resources.vue'),
-          'tab-tutorials': httpVueLoader('tutorials.vue')
+          'tab-tutorials': httpVueLoader('tutorials.vue'),
+          'tab-people': httpVueLoader('people.vue')
         },
         data: { tab: 0 }
       });

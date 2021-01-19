@@ -16,8 +16,6 @@
       <div class="container">
       <div class="row clearfix">
       <div class="col-md-10 column">
-       <!--  <a href="https://github.com/simtk/openmm"><img style="float: right; border: 0; z-index: 1000" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
-         -->
           <h1>About OpenMM</h1>
           <p>
             Backed by researchers and developers from Stanford University, MSKCC, UPF, and others around the world.
@@ -47,64 +45,6 @@
           </p>
         </div>
       </div>
-      <h3 class="text-center page-header"> Get started quickly with the Python Wrapper </h3>
-      <div class="row clearfix">
-        <div class="col-md-11 center-block" style="float: none;">
-<pre><code class="language-python">from simtk.openmm.app import *
-from simtk.openmm import *
-from simtk.unit import *
-from sys import stdout
-
-pdb = PDBFile('input.pdb')
-forcefield = ForceField('amber99sb.xml', 'tip3p.xml')
-system = forcefield.createSystem(pdb.topology, nonbondedMethod=PME, nonbondedCutoff=1*nanometer, constraints=HBonds)
-integrator = LangevinIntegrator(300*kelvin, 1/picosecond, 0.002*picoseconds)
-simulation = Simulation(pdb.topology, system, integrator)
-simulation.context.setPositions(pdb.positions)
-simulation.minimizeEnergy()
-simulation.reporters.append(PDBReporter('output.pdb', 1000))
-simulation.reporters.append(StateDataReporter(stdout, 1000, step=True, potentialEnergy=True, temperature=True))
-simulation.step(10000)</code></pre>
-        </div>
-
-      </div>
-      <h3 class="page-header text-center">Part of the Omnia Suite</h3>
-      <div class="lead text-center"> The cornerstone for the Omnia suite of tools for predictive biomolecular simulation.  <a href="https://omniamd.squarespace.com/"> Learn more </a> </div>
-
-      <div class="row clearfix">
-        <a name="team"></a>
-        <h3 class="page-header text-center">Current Team</h3>
-        <div class="col-md-3 column text-center lead">
-          <h4><a href="https://web.stanford.edu/group/markland/">Markland Lab</a></h4>
-          <ul class="list-group">
-            <li class="list-group-item-special"><a href="https://web.stanford.edu/group/markland/about.html">Tom Markland</a></li>
-            <li class="list-group-item-special"><a href="https://simtk.org/users/peastman">Peter Eastman</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 column text-center lead">
-          <h4><a href="https://www.choderalab.org">Chodera Lab</a></h4>
-          <ul class="list-group">
-            <li class="list-group-item-special"><a href="https://www.choderalab.org/members#john-chodera">John Chodera</a></li>
-            <li class="list-group-item-special"><a href="https://www.choderalab.org/members#jaime-rodriguez-guerra">Jaime Rodriguez-Guerra</a></li>
-            <!-- <li class="list-group-item-special"><a href="https://www.choderalab.org/members#ana-silveira">Ana Silveira</a></li> -->
-            <!-- <li class="list-group-item-special"><a href="https://www.choderalab.org/members#karmen-condic-jurkic">Karmen Čondić-Jurkić</a></li> -->
-          </ul>
-        </div>
-        <div class="col-md-3 column text-center lead">
-          <h4><a href="https://www.compscience.org/">de Fabritiis Lab</a></h4>
-          <ul class="list-group">
-            <li class="list-group-item-special"><a href="https://www.icrea.cat/Web/ScientificStaff/gianni-de-fabritiis-582">Gianni de Fabritiis</a></li>
-            <li class="list-group-item-special"><a href="https://scholar.google.co.uk/citations?user=Hh8_deUAAAAJ&hl=en">Raimondas Galvelis</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 column text-center lead">
-          <h4><a href="https://www.lobos.nih.gov/">NIH</a></h4>
-          <ul class="list-group">
-            <li class="list-group-item-special"><a href="https://www.lobos.nih.gov/cbs/bbrooks.shtml">Bernard Brooks</a></li>
-            <li class="list-group-item-special"><a href="https://scholar.google.com/citations?user=nucvqKoAAAAJ&hl=en">Andrew Simmonett</a></li>
-          </ul>
-        </div>
-      </div>
 
       <div class="row clearfix text-center">
         <p class="lead">Current Citation</p>
@@ -113,34 +53,8 @@ simulation.step(10000)</code></pre>
         <p> <a href="https://simtk.org/project/xml/publications.xml/?group_id=161"> More publications</a></p>
       </div>
 
-      <div class="row clearfix">
-        <a name="consortium"></a>
-        <h3 class="page-header text-center">OpenMM Consortium</h3>
-        <p class="lead text-center">A community of researchers and developers supporting OpenMM.</p>
-        <div class="col-md-6 column text-center lead">
-          <ul class="list-group">
-            <li class="list-group-item-special">John Chodera (MSKCC)</li>
-            <li class="list-group-item-special">Karmen Condic-Jurkic (MSKCC)</li>
-            <li class="list-group-item-special">Peter Eastman (Stanford)</li>
-            <li class="list-group-item-special">Gianni de Fabritiis (Pompeu Fabra)</li>
-            <li class="list-group-item-special">Emilio Gallicchio (Brooklyn College)</li>
-            <li class="list-group-item-special">Tom Markland (Stanford)</li>
-            <li class="list-group-item-special">Justin McCallum (UCalgary)</li>
-            <li class="list-group-item-special">Vijay Pande (Stanford)</li>
-          </ul>
-        </div>
-        <div class="col-md-6 column text-center lead">
-          <ul class="list-group">
-            <li class="list-group-item-special">Jean-Philip Piquemal (Sorbonne)</li>
-            <li class="list-group-item-special">Jay Ponder (WashU)</li>
-            <li class="list-group-item-special">Josh Rackers (Sandia)</li>
-            <li class="list-group-item-special">Pengyu Ren (UT Austin)</li>
-            <li class="list-group-item-special">Julia Rice (IBM)</li>
-            <li class="list-group-item-special">Andy Simmonett (NIH)</li>
-            <li class="list-group-item-special">Bill Swope (IBM)</li>
-          </ul>
-        </div>
-      </div>
+      <h3 class="page-header text-center">Part of the Omnia Suite</h3>
+      <div class="lead text-center"> The cornerstone for the Omnia suite of tools for predictive biomolecular simulation.  <a href="https://omniamd.squarespace.com/"> Learn more </a> </div>
 
     <h3 class="page-header text-center">Funding</h3>
     <div class="lead text-center">OpenMM is currently (May 2020-Apr 2021) funded by a <a href="https://chanzuckerberg.com/eoss/proposals/openmm-key-infrastructure-for-biomolecular-modeling-and-simulation">Chan Zuckerberg Initiative Essential Open Source Software for Science grant</a> </div>
