@@ -135,5 +135,58 @@
       </table>
       </div>
 </div></div>
+
+    <div class="jumbotron jumbtron-color">
+      <div class="container">
+      <div class="row clearfix">
+      <div class="col-md-12 column">
+          <h1>Resources</h1>
+          <p>Resources that make it easier to use OpenMM.</p>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10" role="main">
+          <div>
+            <p class="lead">The OpenMM team has reviewed the links on this page, but we encourage the community to add their own.</p>
+            <h2 class="page-header">Tools</h2>
+            <p class="lead"> <a href="https://omniamd.squarespace.com">Omnia</a> An open source ecosystem built around OpenMM.</p>
+            <p class="lead"> <a href="https://openmmtools.readthedocs.io">OpenMMTools</a> Integrators, enhanced sampling methods, test systems, and alchemical factories for OpenMM.</p>
+            <p class="lead"> <a href="https://github.com/openmm/openmm-setup">OpenMM Setup</a> A graphical application to set up and run simulations with OpenMM. Includes pull-down menus, pop-up tips, error checking, and live script building capabilities.</p>
+            <p class="lead"> <a href="https://simtk.org/svn/pyopenmm/trunk/simtk/pyopenmm/extras/optimizepme.py">PME Optimizer</a> A script to optimize the performance of PME. It runs a series of simulations and selects the parameters that give best performance for simulating a particular system on particular hardware.</p>
+            <p class="lead"> <a href="https://github.com/leeping/OpenMM-MD">OpenMM-MD</a> A general purpose script (with lots of comments) that uses the OpenMM Python module to drive MD simulations. Simulation options are handled via an input file. To facilitate use of the script, the available options are always printed out for you to see, along with documentation.</p>
+                  </div>
+        </div>
+      </div>
+    </div>
+
+   <div class="jumbotron jumbtron-color">
+      <div class="container">
+      <div class="row clearfix">
+      <div class="col-md-12 column">
+        <h1>Support</h1>
+        <p> For help on submitting bug reports, requesting features, etc.</p>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10" role="main">
+          <h2 class="page-header">Users</h2>
+          <p class="lead"> Use the <a href="https://github.com/simtk/openmm/issues">Issue Tracker</a> to file bug reports. Please include as much information about your hardware, simulation parameters, and system as possible. It is highly recommended to included serialized XML files of your System, Integrator, and State objects.</p>
+          <p class="lead"> For general help on how to use OpenMM, check out our <a href="https://simtk.org/forums/viewforum.php?f=161">forum</a> or refer to our <a href="https://github.com/openmm/openmm/wiki/Frequently-Asked-Questions">FAQ</a> for common errors.</p>
+          <p class="lead"> If you'd like to request a new feature to be included into the next version of OpenMM, please use the <a href="https://github.com/simtk/openmm/issues">Issue Tracker</a>. Note that we have a review process, and while we will consider all requests, we cannot guarantee that they will be implemented.</p>
+          <p class="lead">A list of recommended hardware is available <a href="http://wiki.simtk.org/openmm/Hardware">here</a>.</p>
+          <h2 class="page-header">Developers</h2>
+          <p class="lead"> We encourage developers to use our Github Repository's <a href="https://github.com/simtk/openmm/issues"> Issue Tracker</a>. Note that the discussion is highly technical and is not suitable for most users. </p>
+        </div>
+      </div>
+    </div>
+
 </div>
 </template>
