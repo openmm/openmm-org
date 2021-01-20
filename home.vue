@@ -3,9 +3,9 @@
     <v-container class="d-flex flex-column align-center">
       <v-card width="600" flat>
         <v-card-title>Key Features</v-card-title>
-        <v-carousel width="600" height="375" interval="3000">
+        <v-carousel width="600" height="375" cycle interval="3000">
           <v-carousel-item>
-            <v-sheet class="d-flex justify-center align-center text-h6" justify-center color="light-green" height="100%" align="center">
+            <v-sheet class="d-flex justify-center align-center text-h6" justify-center color="red lighten-1" height="100%" align="center">
               Feature 1
             </v-sheet>
           </v-carousel-item>
