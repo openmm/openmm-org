@@ -84,7 +84,7 @@ module.exports = {
   },
   methods: {
     changeSlideColor: function() {
-      const colors = ['red lighten-1', 'light-green', 'light-blue', 'amber'];
+      const colors = ['deep-orange', 'light-green', 'light-blue', 'amber'];
       let nextColor = this.slideColor;
       while(nextColor === this.slideColor) {
         nextColor = colors[Math.floor(Math.random() * colors.length)]
