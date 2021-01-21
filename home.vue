@@ -3,27 +3,20 @@
     <v-container class="d-flex flex-column align-center">
       <v-card width="600" flat>
         <v-card-title>Key Features</v-card-title>
-        <v-carousel width="600" height="375" cycle interval="3000">
-          <v-carousel-item>
-            <v-sheet class="d-flex justify-center align-center text-h6" justify-center color="red lighten-1" height="100%" align="center">
-              Feature 1
-            </v-sheet>
-          </v-carousel-item>
-          <v-carousel-item>
-            <v-sheet class="d-flex justify-center align-center text-h6" justify-center color="light-green" height="100%" align="center">
-              Feature 2
-            </v-sheet>
-          </v-carousel-item>
-          <v-carousel-item>
-            <v-sheet class="d-flex justify-center align-center text-h6" color="light-blue" height="100%" align="center">
-              Feature 3
-            </v-sheet>
-          </v-carousel-item>
-          <v-carousel-item>
-            <v-sheet class="d-flex justify-center align-center text-h6" color="amber" height="100%" align="center">
-              Feature 4
-            </v-sheet>
-          </v-carousel-item>
+        <v-carousel width="600" height="375" cycle interval="3000" @change="changeSlideColor()">
+          <v-carousel-slide title="Custom Forces" :color="slideColor">
+            Want a custom force between two atoms? No problem. Write your force expressions in string format, and OpenMM will generate blazing fast code to do just that. No more hand-writing GPU kernels.
+          </v-carousel-slide>
+          <v-carousel-slide title="Highly Optimized" :color="slideColor">
+            OpenMM is optimized for the latest generation of compute hardware, including AMD (via OpenCL) and NVIDIA (via CUDA) GPUs. We also heavily optimize for CPUs using intrinsics.
+          </v-carousel-slide>
+          <v-carousel-slide title="Portable" :color="slideColor">
+            We strive to make our binaries as portable as possible. We've tested OpenMM on many flavors of Linux, OS X, and even Windows.
+          </v-carousel-slide>
+          <v-carousel-slide title="Easy to install" :color="slideColor">
+            Install OpenMM and all its dependencies with Conda package manager. No manual compilation
+            from source required. 
+          </v-carousel-slide>
         </v-carousel>
       </v-card>
       <v-card width="800" flat>
@@ -79,9 +72,25 @@
 
 <script>
 module.exports = {
-  data: function() { return { example: '' } },
+  components: {
+    'v-carousel-slide': httpVueLoader('slide.vue')
+  },
+  data: function() { return { 
+    example: '',
+    slideColor: 'amber'
+  }},
   created: function() {
     fetch('example.py').then(res => res.text().then(str => this.example = str))
+  },
+  methods: {
+    changeSlideColor: function() {
+      const colors = ['red lighten-1', 'light-green', 'light-blue', 'amber'];
+      let nextColor = this.slideColor;
+      while(nextColor === this.slideColor) {
+        nextColor = colors[Math.floor(Math.random() * colors.length)]
+      };
+      this.slideColor = nextColor
+    }
   }
 }
 </script>
