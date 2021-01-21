@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://unpkg.com/vuetify@2.4.2/dist/vuetify.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/mdi@2.2.43/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/default.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon/favicon.ico">
     <title>OpenMM</title>
@@ -16,14 +16,31 @@
         <v-card class="grey lighten-3">
           <top></top>
           <v-tabs v-model="tab" background-color="grey lighten-3" grow show-arrows>
-            <v-tab>Home</v-tab>
-            <v-tab>News</v-tab>
-            <v-tab>Benchmarks</v-tab>
-            <v-tab>Documentation</v-tab>
-            <v-tab>Tutorials</v-tab>
-            <v-tab>People</v-tab>
+            <v-tab>
+              <v-icon left>mdi-home-outline</v-icon>
+              Home
+            </v-tab>
+            <v-tab>
+              <v-icon left>mdi-newspaper-variant-outline</v-icon>
+              News
+            </v-tab>
+            <v-tab>
+              <v-icon left>mdi-gauge</v-icon>
+              Benchmarks</v-tab>
+            <v-tab>
+              <v-icon left>mdi-book-open-page-variant-outline</v-icon>
+              Documentation
+            </v-tab>
+            <v-tab>
+              <v-icon left>mdi-school-outline</v-icon>
+              Tutorials
+            </v-tab>
+            <v-tab>
+              <v-icon left>mdi-account-group-outline</v-icon>
+              People
+            </v-tab>
             <v-tab>Tmp</v-tab>
-            </v-tabs>
+          </v-tabs>
         </v-card>
         <v-main>
           <v-tabs-items v-model="tab">
@@ -37,7 +54,7 @@
           </v-tabs-items>
         </v-main>
         <v-footer class="grey lighten-3" padless>
-          <v-container class="d-flex justify-center text--secondary">
+          <v-container class="d-flex justify-center text--secondary text-body-2">
             Copyright © 2017-{{ new Date().getFullYear() }}, OpenMM team
           </v-container>
         </v-footer>
