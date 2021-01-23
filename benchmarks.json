@@ -1,12 +1,12 @@
 {
-"speed":
+"dhfr":
   [
-    ["Simulation type"       , "CUDA (Titan X Pascal)", "CUDA (Titan V)", "CPU (Core i7-7740X)"],
-    ["Implicit, 2 fs"        ,                     927,             1004,                   9.4],
-    ["Implicit, 5 fs HMR"    ,                    1528,             1437,                  23.2],
-    ["Explicit-RF, 2 fs"     ,                     626,              697,                  20.2],
-    ["Explicit-RF, 5 fs HMR" ,                    1118,             1071,                  45.6],
-    ["Explicit-PME, 2 fs"    ,                     393,              419,                  16.5],
-    ["Explicit-PME, 5 fs HMR",                     752,              785,                  37.9]
+    ["Simulation type"       , "CUDA Titan X", "CUDA Titan V", "OpenCL Titan X", "OpenCL Titan V", "OpenCL Radeon", "CPU"],
+    ["Implicit, 2 fs"        ,  927, 1004,  672,  834,  403,   9.4],
+    ["Implicit, 5 fs HMR"    , 1528, 1437,  771, 1089,  521,  23.2],
+    ["Explicit-RF, 2 fs"     ,  626,  697,  496,  627,  295,  20.2],
+    ["Explicit-RF, 5 fs HMR" , 1118, 1071,  677,  893,  463,  45.6],
+    ["Explicit-PME, 2 fs"    ,  393,  419,  316,  324,  163,  16.5],
+    ["Explicit-PME, 5 fs HMR",  752,  785,  496,  617,  317,  37.9]
   ]
 }

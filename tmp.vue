@@ -54,11 +54,6 @@
       <a href="https://siremol.org" class="list-group-item lead">SireMol</a>
     </p>
 
-    <h3>OpenMM 7.4 Benchmarks</h3>
-    <p>
-      Performance on DHFR measured in ns/day. <a href="https://simtk.org/plugins/moinmoin/openmm/BenchmarkOpenMMDHFR">Details.</a>
-    </p>
-
     <h1>Resources</h1>
     <p>
       Resources that make it easier to use OpenMM.
