@@ -36,6 +36,10 @@
               Tutorials
             </v-tab>
             <v-tab>
+              <v-icon left>mdi-vector-combine</v-icon>
+              Ecosystem
+            </v-tab>
+            <v-tab>
               <v-icon left>mdi-account-group-outline</v-icon>
               People
             </v-tab>
@@ -49,6 +53,7 @@
             <v-tab-item><tab-benchmarks/></v-tab-item>
             <v-tab-item><tab-documenation/></v-tab-item>
             <v-tab-item><tab-tutorials/></v-tab-item>
+            <v-tab-item><tab-ecosystem/></v-tab-item>
             <v-tab-item><tab-people/></v-tab-item>
             <v-tab-item><tab-tmp/></v-tab-item>
           </v-tabs-items>
@@ -79,6 +84,7 @@
           'tab-benchmarks': httpVueLoader('benchmarks.vue'),
           'tab-documenation': httpVueLoader('documentation.vue'),
           'tab-tutorials': httpVueLoader('tutorials.vue'),
+          'tab-ecosystem': httpVueLoader('ecosystem.vue'),
           'tab-people': httpVueLoader('people.vue'),
           'tab-tmp': httpVueLoader('tmp.vue'),
         },

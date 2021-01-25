@@ -25,42 +25,7 @@
       OpenMM is currently (May 2020-Apr 2021) funded by a <a href="https://chanzuckerberg.com/eoss/proposals/openmm-key-infrastructure-for-biomolecular-modeling-and-simulation">Chan Zuckerberg Initiative Essential Open Source Software for Science grant</a>
     </p>
 
-    <h3>Built with OpenMM</h3>
-    <p>
-      Trusted and used by scientists around the world.
-    </p>
-    <p>
-      <a href="https://foldingathome.org" class="list-group-item lead">Folding<span style="color: red; font-weight: 500;">@</span>home</a>
-    </p>
-    <p>
-      <a href="https://www.charmm.org" class="list-group-item lead">CHARMM</a>
-    </p>
-    <p>
-      <a href="https://simtk.org/home/forcebalance" class="list-group-item lead">ForceBalance</a>
-    </p>
-    <p>
-      <a href="http://getyank.org" class="list-group-item lead">YANK</a>
-    </p>
-    <p>
-      <a href="https://github.com/pandegroup/pdbfixer" class="list-group-item lead">PDBFixer</a>
-    </p>
-    <p>
-      <a href="http://www.gromacs.org/" class="list-group-item lead">GROMACS</a>
-    </p>
-    <p>
-      <a href="https://biomol.bme.utexas.edu/tinkergpu/index.php?title=Main_Page" class="list-group-item lead">TINKER</a>
-    </p>
-    <p>
-      <a href="https://siremol.org" class="list-group-item lead">SireMol</a>
-    </p>
-
     <h1>Resources</h1>
-    <p>
-      Resources that make it easier to use OpenMM.
-    </p>
-    <p>
-      The OpenMM team has reviewed the links on this page, but we encourage the community to add their own.
-    </p>
 
     <h2>Tools</h2>
     <p>
@@ -78,7 +43,6 @@
     <p>
       <a href="https://github.com/leeping/OpenMM-MD">OpenMM-MD</a> A general purpose script (with lots of comments) that uses the OpenMM Python module to drive MD simulations. Simulation options are handled via an input file. To facilitate use of the script, the available options are always printed out for you to see, along with documentation.
     </p>
-
 
     <h1>Support</h1>
     <p>
