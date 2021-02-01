@@ -1,26 +1,10 @@
 <template>
   <v-container>
-    <h1>Extreme Flexibility. Extreme Speed.</h1>
-    <p>
-      Extreme flexibility through custom forces and integrators. Extreme performance through GPU Acceleration, with optimizations for AMD, NVIDIA, and Intel Integrated GPUs. It's fast on CPUs too. <a href="about.html#benchmarks">See the benchmarks.</a>
-    </p>
-
-    <h1>About OpenMM</h1>
-    <p>
-      Backed by researchers and developers from Stanford University, MSKCC, UPF, and others around the world.
-    </p>
-
-    <h1>Part of the Omnia Suite</h1>
-    <p>
-      The cornerstone for the Omnia suite of tools for predictive biomolecular simulation.  <a href="https://omniamd.squarespace.com/">Learn more</a>
-    </p>
 
     <h1>Funding</h1>
     <p>
       OpenMM is currently (May 2020-Apr 2021) funded by a <a href="https://chanzuckerberg.com/eoss/proposals/openmm-key-infrastructure-for-biomolecular-modeling-and-simulation">Chan Zuckerberg Initiative Essential Open Source Software for Science grant</a>
     </p>
-
-    <h1>Resources</h1>
 
     <h1>Support</h1>
     <p>
