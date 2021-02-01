@@ -18,7 +18,9 @@
       <v-card href="https://www.charmm.org/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>CHARMM</v-card-title>
         <v-card-text>
-          xxx
+          A molecular simulation program with many energy functions, enhanced
+          sampling methods, implicit solvent models, and support for multi-scale
+          modeling.
         </v-card-text>
       </v-card>
       <v-card href="https://foldingathome.org/" target="blank" class="ma-4" width="300" hover>
@@ -27,10 +29,10 @@
           A distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases.
         </v-card-text>
       </v-card>
-      <v-card href="https://simtk.org/home/forcebalance/" target="blank" class="ma-4" width="300" hover>
+      <v-card href="https://github.com/leeping/forcebalance/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>ForceBalance</v-card-title>
         <v-card-text>
-          xxx
+          A powerful and highly versatile software package for force field optimization.
         </v-card-text>
       </v-card>
       <v-card href="https://www.gpugrid.net/" target="blank" class="ma-4" width="300" hover>
@@ -42,31 +44,33 @@
       <v-card href="http://www.gromacs.org/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>GROMACS</v-card-title>
         <v-card-text>
-          xxx
+          a molecular dynamics package mainly designed for simulations of
+          proteins, lipids, and nucleic acids.
         </v-card-text>
       </v-card>
       <v-card href="https://github.com/pandegroup/pdbfixer/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>PDBFixer</v-card-title>
         <v-card-text>
-          xxx
+          A powerful, flexible tool for preparing PDB files for molecular simulation or modeling, capable of running in interactive, Python-scriptable, or fully automated modes.
         </v-card-text>
       </v-card>
       <v-card href="https://siremol.org/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>SireMol</v-card-title>
         <v-card-text>
-          xxx
+          An advanced, multiscale, molecular simulation framework. It allows
+          to quickly prototype and develop new algorithms.
         </v-card-text>
       </v-card>
       <v-card href="https://biomol.bme.utexas.edu/tinkergpu/index.php?title=Main_Page" target="blank" class="ma-4" width="300" hover>
         <v-card-title>TINKER</v-card-title>
         <v-card-text>
-          xxx
+          A high-performance molecular modeling and simulation platform.
         </v-card-text>
       </v-card>
       <v-card href="http://getyank.org/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>YANK</v-card-title>
         <v-card-text>
-          xxx
+          A GPU-accelerated Python framework for exploring algorithms for alchemical free energy calculations.
         </v-card-text>
       </v-card>
     </v-container>
@@ -109,7 +113,39 @@
       <v-card flat>
         <v-card-title>OpenMM Tools</v-card-title>
         <v-card-text>
-          Resources that make it easier to use OpenMM.  
+          Resources that make it easier to use OpenMM.
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container class="d-flex flex-wrap justify-center">
+      <v-card href="https://openmmtools.readthedocs.io/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>OpenMMTools</v-card-title>
+        <v-card-text>
+          Integrators, enhanced sampling methods, test systems, and alchemical factories for OpenMM.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/openmm/openmm-setup" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>OpenMM Setup</v-card-title>
+        <v-card-text>
+          A graphical application to set up and run simulations with OpenMM. Includes pull-down menus, pop-up tips, error checking, and live script building
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/leeping/OpenMM-MD/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>OpenMM-MD</v-card-title>
+        <v-card-text>
+           A general purpose script (with lots of comments) that uses the OpenMM Python module to drive MD simulations. Simulation options are handled via an input file.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://simtk.org/svn/pyopenmm/trunk/simtk/pyopenmm/extras/optimizepme.py" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>PME Optimizer</v-card-title>
+        <v-card-text>
+          A script to optimize the performance of PME. It runs a series of simulations and selects the parameters that give best performance for simulating a particular system on particular hardware.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://omniamd.squarespace.com/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Omnia</v-card-title>
+        <v-card-text>
+          An open source ecosystem built around OpenMM.
         </v-card-text>
       </v-card>
     </v-container>
