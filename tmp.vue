@@ -10,11 +10,6 @@
       Backed by researchers and developers from Stanford University, MSKCC, UPF, and others around the world.
     </p>
 
-    <h1>Current Citation</h1>
-    <p>
-      Peter Eastman, Jason Swails, John D. Chodera, Robert T. McGibbon, Yutong Zhao, Kyle A. Beauchamp, Lee-Ping Wang, Andrew C. Simmonett, Matthew P. Harrigan, Chaya D. Stern, Rafal P. Wiewiora, Bernard R. Brooks, Vijay S. Pande. OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics. PLoS Comput. Biol. 13:e1005659, 2017. <a href="https://simtk.org/project/xml/publications.xml/?group_id=161">More publications</a>
-    </p>
-
     <h1>Part of the Omnia Suite</h1>
     <p>
       The cornerstone for the Omnia suite of tools for predictive biomolecular simulation.  <a href="https://omniamd.squarespace.com/">Learn more</a>

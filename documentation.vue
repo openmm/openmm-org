@@ -70,6 +70,21 @@
     </v-container>
     <v-container>
       <v-card flat>
+        <v-card-title>Publications</v-card-title>
+        <v-card-text>
+          <ul>
+            <li>
+              Peter Eastman, Jason Swails, John D. Chodera, Robert T. McGibbon, Yutong Zhao, Kyle A. Beauchamp, Lee-Ping Wang, Andrew C. Simmonett, Matthew P. Harrigan, Chaya D. Stern, Rafal P. Wiewiora, Bernard R. Brooks, Vijay S. Pande. OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics. PLoS Comput. Biol. 13:e1005659, 2017. DOI: <a href="https://doi.org/10.1371/journal.pcbi.1005659" target="blank">10.1371/journal.pcbi.1005659</a>
+            </li>
+          </ul>
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container class="d-flex justify-center">
+      <v-btn href="https://simtk.org/plugins/publications/index.php/?group_id=161" target="blank">More publications</v-btn>
+    </v-container>
+    <v-container>
+      <v-card flat>
         <v-card-title>Bleeding Edge</v-card-title>
         <v-card-text>
            Visit the <a href="https://github.com/openmm/openmm">OpenMM repository</a> at GitHub to stay up to date with the latest development.
