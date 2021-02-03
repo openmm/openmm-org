@@ -1,15 +1,7 @@
 <template>
   <v-container>
 
-    <h1>Support</h1>
-    <p>
-      For help on submitting bug reports, requesting features, etc.
-    </p>
-
     <h2>Users</h2>
-    <p>
-       Use the <a href="https://github.com/simtk/openmm/issues">Issue Tracker</a> to file bug reports. Please include as much information about your hardware, simulation parameters, and system as possible. It is highly recommended to included serialized XML files of your System, Integrator, and State objects.
-    </p>
     <p>
       For general help on how to use OpenMM, check out our <a href="https://simtk.org/forums/viewforum.php?f=161">forum</a> or refer to our <a href="https://github.com/openmm/openmm/wiki/Frequently-Asked-Questions">FAQ</a> for common errors.
     </p>

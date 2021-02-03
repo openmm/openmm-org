@@ -70,11 +70,40 @@
     </v-container>
     <v-container>
       <v-card flat>
-        <v-card-title>Publications</v-card-title>
+        <v-card-title>Support</v-card-title>
+        <v-card-text>
+          For bug reports, feature requests, specific questions, etc.
+        </v-card-text>
       </v-card>
     </v-container>
     <v-container class="d-flex flex-wrap justify-center">
-      <v-card href="https://doi.org/10.1371/journal.pcbi.1005659" target="blank" class="ma-2" hover>
+      <v-card href="https://github.com/openmm/openmm/wiki/Frequently-Asked-Questions" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>FAQ</v-card-title>
+        <v-card-text>
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/openmm/openmm/issues" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Issue Tracker</v-card-title>
+        <v-card-text>
+          Report bugs and request features. Please describe clearly what you want to achieve.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://simtk.org/forums/viewforum.php?f=161" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Formum (old)</v-card-title>
+        <v-card-text>
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container>
+      <v-card flat>
+        <v-card-title>Publications</v-card-title>
+        <v-card-text>
+          If you use OpenMM for scientific research, please cite it.
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container class="d-flex flex-wrap justify-center">
+      <v-card href="https://doi.org/10.1371/journal.pcbi.1005659" target="blank" class="ma-4" hover>
         <v-card-text>
           Peter Eastman, Jason Swails, John D. Chodera, Robert T. McGibbon, Yutong Zhao, Kyle A. Beauchamp, Lee-Ping Wang, Andrew C. Simmonett, Matthew P. Harrigan, Chaya D. Stern, Rafal P. Wiewiora, Bernard R. Brooks, Vijay S. Pande. OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics. PLoS Comput. Biol. 13:e1005659, 2017. DOI: <a href="https://doi.org/10.1371/journal.pcbi.1005659" target="blank">10.1371/journal.pcbi.1005659</a>
         </v-card-text>
