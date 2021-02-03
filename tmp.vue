@@ -1,11 +1,6 @@
 <template>
   <v-container>
 
-    <h1>Funding</h1>
-    <p>
-      OpenMM is currently (May 2020-Apr 2021) funded by a <a href="https://chanzuckerberg.com/eoss/proposals/openmm-key-infrastructure-for-biomolecular-modeling-and-simulation">Chan Zuckerberg Initiative Essential Open Source Software for Science grant</a>
-    </p>
-
     <h1>Support</h1>
     <p>
       For help on submitting bug reports, requesting features, etc.

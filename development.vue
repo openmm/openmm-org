@@ -48,6 +48,19 @@
     </v-container>
     <v-container>
       <v-card flat>
+        <v-card-title>Funding Sources</v-card-title>
+      </v-card>
+    </v-container>
+    <v-container class="d-flex flex-wrap justify-center">
+      <v-card href="https://chanzuckerberg.com/eoss/proposals/openmm-key-infrastructure-for-biomolecular-modeling-and-simulation/" target="blank" class="ma-2" width="300" hover>
+        <v-card-title>Chan Zuckerberg Initiative</v-card-title>
+        <v-card-text>
+          OpenMM is currently (May 2020-Apr 2021) funded by the CZI Essential Open Source Software for Science grant.
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container>
+      <v-card flat>
         <v-card-title>OpenMM Consortium</v-card-title>
         <v-card-text>
           A community of researchers and developers supporting OpenMM.
@@ -55,7 +68,7 @@
       </v-card>
     </v-container>
     <v-container class="d-flex flex-wrap justify-center">
-      <v-card v-for="person of people" :key="person" class="ma-2" width="300">
+      <v-card v-for="person of people" :key="person" class="ma-2" width="300" hover>
         <v-card-text>{{ person }}</v-card-text>
       </v-card>
     </v-container>
