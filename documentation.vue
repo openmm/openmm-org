@@ -80,6 +80,7 @@
       <v-card href="https://github.com/openmm/openmm/wiki/Frequently-Asked-Questions" target="blank" class="ma-4" width="300" hover>
         <v-card-title>FAQ</v-card-title>
         <v-card-text>
+          Frequently asked questions about OpenMM.
         </v-card-text>
       </v-card>
       <v-card href="https://github.com/openmm/openmm/issues" target="blank" class="ma-4" width="300" hover>
@@ -91,6 +92,13 @@
       <v-card href="https://simtk.org/forums/viewforum.php?f=161" target="blank" class="ma-4" width="300" hover>
         <v-card-title>Formum (old)</v-card-title>
         <v-card-text>
+          General discussion how to use OpenMM.
+        </v-card-text>
+      </v-card>
+      <v-card href="http://wiki.simtk.org/openmm/Hardware" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Hardware (old)</v-card-title>
+        <v-card-text>
+          Hardware requiment and recommendations for OpenMM.
         </v-card-text>
       </v-card>
     </v-container>
