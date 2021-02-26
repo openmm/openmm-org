@@ -34,7 +34,7 @@ module.exports = {
           path: 'tutorials/hkmt_tip4pew/',
         },
         {
-          title: 'HSP90 with multisite Hg2+',
+          title: 'HSP90 with ADP:Mg2+ simulation',
           path: 'tutorials/hsp90_adp_mg/'
         },
       ]
