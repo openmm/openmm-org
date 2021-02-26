@@ -1,11 +1,11 @@
 <template>
   <v-container>
-    <tutorial src="tutorials/index.md"></tutorial>
+    <tutorial path="tutorials/"></tutorial>
     <v-expansion-panels focusable>
       <v-expansion-panel v-for="tutorial in tutorials" :key="tutorial">
         <v-expansion-panel-header>{{ tutorial.title }}</v-expansion-panel-header>
         <v-expansion-panel-content>
-          <tutorial :src="tutorial.src"/>
+          <tutorial :path="tutorial.path" />
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
@@ -19,23 +19,23 @@ module.exports = {
       tutorials: [
         {
           title: 'Alchemical free energy calculations',
-          src: 'tutorials/alchemical-free-energy/index.md'
+          path: 'tutorials/alchemical-free-energy/'
         },
         {
           title: 'Beta-2-adrenergic receptor (B2AR) membrane protein simulation with CHARMM',
-          src: 'tutorials/b2ar_membrane/index.md'
+          path: 'tutorials/b2ar_membrane/'
         },
         {
           title: 'Histone methyltransferase simulation with multisite Zn2+ structural ions',
-          src: 'tutorials/hkmt_zinc/index.md'
+          path: 'tutorials/hkmt_zinc/'
         },
         {
           title: 'Histone methyltransferase simulation with a multisite water model (TIP4P-Ew)',
-          src: 'tutorials/hkmt_tip4pew/index.md'
+          path: 'tutorials/hkmt_tip4pew/',
         },
         {
           title: 'HSP90 with multisite Hg2+',
-          src: 'tutorials/hsp90_adp_mg/index.md'
+          path: 'tutorials/hsp90_adp_mg/'
         },
       ]
     }

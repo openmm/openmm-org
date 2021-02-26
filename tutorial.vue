@@ -5,11 +5,11 @@
 
 <script>
 module.exports = {
-  props: ['src'],
+  props: ['path'],
   mounted: function() {
-    fetch(this.src).then((res) => {
+    fetch(this.path + 'index.md').then((res) => {
       res.text().then((str) => {
-        this.$el.innerHTML = marked(str)
+        this.$el.innerHTML = marked(str, { baseUrl: this.path })
       })
     })
   }
