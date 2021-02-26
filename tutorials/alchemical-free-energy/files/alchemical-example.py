@@ -59,7 +59,7 @@ kT = unit.AVOGADRO_CONSTANT_NA * unit.BOLTZMANN_CONSTANT_kB * integrator.getTemp
 
 for k in range(nstates):
     for iteration in range(niterations):
-        print(f"state {k} / {nstates} iteration {iteration} / {niterations}")
+        print(f"state {k + 1} / {nstates} iteration {iteration + 1} / {niterations}")
         # Set alchemical state
         context.setParameter("lambda", lambdas[k])
         # Run some dynamics
