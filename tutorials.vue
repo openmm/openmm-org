@@ -1,15 +1,24 @@
 <template>
-  <v-container>
-    <tutorial path="tutorials/"></tutorial>
-    <v-expansion-panels focusable>
-      <v-expansion-panel v-for="tutorial in tutorials" :key="tutorial">
-        <v-expansion-panel-header>{{ tutorial.title }}</v-expansion-panel-header>
-        <v-expansion-panel-content>
-          <tutorial :path="tutorial.path" />
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels>
-  </v-container>
+  <div>
+    <v-container>
+      <v-card flat>
+        <v-card-title>OpenMM Cookbook and Tutorials</v-card-title>
+        <v-card-text>
+          Tutorials and examples for quickly getting started with OpenMM
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container>
+      <v-expansion-panels focusable>
+        <v-expansion-panel v-for="tutorial in tutorials" :key="tutorial">
+          <v-expansion-panel-header>{{ tutorial.title }}</v-expansion-panel-header>
+          <v-expansion-panel-content>
+            <tutorial :path="tutorial.path" />
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
+    </v-container>
+  </div>
 </template>
 
 <script>
