@@ -1,8 +1,8 @@
----
-layout: nicepage
-title: Simulating a histone methyltransferase with TIP4P-Ew
-lead: Simulating a protein with a multisite water model
----
+# Histone methyltransferase simulation with a multisite water model (TIP4P-Ew)
+
+*Simulating a protein with a multisite water model.*
+
+This tutorial is described in [OpenMM 7](http://dx.doi.org/10.1371/journal.pcbi.1005659) publication.
 
 ## Files
 

@@ -1,8 +1,6 @@
----
-layout: nicepage
-title: Simulating HSP90 with ADP:Mg2+
-lead: Simulating a protein:ligand complex with multisite solvated ions
----
+# HSP90 with ADP:Mg2+ simulation
+
+*Simulating a protein:ligand complex with multisite solvated ions.*
 
 ## Files
 
@@ -110,7 +108,7 @@ quit
 os.system('tleap -f leaprc.hsp90')
 ```
 
-```
+```plaintext
 > python zeroBvalues.py
 
 This is a simple script designed to zero out the Lennard-Jones

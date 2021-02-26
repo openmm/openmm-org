@@ -1,8 +1,8 @@
----
-layout: nicepage
-title: Simulating a histone methyltransferase with structural Zn2+ ions
-lead: Simulating a protein with structural zinc ions using multisite ions
----
+# Histone methyltransferase simulation with multisite Zn2+ structural ions
+
+*Simulating a protein with structural zinc ions using multisite ions.*
+
+This tutorial is described in [OpenMM 7](http://dx.doi.org/10.1371/journal.pcbi.1005659) publication.
 
 ## Files
 

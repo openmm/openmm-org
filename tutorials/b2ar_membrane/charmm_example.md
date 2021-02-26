@@ -1,7 +1,4 @@
----
-layout: nicepage
-title: Using CHARMM input files in OpenMM and a CHARMM-GUI example
----
+# Using CHARMM input files in OpenMM and a CHARMM-GUI example
 
 OpenMM can directly read CHARMM input files through the use of the `simtk.openmm.app` layer. This enables the use of all 
 the powerful setup tools in the CHARMM ecosystem that a user might be familiar with such as the [CHARMM-GUI](http://onlinelibrary.wiley.com/doi/10.1002/jcc.20945/abstract), [VMD](http://www.sciencedirect.com/science/article/pii/0263785596000185?via%3Dihub), [CGenFF program](https://cgenff.paramchem.org/)
