@@ -76,19 +76,18 @@ module.exports = {
   },
   data: function() { return { 
     example: '',
-    slideColor: 'amber'
+    slideColor: '',
+    slideColorIndex: 0
   }},
   created: function() {
     fetch('example.py').then(res => res.text().then(str => this.example = str))
   },
   methods: {
     changeSlideColor: function() {
-      const colors = ['deep-orange', 'light-green', 'light-blue', 'amber'];
-      let nextColor = this.slideColor;
-      while(nextColor === this.slideColor) {
-        nextColor = colors[Math.floor(Math.random() * colors.length)]
-      };
-      this.slideColor = nextColor
+      const colors = ['deep-orange', 'light-green', 'light-blue', 'amber']
+      const offset = Math.floor(Math.random() * (colors.length - 1)) + 1
+      this.slideColorIndex = (this.slideColorIndex + offset) % colors.length
+      this.slideColor = colors[this.slideColorIndex]
     }
   }
 }
