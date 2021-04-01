@@ -57,8 +57,12 @@
           </v-tabs-items>
         </v-main>
         <v-footer class="grey lighten-3" padless>
-          <v-container class="d-flex justify-center text--secondary text-body-2">
-            Copyright © 2017-{{ new Date().getFullYear() }}, OpenMM team
+          <v-container class="d-flex justify-center">
+            <v-card class="grey lighten-3 text--secondary text-body-2" flat>
+              Copyright © 2017-{{ new Date().getFullYear() }}, OpenMM team.
+              Report an <a href="https://github.com/openmm/openmm-org" target="_blank">issue</a>.
+              Designed by <a href="https://github.com/raimis" target="_blank">raimis</a>.
+            </v-card>
           </v-container>
         </v-footer>
       </v-app>
