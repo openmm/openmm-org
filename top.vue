@@ -1,6 +1,6 @@
 <template>
   <v-container class="d-flex flex-wrap justify-space-around">
-    <v-card class="grey lighten-3" width="200px" flat>
+    <v-card class="grey lighten-3" height="200px" width="200px" flat>
       <v-img src="img/logos/Icon.svg">
     </v-card>
     <v-card class="grey lighten-3" width="70%" flat>
