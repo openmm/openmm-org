@@ -1,8 +1,7 @@
 <template>
   <div>
     <v-container class="d-flex flex-column align-center">
-      <v-card width="600" flat>
-        <v-card-title>Key Features</v-card-title>
+      <v-card class="py-12" width="600" flat>
         <v-carousel width="600" height="375" cycle interval="3000" @change="changeSlideColor()">
           <v-carousel-slide title="Custom Forces" :color="slideColor">
             Want a custom force between two atoms? No problem. Write your force expressions in string format, and OpenMM will generate blazing fast code to do just that. No more hand-writing GPU kernels.
@@ -13,7 +12,7 @@
           <v-carousel-slide title="Portable" :color="slideColor">
             We strive to make our binaries as portable as possible. We've tested OpenMM on many flavors of Linux, OS X, and even Windows.
           </v-carousel-slide>
-          <v-carousel-slide title="Easy to install" :color="slideColor">
+          <v-carousel-slide title="Easy Installation" :color="slideColor">
             Install OpenMM and all its dependencies with Conda package manager. No manual compilation
             from source required. 
           </v-carousel-slide>
