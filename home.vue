@@ -43,7 +43,7 @@
                     Packages are available for Linux, MacOS, and Windows.
                     A command for a quick installation:
                     <highlightjs class="py-2" language='bash' code="$ conda install -c conda-forge openmm"></highlightjs>
-                    More details are available in the <a href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank">documentaion</a>.
+                    More details are available in the <a href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank">documentation</a>.
                   </v-card-text>
                 </v-card>
               </v-container>
