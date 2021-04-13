@@ -39,8 +39,11 @@
              <v-container class="d-flex justify-center">
                 <v-card flat>
                   <v-card-text class="text--primary">
-                    OpenMM can be easily installed Conda package manager. Packages are available for Linux, MacOS, and Windows.
-                    <highlightjs language='bash' code="$ conda install -c conda-forge openmm"></highlightjs>
+                    OpenMM can be easily installed with Conda package manager.
+                    Packages are available for Linux, MacOS, and Windows.
+                    A command for a quick installation:
+                    <highlightjs class="py-2" language='bash' code="$ conda install -c conda-forge openmm"></highlightjs>
+                    More details are available in the <a href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank">documentaion</a>.
                   </v-card-text>
                 </v-card>
               </v-container>
