@@ -47,7 +47,7 @@
         <v-card-title>OpenMM Workshop 2012</v-card-title>
         <v-card-text>
           <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGL4XGw8noUxYZ-JrAob4hpVGCAhKGesk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLGL4XGw8noUxYZ-JrAob4hpVGCAhKGesk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </v-card-text>
       </v-card>
@@ -55,7 +55,7 @@
         <v-card-title>OpenMM Workshop 2013</v-card-title>
         <v-card-text>
           <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGL4XGw8noUzNX6x0Lko2-1juuy7cm8xO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLGL4XGw8noUzNX6x0Lko2-1juuy7cm8xO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </v-card-text>
       </v-card>
@@ -63,7 +63,7 @@
         <v-card-title>OpenMM Workshop 2014</v-card-title>
         <v-card-text>
           <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGL4XGw8noUwrh16gsC9H_D03fED3IcHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLGL4XGw8noUwrh16gsC9H_D03fED3IcHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </v-card-text>
       </v-card>
