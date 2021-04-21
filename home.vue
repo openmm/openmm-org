@@ -59,9 +59,6 @@
                   <v-card-text class="text--primary">
                     <highlightjs language='python' :code="example"></highlightjs>
                   </v-card-text>
-                  <v-card-actions>
-                    <v-btn href="http://builder.openmm.org/" target="blank">Script builder</v-btn>
-                  </v-card-actions>
                 </v-card>
               </v-container>
             </v-expansion-panel-content>
