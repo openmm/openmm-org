@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container class="d-flex flex-column align-center">
-      <v-card class="py-12" width="600" flat>
+      <v-card class="my-12" width="600" flat>
         <v-carousel width="600" height="375" cycle interval="5000" @change="changeSlideColor()">
           <v-carousel-slide title="Custom Forces" :color="slideColor">
             Want a custom force between two atoms? No problem. Write your force expressions in string format, and OpenMM will generate blazing fast code to do just that. No more hand-writing GPU kernels.
@@ -18,9 +18,10 @@
           </v-carousel-slide>
         </v-carousel>
       </v-card>
-      <v-card width="800" flat>
-        <v-card-title>Quick Start</v-card-title>
-        <v-expansion-panels focusable>
+      <v-card class="my-6" width="1000">
+        <!-- <v-card-title>Quick Start</v-card-title> -->
+        <iframe class="mb-n2" frameborder="0" width="100%" height="1750" src="https://render.githubusercontent.com/view/ipynb?enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f676973742f7261696d69732f31633833633431333139373431303637356532633432373164393030336639312f7261772f663235363661366332353634633466323638383134323066383763656434366532376662343531652f6f70656e6d6d2d6f72672d6578616d706c652e6970796e62"></iframe>
+        <!-- <v-expansion-panels focusable>
           <v-expansion-panel>
             <v-expansion-panel-header class="text-h6">
               Watch an intoduction video
@@ -63,7 +64,7 @@
               </v-container>
             </v-expansion-panel-content>
           </v-expansion-panel>
-        </v-expansion-panels>
+        </v-expansion-panels> -->
       </v-card>
     </v-container>
   </div>
