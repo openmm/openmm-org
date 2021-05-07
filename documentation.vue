@@ -90,7 +90,7 @@
         </v-card-text>
       </v-card>
       <v-card href="https://simtk.org/forums/viewforum.php?f=161" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>Formum (old)</v-card-title>
+        <v-card-title>Forum (old)</v-card-title>
         <v-card-text>
           General discussion how to use OpenMM.
         </v-card-text>
