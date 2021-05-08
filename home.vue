@@ -19,8 +19,9 @@
         </v-carousel>
       </v-card>
       <v-card class="my-6" width="1000">
-        <!-- <v-card-title>Quick Start</v-card-title> -->
-        <iframe class="mb-n2" frameborder="0" width="100%" height="1750" src="https://render.githubusercontent.com/view/ipynb?enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f676973742f7261696d69732f31633833633431333139373431303637356532633432373164393030336639312f7261772f663235363661366332353634633466323638383134323066383763656434366532376662343531652f6f70656e6d6d2d6f72672d6578616d706c652e6970796e62"></iframe>
+        <div id="tutorial-temporary"></div>
+        <iframe id="tutorial" class="mb-n2" frameborder="0" width="100%" height="1760" src=""></iframe>
+        <!-- <v-card-title>Quick Start</v-card-title>
         <!-- <v-expansion-panels focusable>
           <v-expansion-panel>
             <v-expansion-panel-header class="text-h6">
@@ -76,12 +77,20 @@ module.exports = {
     'v-carousel-slide': httpVueLoader('slide.vue')
   },
   data: function() { return { 
-    example: '',
+    // example: '',
     slideColor: '',
-    slideColorIndex: 0
+    slideColorIndex: 0,
+    tutorialURL: 'https://gist.github.com/raimis/1c83c413197410675e2c4271d9003f91'
   }},
-  created: function() {
-    fetch('example.py').then(res => res.text().then(str => this.example = str))
+  mounted: function() {
+    // fetch('example.py').then(res => res.text().then(str => this.example = str))
+    postscribe('#tutorial-temporary', `<script src="${this.tutorialURL}.js"><\/script>`, {
+      done: () => {
+        let src = document.getElementsByClassName('render-viewer')[0].src
+        document.getElementById('tutorial').src = src
+        document.getElementById('tutorial-temporary').remove()
+        }
+    })
   },
   methods: {
     changeSlideColor: function() {
