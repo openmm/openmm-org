@@ -20,7 +20,7 @@
       </v-card>
       <v-card class="my-6" width="1000">
         <div id="tutorial-temporary"></div>
-        <iframe id="tutorial" class="mb-n2" frameborder="0" width="100%" height="1760" src=""></iframe>
+        <iframe id="tutorial" class="mb-n2" frameborder="0" width="100%" height="8800" src=""></iframe>
         <!-- <v-card-title>Quick Start</v-card-title>
         <!-- <v-expansion-panels focusable>
           <v-expansion-panel>
