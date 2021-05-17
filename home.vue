@@ -18,9 +18,13 @@
           </v-carousel-slide>
         </v-carousel>
       </v-card>
+      <v-btn class="mt-6" href="https://colab.research.google.com/gist/raimis/1c83c413197410675e2c4271d9003f91" target="blank">
+        <v-icon left >mdi-play-circle-outline</v-icon>
+        Run in Colab
+      </v-btn>
       <v-card class="my-6" width="1000">
         <div id="tutorial-temporary"></div>
-        <iframe id="tutorial" class="mb-n2" frameborder="0" width="100%" height="8800" src=""></iframe>
+        <iframe id="tutorial" class="mb-n2" frameborder="0" width="100%" height="4660" src=""></iframe>
       </v-card>
     </v-container>
   </div>
