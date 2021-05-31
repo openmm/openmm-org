@@ -24,7 +24,7 @@
       </v-btn>
       <v-card class="my-6" width="1000">
         <div id="tutorial-temporary"></div>
-        <iframe id="tutorial" class="mb-n2" frameborder="0" width="100%" height="4660" src=""></iframe>
+        <iframe id="tutorial" class="mb-n2" frameborder="0" width="100%" height="6010" src=""></iframe>
       </v-card>
     </v-container>
   </div>
