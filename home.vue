@@ -30,7 +30,7 @@
       <v-card href="http://docs.openmm.org/latest/userguide/application.html#the-openmm-setup-application" class="ma-4" width="300" hover>
         <v-card-title>User Friendly</v-card-title>
         <v-card-text>
-          OpenMM-Setup provide a simple UI to prepare input files, configure options, and run simulations.
+          OpenMM-Setup provides a simple UI to prepare input files, configure options, and run simulations.
         </v-card-text>
       </v-card>
     </v-container>
