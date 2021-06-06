@@ -88,7 +88,7 @@
     <script type="text/javascript">
       Vue.use(hljs.vuePlugin);
       marked.setOptions({ highlight: (code, lang) => hljs.highlight(lang, code).value });
-      new Vue({
+      var app = new Vue({
         el: '#app',
         vuetify: new Vuetify(),
         components: {
