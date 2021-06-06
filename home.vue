@@ -38,7 +38,7 @@
       <v-card flat>
         <v-card-title>Installation</v-card-title>
         <v-card-text>
-          OpenMM can be easily installed with Conda package manager:
+          OpenMM can be easily installed from <a href="https://conda-forge.org/">conda-forge</a> with the <a href="https://docs.conda.io/">Conda</a> package manager:
           <highlightjs class="py-4" language='bash' code="$ conda install -c conda-forge openmm"></highlightjs>
           More details are available in the <a href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm">documentaion</a>.
         </v-card-text>
