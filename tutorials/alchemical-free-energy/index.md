@@ -1,9 +1,8 @@
----
-layout: nicepage
-title: Alchemical free energy calculations
-lead: Computing the free energy of inserting a Lennard-Jones particle in a Lennard-Jones fluid
----
+# Alchemical free energy calculations
 
+*Computing the free energy of inserting a Lennard-Jones particle in a Lennard-Jones fluid.*
+
+This tutorial is described in [OpenMM 7](http://dx.doi.org/10.1371/journal.pcbi.1005659) publication.
 ## Files
 
 The code for this example can be downloaded here:

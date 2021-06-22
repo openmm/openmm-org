@@ -1,9 +1,8 @@
----
-layout: nicepage
-title: Using OpenMM 7 to simulate the beta-2-adrenergic receptor
-lead: Use CHARMM-GUI to set up a membrane protein simulation for OpenMM
+# Beta-2-adrenergic receptor (B2AR) membrane protein simulation with CHARMM
 
----
+*Use CHARMM-GUI to set up a membrane protein simulation for OpenMM.*
+
+This tutorial is described in [OpenMM 7](http://dx.doi.org/10.1371/journal.pcbi.1005659) publication.
 
 ## Files
 
