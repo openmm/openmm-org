@@ -73,7 +73,9 @@
       const routes = tabs.map(tab => {
         const component = httpVueLoader(`${tab.name.toLowerCase()}.vue`)
         return { path: tab.path, component }
-      })
+      }).concat([
+        { path: '/documentation.html', redirect: '/documentation'}
+      ])
       const router = new VueRouter({
         base: document.URL.includes('/openmm-org') ? '/openmm-org/' : '/',
         mode: 'history',
