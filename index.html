@@ -26,30 +26,31 @@
         <v-card class="grey lighten-3">
           <top></top>
           <v-tabs v-model="tab" background-color="grey lighten-3" grow show-arrows>
-            <v-tab>
+            <v-tab to="/">
               <v-icon left>mdi-home-outline</v-icon>
               Home
             </v-tab>
-            <v-tab>
+            <v-tab to="/news">
               <v-icon left>mdi-newspaper-variant-outline</v-icon>
               News
             </v-tab>
-            <v-tab>
+            <v-tab to="/benchmarks">
               <v-icon left>mdi-speedometer</v-icon>
-              Benchmarks</v-tab>
-            <v-tab>
+              Benchmarks
+            </v-tab>
+            <v-tab to="/documentation">
               <v-icon left>mdi-book-open-page-variant-outline</v-icon>
               Documentation
             </v-tab>
-            <v-tab>
+            <v-tab to="/tutorials">
               <v-icon left>mdi-school-outline</v-icon>
               Tutorials
             </v-tab>
-            <v-tab>
+            <v-tab to="/ecosystem">
               <v-icon left>mdi-vector-combine</v-icon>
               Ecosystem
             </v-tab>
-            <v-tab>
+            <v-tab to="/development">
               <v-icon left>mdi-account-group-outline</v-icon>
               Development
             </v-tab>
@@ -57,13 +58,13 @@
         </v-card>
         <v-main class="pb-6">
           <v-tabs-items v-model="tab">
-            <v-tab-item><tab-home/></v-tab-item>
-            <v-tab-item><tab-news/></v-tab-item>
-            <v-tab-item><tab-benchmarks/></v-tab-item>
-            <v-tab-item><tab-documenation/></v-tab-item>
-            <v-tab-item><tab-tutorials/></v-tab-item>
-            <v-tab-item><tab-ecosystem/></v-tab-item>
-            <v-tab-item><tab-development/></v-tab-item>
+            <v-tab-item value=""><router-view/></v-tab-item>
+            <v-tab-item value="/news"><router-view/></v-tab-item>
+            <v-tab-item value="/benchmarks"><router-view/></v-tab-item>
+            <v-tab-item value="/documentation"><router-view/></v-tab-item>
+            <v-tab-item value="/tutorials"><router-view/></v-tab-item>
+            <v-tab-item value="/ecosystem"><router-view/></v-tab-item>
+            <v-tab-item value="/development"><router-view/></v-tab-item>
           </v-tabs-items>
         </v-main>
         <v-footer class="grey lighten-3" padless>
@@ -78,6 +79,7 @@
       </v-app>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@3.5.2/dist/vue-router.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.5.6/dist/vuetify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/http-vue-loader@1.4.2/src/httpVueLoader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@2.1.3/lib/marked.min.js"></script>
@@ -88,20 +90,24 @@
     <script type="text/javascript">
       Vue.use(hljs.vuePlugin);
       marked.setOptions({ highlight: (code, lang) => hljs.highlight(lang, code).value });
+      const router = new VueRouter({
+        mode: 'history',
+        routes: [
+          { path: '/', component: httpVueLoader('home.vue') },
+          { path: '/news', component: httpVueLoader('news.vue') },
+          { path: '/benchmarks', component: httpVueLoader('benchmarks.vue') },
+          { path: '/documentation', component: httpVueLoader('documentation.vue') },
+          { path: '/tutorials', component: httpVueLoader('tutorials.vue') },
+          { path: '/ecosystem', component: httpVueLoader('ecosystem.vue') },
+          { path: '/development', component: httpVueLoader('development.vue') },
+        ]
+      })
       var app = new Vue({
         el: '#app',
+        router,
         vuetify: new Vuetify(),
-        components: {
-          'top': httpVueLoader('top.vue'),
-          'tab-home': httpVueLoader('home.vue'),
-          'tab-news': httpVueLoader('news.vue'),
-          'tab-benchmarks': httpVueLoader('benchmarks.vue'),
-          'tab-documenation': httpVueLoader('documentation.vue'),
-          'tab-tutorials': httpVueLoader('tutorials.vue'),
-          'tab-ecosystem': httpVueLoader('ecosystem.vue'),
-          'tab-development': httpVueLoader('development.vue'),
-        },
-        data: { tab: 0 }
+        components: { 'top': httpVueLoader('top.vue') },
+        data: { tab: null }
       });
     </script>
   </body>
