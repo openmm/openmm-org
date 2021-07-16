@@ -25,40 +25,15 @@
       <v-app>
         <v-card class="grey lighten-3">
           <top></top>
-          <v-tabs v-model="tab" background-color="grey lighten-3" grow show-arrows>
-            <v-tab to="/">
-              <v-icon left>mdi-home-outline</v-icon>
-              Home
-            </v-tab>
-            <v-tab to="/news">
-              <v-icon left>mdi-newspaper-variant-outline</v-icon>
-              News
-            </v-tab>
-            <v-tab to="/benchmarks">
-              <v-icon left>mdi-speedometer</v-icon>
-              Benchmarks
-            </v-tab>
-            <v-tab to="/documentation">
-              <v-icon left>mdi-book-open-page-variant-outline</v-icon>
-              Documentation
-            </v-tab>
-            <v-tab to="/tutorials">
-              <v-icon left>mdi-school-outline</v-icon>
-              Tutorials
-            </v-tab>
-            <v-tab to="/ecosystem">
-              <v-icon left>mdi-vector-combine</v-icon>
-              Ecosystem
-            </v-tab>
-            <v-tab to="/development">
-              <v-icon left>mdi-account-group-outline</v-icon>
-              Development
+          <v-tabs v-model="currentTab" background-color="grey lighten-3" grow show-arrows>
+            <v-tab v-for="tab in tabs" :to="tab.path">
+              <v-icon left>{{ tab.icon }}</v-icon>{{ tab.name }}
             </v-tab>
           </v-tabs>
         </v-card>
         <v-main class="pb-6">
-          <v-tabs-items v-model="tab">
-            <v-tab-item v-for= "route in $router.getRoutes()" :value="route.path ? route.path: '/'">
+          <v-tabs-items v-model="currentTab">
+            <v-tab-item v-for= "tab in tabs" :value="tab.path">
               <router-view/>
             </v-tab-item>
           </v-tabs-items>
@@ -86,25 +61,30 @@
     <script type="text/javascript">
       Vue.use(hljs.vuePlugin);
       marked.setOptions({ highlight: (code, lang) => hljs.highlight(lang, code).value });
+      const tabs = [
+        { name: 'Home', path: '/', icon: 'mdi-home-outline'},
+        { name: 'News', path: '/news', icon: 'mdi-newspaper-variant-outline'},
+        { name: 'Benchmarks', path: '/benchmarks', icon: 'mdi-speedometer'},
+        { name: 'Documentation', path: '/documentation', icon: 'mdi-book-open-page-variant-outline'},
+        { name: 'Tutorials', path: '/tutorials', icon: 'mdi-school-outline'},
+        { name: 'Ecosystem', path: '/ecosystem', icon: 'mdi-vector-combine'},
+        { name: 'Development', path: '/development', icon: 'mdi-account-group-outline'},
+      ]
+      const routes = tabs.map(tab => {
+        const component = httpVueLoader(`${tab.name.toLowerCase()}.vue`)
+        return { path: tab.path, component }
+      })
       const router = new VueRouter({
         base: document.URL.includes('/openmm-org') ? '/openmm-org/' : '/',
         mode: 'history',
-        routes: [
-          { path: '/', component: httpVueLoader('home.vue') },
-          { path: '/news', component: httpVueLoader('news.vue') },
-          { path: '/benchmarks', component: httpVueLoader('benchmarks.vue') },
-          { path: '/documentation', component: httpVueLoader('documentation.vue') },
-          { path: '/tutorials', component: httpVueLoader('tutorials.vue') },
-          { path: '/ecosystem', component: httpVueLoader('ecosystem.vue') },
-          { path: '/development', component: httpVueLoader('development.vue') },
-        ]
+        routes
       })
       var app = new Vue({
         el: '#app',
         router,
         vuetify: new Vuetify(),
         components: { 'top': httpVueLoader('top.vue') },
-        data: { tab: '/' }
+        data: { tabs, currentTab: '/' }
       });
     </script>
   </body>
