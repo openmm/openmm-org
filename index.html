@@ -62,13 +62,13 @@
       Vue.use(hljs.vuePlugin);
       marked.setOptions({ highlight: (code, lang) => hljs.highlight(lang, code).value });
       const tabs = [
-        { name: 'Home', path: '/', icon: 'mdi-home-outline'},
-        { name: 'News', path: '/news', icon: 'mdi-newspaper-variant-outline'},
-        { name: 'Benchmarks', path: '/benchmarks', icon: 'mdi-speedometer'},
-        { name: 'Documentation', path: '/documentation', icon: 'mdi-book-open-page-variant-outline'},
-        { name: 'Tutorials', path: '/tutorials', icon: 'mdi-school-outline'},
-        { name: 'Ecosystem', path: '/ecosystem', icon: 'mdi-vector-combine'},
-        { name: 'Development', path: '/development', icon: 'mdi-account-group-outline'},
+        { name: 'Home', path: '/', icon: 'mdi-home-outline' },
+        { name: 'News', path: '/news', icon: 'mdi-newspaper-variant-outline' },
+        { name: 'Benchmarks', path: '/benchmarks', icon: 'mdi-speedometer' },
+        { name: 'Documentation', path: '/documentation', icon: 'mdi-book-open-page-variant-outline' },
+        { name: 'Tutorials', path: '/tutorials', icon: 'mdi-school-outline' },
+        { name: 'Ecosystem', path: '/ecosystem', icon: 'mdi-vector-combine' },
+        { name: 'Development', path: '/development', icon: 'mdi-account-group-outline' },
       ]
       const routes = tabs.map(tab => {
         const component = httpVueLoader(`${tab.name.toLowerCase()}.vue`)
