@@ -9,7 +9,7 @@
       </v-card>
     </v-container>
     <v-container class="d-flex flex-wrap justify-center" fluid>
-      <v-card v-on:click="app.tab=2" class="ma-4" width="200" hover>
+      <v-card v-on:click="$router.push('/benchmarks')" class="ma-4" width="200" hover>
         <v-card-title>Highly Optimized</v-card-title>
         <v-card-text>
           Optimized for the latest generation of compute hardware, including NVIDIA, AMD, and Intel GPUs. We also heavily optimize for CPUs.
