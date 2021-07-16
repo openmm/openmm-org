@@ -58,13 +58,9 @@
         </v-card>
         <v-main class="pb-6">
           <v-tabs-items v-model="tab">
-            <v-tab-item value="/"><router-view/></v-tab-item>
-            <v-tab-item value="/news"><router-view/></v-tab-item>
-            <v-tab-item value="/benchmarks"><router-view/></v-tab-item>
-            <v-tab-item value="/documentation"><router-view/></v-tab-item>
-            <v-tab-item value="/tutorials"><router-view/></v-tab-item>
-            <v-tab-item value="/ecosystem"><router-view/></v-tab-item>
-            <v-tab-item value="/development"><router-view/></v-tab-item>
+            <v-tab-item v-for= "route in $router.getRoutes()" :value="route.path ? route.path: '/'">
+              <router-view/>
+            </v-tab-item>
           </v-tabs-items>
         </v-main>
         <v-footer class="grey lighten-3" padless>
@@ -108,7 +104,7 @@
         router,
         vuetify: new Vuetify(),
         components: { 'top': httpVueLoader('top.vue') },
-        data: { tab: null }
+        data: { tab: '/' }
       });
     </script>
   </body>
