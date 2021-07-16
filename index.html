@@ -91,6 +91,7 @@
       Vue.use(hljs.vuePlugin);
       marked.setOptions({ highlight: (code, lang) => hljs.highlight(lang, code).value });
       const router = new VueRouter({
+        base: '/openmm-org/',
         mode: 'history',
         routes: [
           { path: '/', component: httpVueLoader('home.vue') },
