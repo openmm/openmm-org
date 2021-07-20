@@ -34,7 +34,7 @@
         <v-main class="pb-6">
           <v-tabs-items v-model="currentTab">
             <v-tab-item v-for= "tab in tabs" :value="tab.path">
-              <router-view/>
+              <router-view v-if="currentTab === tab.path"/>
             </v-tab-item>
           </v-tabs-items>
         </v-main>
