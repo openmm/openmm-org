@@ -55,7 +55,7 @@
       <v-card href="https://chanzuckerberg.com/eoss/proposals/openmm-key-infrastructure-for-biomolecular-modeling-and-simulation/" target="blank" class="ma-2" width="300" hover>
         <v-card-title>Chan Zuckerberg Initiative</v-card-title>
         <v-card-text>
-          OpenMM is currently (May 2020-Apr 2021) funded by the CZI Essential Open Source Software for Science grant.
+          OpenMM was supported (May 2020-Apr 2021) by the CZI Essential Open Source Software for Science grant.
         </v-card-text>
       </v-card>
       <v-card class="ma-2" width="300">
