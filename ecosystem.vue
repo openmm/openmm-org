@@ -67,6 +67,12 @@
           A high-performance molecular modeling and simulation platform.
         </v-card-text>
       </v-card>
+      <v-card href="https://github.com/ADicksonLab/wepy" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>wepy</v-card-title>
+        <v-card-text>
+          A Weighted Ensemble (WE) simulation framework in Python with first class support for OpenMM.
+        </v-card-text>
+      </v-card>
       <v-card href="http://getyank.org/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>YANK</v-card-title>
         <v-card-text>
