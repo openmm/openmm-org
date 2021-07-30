@@ -41,13 +41,6 @@
           A distributed computing infrastructure devoted to biomedical research to understand the function of biomolecules for health and disease.
         </v-card-text>
       </v-card>
-      <v-card href="http://www.gromacs.org/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>GROMACS</v-card-title>
-        <v-card-text>
-          a molecular dynamics package mainly designed for simulations of
-          proteins, lipids, and nucleic acids.
-        </v-card-text>
-      </v-card>
       <v-card href="https://github.com/pandegroup/pdbfixer/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>PDBFixer</v-card-title>
         <v-card-text>
