@@ -1,4 +1,2 @@
-/.idea/
-/Gemfile.lock
-/.jekyll-metadata
-/_site
+.idea
+.vscode
