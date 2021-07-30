@@ -28,23 +28,23 @@ module.exports = {
       tutorials: [
         {
           title: 'Alchemical free energy calculations',
-          path: 'tutorials/alchemical-free-energy/'
+          path: 'tutorials_/alchemical-free-energy/'
         },
         {
           title: 'Beta-2-adrenergic receptor (B2AR) membrane protein simulation with CHARMM',
-          path: 'tutorials/b2ar_membrane/'
+          path: 'tutorials_/b2ar_membrane/'
         },
         {
           title: 'Histone methyltransferase simulation with multisite Zn2+ structural ions',
-          path: 'tutorials/hkmt_zinc/'
+          path: 'tutorials_/hkmt_zinc/'
         },
         {
           title: 'Histone methyltransferase simulation with a multisite water model (TIP4P-Ew)',
-          path: 'tutorials/hkmt_tip4pew/',
+          path: 'tutorials_/hkmt_tip4pew/',
         },
         {
           title: 'HSP90 with ADP:Mg2+ simulation',
-          path: 'tutorials/hsp90_adp_mg/'
+          path: 'tutorials_/hsp90_adp_mg/'
         },
       ]
     }
