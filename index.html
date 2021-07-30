@@ -81,7 +81,7 @@
         { name: 'Development', path: '/development', icon: 'mdi-account-group-outline' },
       ]
       const routes = tabs.map(tab => {
-        const component = httpVueLoader(`${tab.name.toLowerCase()}.vue`)
+        const component = httpVueLoader(`components/${tab.name.toLowerCase()}.vue`)
         return { path: tab.path, component }
       }).concat([
         { path: '/documentation.html', redirect: '/documentation'},

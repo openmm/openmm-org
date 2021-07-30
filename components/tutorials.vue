@@ -50,7 +50,7 @@ module.exports = {
     }
   },
   components: {
-    'tutorial': httpVueLoader('tutorial.vue')
+    'tutorial': httpVueLoader('components/tutorial.vue')
   },
 }
 </script>
