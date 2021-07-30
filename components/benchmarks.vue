@@ -103,7 +103,7 @@ module.exports = {
       }
     };
     google.charts.setOnLoadCallback(() => {
-      fetch('benchmarks.json').then(res => {
+      fetch('data/benchmarks.json').then(res => {
         res.json().then(json => {
           const chart = new google.visualization.BarChart(document.getElementById('dhfr'));
           const data = google.visualization.arrayToDataTable(json['dhfr']);
