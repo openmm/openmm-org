@@ -92,6 +92,7 @@ module.exports = {
       'Emilio Gallicchio (Brooklyn College)',
       'Tom Markland (Stanford)',
       'Justin McCallum (UCalgary)',
+      'Antonia Mey (Edinburgh)',
       'Julien Michel (Edinburgh)',
       'Vijay Pande (Stanford)',
       'Jean-Philip Piquemal (Sorbonne)',
