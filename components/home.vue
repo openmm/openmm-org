@@ -71,7 +71,7 @@ module.exports = {
     example: ''
   }},
   created: function() {
-    fetch('example.py').then(res => res.text().then(str => this.example = str))
+    fetch('data/example.py').then(res => res.text().then(str => this.example = str))
   }
 }
 </script>
