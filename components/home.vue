@@ -56,9 +56,9 @@
     <v-container>
       <v-card flat>
         <v-card-title>The Power of Python Scripting</v-card-title>
-        <v-card-text class="text--primary">
+        <v-card-text>
           Use Python scripting to create your own simulation protocols in just a few lines of code.
-          <highlightjs class="my-4" language='python' :code="example"/>
+          <highlightjs class="text--primary my-4" language='python' :code="example"/>
         </v-card-text>
       </v-card>
     </v-container>
