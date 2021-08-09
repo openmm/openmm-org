@@ -15,19 +15,19 @@
           Optimized for the latest generation of compute hardware, including NVIDIA, AMD, and Intel GPUs. We also heavily optimize for CPUs.
         </v-card-text>
       </v-card>
-      <v-card href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" class="ma-4" width="300" hover>
+      <v-card href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank" class="ma-4" width="300" hover>
         <v-card-title>Easy Installation</v-card-title>
         <v-card-text>
           Install OpenMM and all its dependencies with the Conda package manager. No manual compilation from source required. 
         </v-card-text>
       </v-card>
-      <v-card href="http://docs.openmm.org/latest/userguide/theory.html#custom-forces" class="ma-4" width="300" hover>
+      <v-card href="http://docs.openmm.org/latest/userguide/theory.html#custom-forces" target="blank" class="ma-4" width="300" hover>
         <v-card-title>Custom Forces</v-card-title>
         <v-card-text>
           Want a custom force between atoms? Write your force expression as a string and OpenMM will generate blazing fast code to compute it.
         </v-card-text>
       </v-card>
-      <v-card href="http://docs.openmm.org/latest/userguide/application.html#the-openmm-setup-application" class="ma-4" width="300" hover>
+      <v-card href="http://docs.openmm.org/latest/userguide/application.html#the-openmm-setup-application" target="blank" class="ma-4" width="300" hover>
         <v-card-title>User Friendly</v-card-title>
         <v-card-text>
           OpenMM-Setup provides a simple UI to prepare input files, configure options, and run simulations.
@@ -38,9 +38,9 @@
       <v-card flat>
         <v-card-title>Installation</v-card-title>
         <v-card-text>
-          OpenMM can be easily installed from <a href="https://conda-forge.org/">conda-forge</a> with the <a href="https://docs.conda.io/">Conda</a> package manager:
+          OpenMM can be easily installed from <a href="https://conda-forge.org/" target="blank">conda-forge</a> with the <a href="https://docs.conda.io/" target="blank">Conda</a> package manager:
           <highlightjs class="py-4" language='bash' code="$ conda install -c conda-forge openmm"></highlightjs>
-          More details are available in the <a href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm">documentation</a>.
+          More details are available in the <a href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank">documentation</a>.
         </v-card-text>
       </v-card>
     </v-container>
@@ -49,7 +49,7 @@
         <v-card-title>Get the Source</v-card-title>
         <v-card-text>
           OpenMM is an open source project, distributed under the permissive MIT and LGPL licenses.
-          Source code is available from the <a href="https://github.com/openmm/openmm">GitHub repository</a>.
+          Source code is available from the <a href="https://github.com/openmm/openmm" target="blank">GitHub repository</a>.
         </v-card-text>
       </v-card>
     </v-container>
