@@ -15,3 +15,12 @@ module.exports = {
   }
 }
 </script>
+
+<style scoped>
+pre code {
+  display: block;
+  margin-bottom: 16px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+</style>
