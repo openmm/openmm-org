@@ -33,6 +33,13 @@
           OpenMM-Setup provides a simple UI to prepare input files, configure options, and run simulations.
         </v-card-text>
       </v-card>
+      <v-card href="https://github.com/openmm/openmm" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Open Source</v-card-title>
+        <v-card-text>
+          OpenMM is an open source project, distributed under the permissive MIT and LGPL licenses.
+          The source code is available on GitHub.
+        </v-card-text>
+      </v-card>
     </v-container>
     <v-container>
       <v-card flat>
@@ -41,15 +48,6 @@
           OpenMM can be easily installed from <a href="https://conda-forge.org/" target="blank">conda-forge</a> with the <a href="https://docs.conda.io/" target="blank">Conda</a> package manager:
           <highlightjs class="py-4" language='bash' code="$ conda install -c conda-forge openmm"></highlightjs>
           More details are available in the <a href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank">documentation</a>.
-        </v-card-text>
-      </v-card>
-    </v-container>
-    <v-container>
-      <v-card flat>
-        <v-card-title>Get the Source</v-card-title>
-        <v-card-text>
-          OpenMM is an open source project, distributed under the permissive MIT and LGPL licenses.
-          Source code is available from the <a href="https://github.com/openmm/openmm" target="blank">GitHub repository</a>.
         </v-card-text>
       </v-card>
     </v-container>
