@@ -15,12 +15,6 @@
           Optimized for the latest generation of compute hardware, including NVIDIA, AMD, and Intel GPUs. We also heavily optimize for CPUs.
         </v-card-text>
       </v-card>
-      <v-card href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>Easy Installation</v-card-title>
-        <v-card-text>
-          Install OpenMM and all its dependencies with the Conda package manager. No manual compilation from source required. 
-        </v-card-text>
-      </v-card>
       <v-card href="http://docs.openmm.org/latest/userguide/theory.html#custom-forces" target="blank" class="ma-4" width="300" hover>
         <v-card-title>Custom Forces</v-card-title>
         <v-card-text>
@@ -50,7 +44,6 @@
           More details are available in the User Guide.
         </v-card-text>
       </v-card>
-
     </v-container>
     <v-container>
       <v-card flat>
