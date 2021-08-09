@@ -41,15 +41,16 @@
         </v-card-text>
       </v-card>
     </v-container>
-    <v-container>
-      <v-card flat>
-        <v-card-title>Installation</v-card-title>
+    <v-container class="d-flex flex-wrap justify-center">
+      <v-card href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank" class="ma-4" width="450" hover>
+        <v-card-title>Easy Installation</v-card-title>
         <v-card-text>
-          OpenMM can be easily installed from <a href="https://conda-forge.org/" target="blank">conda-forge</a> with the <a href="https://docs.conda.io/" target="blank">Conda</a> package manager:
-          <highlightjs class="py-4" language='bash' code="$ conda install -c conda-forge openmm"></highlightjs>
-          More details are available in the <a href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank">documentation</a>.
+          OpenMM can be easily installed with Conda package manager:
+          <highlightjs class="text--primary py-2" language='bash' code="$ conda install -c conda-forge openmm"></highlightjs>
+          More details are available in the User Guide.
         </v-card-text>
       </v-card>
+
     </v-container>
     <v-container>
       <v-card flat>
