@@ -34,14 +34,11 @@
           The source code is available on GitHub.
         </v-card-text>
       </v-card>
-    </v-container>
-    <v-container class="d-flex flex-wrap justify-center">
-      <v-card href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank" class="ma-4" width="450" hover>
+      <v-card href="http://docs.openmm.org/latest/userguide/application.html#installing-openmm" target="blank" class="ma-4" width="300" hover>
         <v-card-title>Easy Installation</v-card-title>
         <v-card-text>
-          OpenMM can be easily installed with Conda package manager:
-          <highlightjs class="text--primary py-2" language='bash' code="$ conda install -c conda-forge openmm"></highlightjs>
-          More details are available in the User Guide.
+          OpenMM can be easily installed with the Conda package manager:
+          <highlightjs class="text--primary py-2" language='bash' code="conda install -c conda-forge openmm"></highlightjs>
         </v-card-text>
       </v-card>
     </v-container>
