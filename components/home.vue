@@ -4,7 +4,9 @@
       <v-card flat>
         <v-card-title>Welcome to OpenMM</v-card-title>
         <v-card-text>
-          A high-performance toolkit for molecular simulation. Use it as an application, a library, or a flexible programming environment. We include extensive language bindings for Python, C, C++, and even Fortran. The code is open source and developed on GitHub, licensed under MIT and LGPL.
+          A high-performance toolkit for molecular simulation.
+          Use it as an application, a library, or a flexible programming environment.
+          We include extensive language bindings for Python, C, C++, and even Fortran.
         </v-card-text>
       </v-card>
     </v-container>
