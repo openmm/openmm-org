@@ -95,7 +95,6 @@ module.exports = {
       'Antonia Mey (Edinburgh)',
       'Julien Michel (Edinburgh)',
       'Vijay Pande (Stanford)',
-      'Jean-Philip Piquemal (Sorbonne)',
       'Jay Ponder (WashU)',
       'Josh Rackers (Sandia)',
       'Pengyu Ren (UT Austin)',
