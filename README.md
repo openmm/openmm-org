@@ -1,18 +1,35 @@
-# OpenMM.org website
+<img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fopenmm.org">
 
-This repository contains the code for the generation of the static
-http://openmm.org website. The site provides a description of the project and
-serves links to documentation, downloads, videos, etc. The development of the
-OpenMM project itself takes place at https://github.com/openmm/openmm
+# OpenMM website
 
-The site uses the [Vue.js](https://vuejs.org/) framework, and so does not need
-any static site generator to edit. The `master` branch is deployed automatically to https://openmm.org via GitHub Pages.
+This repository contains the content of https://openmm.org.
+
+**Note:** the source code of OpenMM is at https://github.com/openmm/openmm.
+
+## Design
+
+The website is fully static from the server side to facilitate deployment via [GitHub Pages](https://pages.github.com/).
+All the dependencies are served via CDN, preferably [jsDelivr](https://www.jsdelivr.com/).
+
+Key dependencies:
+- [Vue.js](https://vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
+- [Vue Loader](https://vue-loader.vuejs.org/)
+- [Vuetify](https://vuetifyjs.com/)
+
+## Deployment
+
+ The `master` branch is automatically deployed to https://openmm.org via [GitHub Pages](https://pages.github.com/).
 
 ## Development
 
-Fork the repository on GitHub and clone locally. To view the website produced by
-a local copy, serve the folder via a simple HTTP server; for example:
+1. Fork the repository and clone it locally.
+2. Create a new new branch and make modifications.
+3. Deploy the branch via [GitHub Pages](https://pages.github.com/), so it is visible publicly: `https://[username].github.io/openmm-org/` (e.g https://raimis.github.io/openmm-org/)
+4. Make a pull request.
 
+**Note:** to view the website locally, serve the root folder via a simple HTTP server.
+For example:
 ```shell
 npm install -g http-server
 http-server
