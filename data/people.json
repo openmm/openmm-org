@@ -1,0 +1,20 @@
+{
+"consortium": [
+    {"name": "John Chodera (MSKCC)"},
+    {"name": "Karmen Condic-Jurkic (MSKCC)"},
+    {"name": "Peter Eastman (Stanford)"},
+    {"name": "Gianni de Fabritiis (Pompeu Fabra)"},
+    {"name": "Emilio Gallicchio (Brooklyn College)"},
+    {"name": "Tom Markland (Stanford)"},
+    {"name": "Justin McCallum (UCalgary)"},
+    {"name": "Antonia Mey (Edinburgh)"},
+    {"name": "Julien Michel (Edinburgh)"},
+    {"name": "Vijay Pande (Stanford)"},
+    {"name": "Jay Ponder (WashU)"},
+    {"name": "Josh Rackers (Sandia)"},
+    {"name": "Pengyu Ren (UT Austin)"},
+    {"name": "Julia Rice (IBM)"},
+    {"name": "Andy Simmonett (NIH)"},
+    {"name": "Bill Swope (IBM)"}
+    ]
+}

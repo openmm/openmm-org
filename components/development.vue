@@ -74,8 +74,8 @@
       </v-card>
     </v-container>
     <v-container class="d-flex flex-wrap justify-center">
-      <v-card v-for="person of people" :key="person" class="ma-2" width="300" hover>
-        <v-card-text>{{ person }}</v-card-text>
+      <v-card v-for="person of people.consortium" :key="person" class="ma-2" width="300" hover>
+        <v-card-text>{{ person.name }}</v-card-text>
       </v-card>
     </v-container>
   </div>
@@ -84,24 +84,10 @@
 <script>
 module.exports = {
   data: function() { return {
-    people: [
-      'John Chodera (MSKCC)',
-      'Karmen Condic-Jurkic (MSKCC)',
-      'Peter Eastman (Stanford)',
-      'Gianni de Fabritiis (Pompeu Fabra)',
-      'Emilio Gallicchio (Brooklyn College)',
-      'Tom Markland (Stanford)',
-      'Justin McCallum (UCalgary)',
-      'Antonia Mey (Edinburgh)',
-      'Julien Michel (Edinburgh)',
-      'Vijay Pande (Stanford)',
-      'Jay Ponder (WashU)',
-      'Josh Rackers (Sandia)',
-      'Pengyu Ren (UT Austin)',
-      'Julia Rice (IBM)',
-      'Andy Simmonett (NIH)',
-      'Bill Swope (IBM)',
-    ]
-  }}
+    people: []
+  }},
+  created: function() {
+    fetch('data/people.json').then(res => res.json()).then(people => this.people = people)
+  }
 }
 </script>
