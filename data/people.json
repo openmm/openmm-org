@@ -1,20 +1,68 @@
 {
 "consortium": [
-    {"name": "John Chodera (MSKCC)"},
-    {"name": "Karmen Condic-Jurkic (MSKCC)"},
-    {"name": "Peter Eastman (Stanford)"},
-    {"name": "Gianni de Fabritiis (Pompeu Fabra)"},
-    {"name": "Emilio Gallicchio (Brooklyn College)"},
-    {"name": "Tom Markland (Stanford)"},
-    {"name": "Justin McCallum (UCalgary)"},
-    {"name": "Antonia Mey (Edinburgh)"},
-    {"name": "Julien Michel (Edinburgh)"},
-    {"name": "Vijay Pande (Stanford)"},
-    {"name": "Jay Ponder (WashU)"},
-    {"name": "Josh Rackers (Sandia)"},
-    {"name": "Pengyu Ren (UT Austin)"},
-    {"name": "Julia Rice (IBM)"},
-    {"name": "Andy Simmonett (NIH)"},
-    {"name": "Bill Swope (IBM)"}
-    ]
+    {
+        "name": "John Chodera (MSKCC)",
+        "url": "https://www.choderalab.org/members#john-chodera"
+    },
+    {
+        "name": "Karmen Condic-Jurkic (MSKCC)",
+        "url": "https://www.linkedin.com/in/karmen-condic-jurkic-805073b"
+    },
+    {
+        "name": "Peter Eastman (Stanford)",
+        "url": "https://simtk.org/users/peastman"
+    },
+    {
+        "name": "Gianni de Fabritiis (Pompeu Fabra)",
+        "url": "https://www.icrea.cat/Web/ScientificStaff/gianni-de-fabritiis-582"
+    },
+    {
+        "name": "Emilio Gallicchio (Brooklyn College)",
+        "url": "https://www.linkedin.com/in/emilio-gallicchio-57a29844"
+    },
+    {
+        "name": "Tom Markland (Stanford)",
+        "url": "https://web.stanford.edu/group/markland/about.html"
+    },
+    {
+        "name": "Justin McCallum (UCalgary)",
+        "url": "https://www.linkedin.com/in/justin-maccallum-79035212"
+    },
+    {
+        "name": "Antonia Mey (Edinburgh)",
+        "url": "https://www.linkedin.com/in/antonia-mey-0b4b897a"
+    },
+    {
+        "name": "Julien Michel (Edinburgh)",
+        "url": "https://www.linkedin.com/in/julien-michel-b4b7b13"
+    },
+    {
+        "name": "Vijay Pande (Stanford)",
+        "url": "https://www.linkedin.com/in/vijay-pande-phd-4b53342"
+    },
+    {
+        "name": "Jay Ponder (WashU)",
+        "url": "https://www.linkedin.com/in/jay-ponder-b46b51127"
+    },
+    {
+        "name": "Josh Rackers (Sandia)",
+        "url": "https://www.linkedin.com/in/joshua-rackers-67ba1a103"
+    },
+    {
+        "name": "Pengyu Ren (UT Austin)",
+        "url": "https://www.linkedin.com/in/pengyuren"
+    },
+    {
+        "name": "Julia Rice (IBM)",
+        "url": "https://www.linkedin.com/in/julia-rice-aa51b01a"
+    },
+    {
+        "name": "Andy Simmonett (NIH)",
+        "url": "https://www.linkedin.com/in/andrew-simmonett-078531b0"
+    },
+    {
+        "name": "Bill Swope (IBM)",
+        "url": "https://www.linkedin.com/in/bill-swope"
+    }
+]
 }
