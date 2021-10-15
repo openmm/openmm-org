@@ -93,6 +93,10 @@
         mode: 'history',
         routes
       })
+      router.afterEach((to, from) => {
+        ga('set', 'page', to.path)
+        ga('send', 'pageview')
+      })
       const app = new Vue({
         el: '#app',
         router,
