@@ -42,7 +42,7 @@
           </v-tabs>
         </v-card>
         <v-main class="pb-6">
-          <v-tabs-items v-model="currentTab">
+          <v-tabs-items v-model="currentTab" @change="$router.push($event)">
             <v-tab-item v-for= "tab in tabs" :value="tab.path">
               <router-view v-if="currentTab === tab.path"/>
             </v-tab-item>
