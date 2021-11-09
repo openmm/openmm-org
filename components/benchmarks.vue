@@ -11,7 +11,10 @@
       <v-card>
         <v-card-title>Dihydrofolate Reductase (DHFR)</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM was benchmarked on the dihydrofolate reductase (DHFR) models taken from the <a href="http://ambermd.org/amber10.bench1.html" target="blank">Joint Amber/Charmm</a> benchmark. This is a 159 residue protein with 2489 atoms. The version used for explicit solvent simulations included 7023 TIP3P water molecules, giving a total of 23,558 atoms. All simulations used the AMBER99SB force field and a Langevin integrator, and were run with OpenMM 7.4.
+          OpenMM was benchmarked on the dihydrofolate reductase (DHFR) models taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
+          This is a 159 residue protein with 2489 atoms.
+          The version used for explicit solvent simulations included 7023 TIP3P water molecules, giving a total of 23,558 atoms.
+          All simulations used the AMBER99SB force field and a Langevin integrator, and were run with OpenMM 7.4.
           <v-expansion-panels class="pt-3" focusable>
             <v-expansion-panel>
               <v-expansion-panel-header class="text--secondary">
