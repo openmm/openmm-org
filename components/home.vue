@@ -46,7 +46,7 @@
     </v-container>
     <v-container>
       <v-card flat>
-        <v-card-title>Annoucements</v-card-title>
+        <v-card-title>Announcements</v-card-title>
       </v-card>
     </v-container>
     <v-container class="d-flex justify-center">
@@ -55,7 +55,7 @@
         <v-card-text>
           We are looking to recruit multiple positions at PhD and post-doctoral levels to work
           on OpenMM.
-          The project are about the next generation molecular simulations and neural network potentials.
+          The projects are about the next generation molecular simulations and neural network potentials.
           The positions are at the Computational Science Laboratory, University Pompeu Fabra, Barcelona.
         </v-card-text>
       </v-card>
