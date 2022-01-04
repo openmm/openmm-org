@@ -243,11 +243,12 @@ module.exports = {
       height: 500,
       title: 'Simulation speed',
       titleTextStyle: { bold: true, italic: false, fontSize: 16, color: '#616161' },
-      chartArea: { width: '50%', height: '90%'},
+      chartArea: { width: '50%', height: '80%'},
       hAxis: {
         title: 'Speed (ns/day)',
         textStyle: { fontSize: 14, color: '#616161' },
-        titleTextStyle: { bold: true, italic: false, fontSize: 14, color: '#616161' }
+        titleTextStyle: { bold: true, italic: false, fontSize: 14, color: '#616161' },
+        minValue: '0'
       },
       vAxis: {
         title: 'Benckmark',
