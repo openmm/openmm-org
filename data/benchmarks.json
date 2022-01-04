@@ -1,12 +1,32 @@
 {
 "dhfr":
   [
-    ["Simulation type"       , "CUDA Titan X", "CUDA Titan V", "OpenCL Titan X", "OpenCL Titan V", "OpenCL Radeon", "CPU"],
-    ["Implicit, 2 fs"        ,  927, 1004,  672,  834,  403,   9.4],
-    ["Implicit, 5 fs HMR"    , 1528, 1437,  771, 1089,  521,  23.2],
-    ["Explicit-RF, 2 fs"     ,  626,  697,  496,  627,  295,  20.2],
-    ["Explicit-RF, 5 fs HMR" , 1118, 1071,  677,  893,  463,  45.6],
-    ["Explicit-PME, 2 fs"    ,  393,  419,  316,  324,  163,  16.5],
-    ["Explicit-PME, 5 fs HMR",  752,  785,  496,  617,  317,  37.9]
+    ["Simulation type", "Titan V",  "A100", "CPU"],
+    ["Implicit"       ,  1950.14, 1933.68, 20.3721],
+    ["Explicit-RF"    ,  1253.56, 1384.6,  39.8768],
+    ["Explicit-PME"   ,  926.962, 1153.76, 34.6443]
+  ],
+"apoa1":
+  [
+    ["Simulation type", "Titan V",  "A100", "CPU"],
+    ["RF"             , 426.137, 580.412, 8.82282],
+    ["PME"            , 268.82,  428.537, 7.25955],
+    ["LJPME"          , 203.081, 332.573, 6.27049]
+  ],
+"cellulose":
+  [
+    ["Simulation type", "Titan V",  "A100", "2x A100", "3x A100", "4x A100"],
+    ["PME", 50.2859, 105.638, 164.618, 196.329, 210.19]
+  ],
+"stmv":
+  [
+    ["Simulation type", "Titan V",  "A100", "2x A100", "3x A100", "4x A100"],
+    ["PME", 15.1901, 32.3168, 51.4737, 61.5809, 70.8557]
+  ],
+"amoebadhfr":
+  [
+    ["Simulation type", "Titan V",  "A100"],
+    ["Implicit"       , 19.2784, 30.8867],
+    ["Explicit"       , 16.7365, 23.6541]
   ]
 }
