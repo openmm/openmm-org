@@ -44,8 +44,7 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on an NVIDIA Titan V GPU.</li>
-                  <li>CUDA platform on an NVIDIA A100 GPU.</li>
+                  <li>CUDA platform on a variety of Volta (Titan V, V100), Turing (RTX 2080, RTX 2080 Ti), and Ampere (Quadro RTX 6000, A10, A40, A100) GPUs.</li>
                   <li>CPU platform on a 4 core 4.3 GHz Intel Core i7-7740X CPU.</li>
                 </ul>
               </v-expansion-panel-content>
@@ -94,8 +93,7 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on an NVIDIA Titan V GPU.</li>
-                  <li>CUDA platform on an NVIDIA A100 GPU.</li>
+                  <li>CUDA platform on a variety of Volta (Titan V, V100), Turing (RTX 2080, RTX 2080 Ti), and Ampere (Quadro RTX 6000, A10, A40, A100) GPUs.</li>
                   <li>CPU platform on a 4 core 4.3 GHz Intel Core i7-7740X CPU.</li>
                 </ul>
               </v-expansion-panel-content>
@@ -133,8 +131,7 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on an NVIDIA Titan V GPU.</li>
-                  <li>CUDA platform on an NVIDIA A100 GPU.</li>
+                  <li>CUDA platform on a variety of Volta (Titan V, V100), Turing (RTX 2080, RTX 2080 Ti), and Ampere (Quadro RTX 6000, A10, A40, A100) GPUs.</li>
                   <li>CUDA platform parallelizing the simulation across up to four A100 GPUs connected by NVLink-3.</li>
                 </ul>
               </v-expansion-panel-content>
@@ -172,8 +169,7 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on an NVIDIA Titan V GPU.</li>
-                  <li>CUDA platform on an NVIDIA A100 GPU.</li>
+                  <li>CUDA platform on a variety of Volta (Titan V, V100), Turing (RTX 2080, RTX 2080 Ti), and Ampere (Quadro RTX 6000, A10, A40, A100) GPUs.</li>
                   <li>CUDA platform parallelizing the simulation across up to four A100 GPUs connected by NVLink-3.</li>
                 </ul>
               </v-expansion-panel-content>
@@ -219,11 +215,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the following platforms and hardware:
-                <ul>
-                  <li>CUDA platform on an NVIDIA Titan V GPU.</li>
-                  <li>CUDA platform on an NVIDIA A100 GPU.</li>
-                </ul>
+                Simulations were run using the CUDA platform on a variety of Volta (Titan V, V100), Turing (RTX 2080, RTX 2080 Ti), and Ampere (Quadro RTX 6000, A10, A40, A100) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
