@@ -33,6 +33,18 @@
           The C++ API provides information about OpenMM's C++ interface.
         </v-card-text>
       </v-card>
+      <v-card href="https://openmm.github.io/openmm-cookbook" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Cookbook</v-card-title>
+        <v-card-text>
+          Short examples demonstrating many common operations in OpenMM.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/openmm/openmm/wiki/Frequently-Asked-Questions" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>FAQ</v-card-title>
+        <v-card-text>
+          Frequently asked questions about OpenMM.
+        </v-card-text>
+      </v-card>
     </v-container>
     <v-container>
       <v-card flat>
@@ -77,12 +89,6 @@
       </v-card>
     </v-container>
     <v-container class="d-flex flex-wrap justify-center">
-      <v-card href="https://github.com/openmm/openmm/wiki/Frequently-Asked-Questions" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>FAQ</v-card-title>
-        <v-card-text>
-          Frequently asked questions about OpenMM.
-        </v-card-text>
-      </v-card>
       <v-card href="https://github.com/openmm/openmm/issues" target="blank" class="ma-4" width="300" hover>
         <v-card-title>Issue Tracker</v-card-title>
         <v-card-text>
