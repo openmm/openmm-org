@@ -263,21 +263,11 @@ module.exports = {
     google.charts.setOnLoadCallback(() => {
       fetch('data/benchmarks.json').then(res => {
         res.json().then(json => {
-          const dhfrchart = new google.visualization.BarChart(document.getElementById('dhfr'));
-          const dhfrdata = google.visualization.arrayToDataTable(json['dhfr']);
-          dhfrchart.draw(dhfrdata, options)
-          const apoa1chart = new google.visualization.BarChart(document.getElementById('apoa1'));
-          const apoa1data = google.visualization.arrayToDataTable(json['apoa1']);
-          apoa1chart.draw(apoa1data, options)
-          const cellulosechart = new google.visualization.BarChart(document.getElementById('cellulose'));
-          const cellulosedata = google.visualization.arrayToDataTable(json['cellulose']);
-          cellulosechart.draw(cellulosedata, options)
-          const stmvchart = new google.visualization.BarChart(document.getElementById('stmv'));
-          const stmvdata = google.visualization.arrayToDataTable(json['stmv']);
-          stmvchart.draw(stmvdata, options)
-          const amoebadhfrchart = new google.visualization.BarChart(document.getElementById('amoebadhfr'));
-          const amoebadhfrdata = google.visualization.arrayToDataTable(json['amoebadhfr']);
-          amoebadhfrchart.draw(amoebadhfrdata, options)
+          Object.entries(json).forEach(([name, data]) => {
+            const chart = new google.visualization.BarChart(document.getElementById(name));
+            data = google.visualization.arrayToDataTable(data);
+            chart.draw(data, options)
+          });
         })
       })
     })
