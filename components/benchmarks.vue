@@ -1,5 +1,13 @@
 <template>
   <div>
+    <v-container>
+      <v-card flat>
+        <v-card-title>Simulation speed</v-card-title>
+        <v-card-text>
+          Benchmarks of simulation speed on typical biochemical systems.
+        </v-card-text>
+      </v-card>
+    </v-container>
     <v-container class="d-flex flex-column align-center">
       <v-card>
         <v-card-title>Dihydrofolate Reductase (DHFR)</v-card-title>
