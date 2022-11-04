@@ -36,6 +36,15 @@
           </ul>
         </v-card-text>
       </v-card>
+      <v-card href="https://www.julienmichel.net/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Michel Lab</v-card-title>
+        <v-card-text>
+          <ul>
+            <li><a href="https://www.julienmichel.net/lab/julien" target="blank">Julien Michel</a></li>
+            <li><a href="https://www.linkedin.com/in/stephen-farr-591569111/" target="blank">Stephen Farr</a></li>
+          </ul>
+        </v-card-text>
+      </v-card>
       <v-card href="https://www.lobos.nih.gov/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>NIH</v-card-title>
         <v-card-text>
@@ -62,6 +71,12 @@
         <v-card-title>National Institutes of Health</v-card-title>
         <v-card-text>
         OpenMM is currently (July 2021 - Mar 2025) supported by the <a href="https://www.nigms.nih.gov/" target="blank">National Institute of General Medical Sciences</a> of the <a href="https://www.nih.gov/" target="blank">National Institutes of Health</a> under award number <a href="https://reporter.nih.gov/search/XnJncpjxUkSKiIFzf9su9A/project-details/10100573" target="blank">R01GM140090</a>.
+        </v-card-text>
+      </v-card>
+      <v-card target="blank" class="ma-2" width="300">
+        <v-card-title>EPSRC</v-card-title>
+        <v-card-text>
+          OpenMM is currently (November 2022 - October 2025) supported by the <a href="https://www.ukri.org/councils/epsrc/" target="blank">Engineering and Physical Sciences Research Council</a> under grant <a href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/W030276/1" target="blank">EP/W030276/1</a>.
         </v-card-text>
       </v-card>
     </v-container>
