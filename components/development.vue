@@ -36,6 +36,15 @@
           </ul>
         </v-card-text>
       </v-card>
+      <v-card href="https://www.julienmichel.net/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Michel Lab</v-card-title>
+        <v-card-text>
+          <ul>
+            <li><a href="https://www.julienmichel.net/lab/julien" target="blank">Julien Michel</a></li>
+            <li><a href="https://www.linkedin.com/in/stephen-farr-591569111/" target="blank">Stephen Farr</a></li>
+          </ul>
+        </v-card-text>
+      </v-card>
       <v-card href="https://www.lobos.nih.gov/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>NIH</v-card-title>
         <v-card-text>
