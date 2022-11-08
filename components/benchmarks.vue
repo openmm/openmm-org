@@ -1,7 +1,15 @@
 <template>
   <div>
+    <v-container>
+      <v-card flat>
+        <v-card-title>Simulation speed</v-card-title>
+        <v-card-text>
+          Benchmarks of simulation speed on typical biochemical systems.
+        </v-card-text>
+      </v-card>
+    </v-container>
     <v-container class="d-flex flex-column align-center">
-      <v-card>
+      <v-card class="mb-6">
         <v-card-title>Dihydrofolate Reductase (DHFR)</v-card-title>
         <v-card-text class="text-justify">
           OpenMM 7.7 was benchmarked on the dihydrofolate reductase (DHFR) models taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
@@ -53,7 +61,7 @@
           <v-container class="d-flex justify-center" id="dhfr"></v-container>
         </v-card-text>
       </v-card>
-      <v-card>
+      <v-card class="mb-6">
         <v-card-title>Apolipoprotein A1 (ApoA1)</v-card-title>
         <v-card-text class="text-justify">
           OpenMM 7.7 was benchmarked on Apolipoprotein A1 (ApoA1). This consists of 392 protein residues, 160 POPC lipids, and 21,458 water molecules, for a total of 92,224 atoms.
@@ -102,7 +110,7 @@
           <v-container class="d-flex justify-center" id="apoa1"></v-container>
         </v-card-text>
       </v-card>
-      <v-card>
+      <v-card class="mb-6">
         <v-card-title>Cellulose</v-card-title>
         <v-card-text class="text-justify">
           OpenMM 7.7 was benchmarked on the cellulose model taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
@@ -140,7 +148,7 @@
           <v-container class="d-flex justify-center" id="cellulose"></v-container>
         </v-card-text>
       </v-card>
-      <v-card>
+      <v-card class="mb-6">
         <v-card-title>Satellite Tobacco Mosaic Virus (STMV)</v-card-title>
         <v-card-text class="text-justify">
           OpenMM 7.7 was benchmarked on the satellite tobacco mosaic virus (STMV) model taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
@@ -178,7 +186,7 @@
           <v-container class="d-flex justify-center" id="stmv"></v-container>
         </v-card-text>
       </v-card>
-      <v-card>
+      <v-card class="mb-6">
         <v-card-title>AMOEBA DHFR</v-card-title>
         <v-card-text class="text-justify">
           OpenMM 7.7 was benchmarked on the DHFR models described above with the AMOEBA polarizable force field.  Full mutual polarization was used,
@@ -255,21 +263,11 @@ module.exports = {
     google.charts.setOnLoadCallback(() => {
       fetch('data/benchmarks.json').then(res => {
         res.json().then(json => {
-          const dhfrchart = new google.visualization.BarChart(document.getElementById('dhfr'));
-          const dhfrdata = google.visualization.arrayToDataTable(json['dhfr']);
-          dhfrchart.draw(dhfrdata, options)
-          const apoa1chart = new google.visualization.BarChart(document.getElementById('apoa1'));
-          const apoa1data = google.visualization.arrayToDataTable(json['apoa1']);
-          apoa1chart.draw(apoa1data, options)
-          const cellulosechart = new google.visualization.BarChart(document.getElementById('cellulose'));
-          const cellulosedata = google.visualization.arrayToDataTable(json['cellulose']);
-          cellulosechart.draw(cellulosedata, options)
-          const stmvchart = new google.visualization.BarChart(document.getElementById('stmv'));
-          const stmvdata = google.visualization.arrayToDataTable(json['stmv']);
-          stmvchart.draw(stmvdata, options)
-          const amoebadhfrchart = new google.visualization.BarChart(document.getElementById('amoebadhfr'));
-          const amoebadhfrdata = google.visualization.arrayToDataTable(json['amoebadhfr']);
-          amoebadhfrchart.draw(amoebadhfrdata, options)
+          Object.entries(json).forEach(([name, data]) => {
+            const chart = new google.visualization.BarChart(document.getElementById(name));
+            data = google.visualization.arrayToDataTable(data);
+            chart.draw(data, options)
+          });
         })
       })
     })
