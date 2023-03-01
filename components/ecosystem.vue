@@ -83,10 +83,22 @@
       </v-card>
     </v-container>
     <v-container class="d-flex flex-wrap justify-center">
+      <v-card href="https://github.com/openmm/openmm-torch/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>OpenMM-Torch</v-card-title>
+        <v-card-text>
+          A plugin for OpenMM that allows PyTorch models to be used for defining an OpenMM force object.
+        </v-card-text>
+      </v-card>
       <v-card href="https://github.com/openmm/openmm-plumed/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>OpenMM-PLUMED</v-card-title>
         <v-card-text>
           Provides a connection between OpenMM and PLUMED. It allows you to bias or analyze an OpenMM simulation based on collective variables.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/amd/openmm-hip" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>OpenMM-HIP</v-card-title>
+        <v-card-text>
+          A high performance OpenMM platform for AMD GPUs.
         </v-card-text>
       </v-card>
       <v-card href="https://github.com/openmm/openmm-tensorflow/" target="blank" class="ma-4" width="300" hover>
@@ -99,12 +111,6 @@
         <v-card-title>OpenMM-TensorRT</v-card-title>
         <v-card-text>
           This is a plugin for OpenMM that allows neural networks to be used for defining forces. It is implemented with TensorRT.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://github.com/openmm/openmm-torch/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>OpenMM-Torch</v-card-title>
-        <v-card-text>
-          A plugin for OpenMM that allows PyTorch static computation graphs to be used for defining an OpenMM force object.
         </v-card-text>
       </v-card>
     </v-container>
