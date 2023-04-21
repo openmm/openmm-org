@@ -2,55 +2,17 @@
   <div>
     <v-container>
       <v-card flat>
-        <v-card-title>OpenMM Cookbook and Tutorials</v-card-title>
+        <v-card-title>OpenMM Cookbook</v-card-title>
         <v-card-text>
-          Tutorials and examples for quickly getting started with OpenMM
+          <a href="https://openmm.github.io/openmm-cookbook/latest/cookbook">The OpenMM Cookbook</a> contains short code examples for common tasks you can perform in OpenMM. The examples can be run directly in Colab, the runtime is a few seconds for each one.
+        </v-card-text>
+      </v-card>
+      <v-card flat>
+        <v-card-title>OpenMM Tutorials</v-card-title>
+        <v-card-text>
+          <a href="https://openmm.github.io/openmm-cookbook/latest/tutorials">The OpenMM Tutorials</a> are longer examples that walk you through specific simulation methods. These can also be run in Colab, but due to the longer compute time required (tens of minutes to hours) you may find it better to run them on your own machine.
         </v-card-text>
       </v-card>
     </v-container>
-    <v-container>
-      <v-expansion-panels focusable>
-        <v-expansion-panel v-for="tutorial in tutorials" :key="tutorial">
-          <v-expansion-panel-header>{{ tutorial.title }}</v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <tutorial :path="tutorial.path" />
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-      </v-expansion-panels>
-    </v-container>
   </div>
 </template>
-
-<script>
-module.exports = {
-  data: function() {
-    return {
-      tutorials: [
-        {
-          title: 'Alchemical free energy calculations',
-          path: 'tutorials_/alchemical-free-energy/'
-        },
-        {
-          title: 'Beta-2-adrenergic receptor (B2AR) membrane protein simulation with CHARMM',
-          path: 'tutorials_/b2ar_membrane/'
-        },
-        {
-          title: 'Histone methyltransferase simulation with multisite Zn2+ structural ions',
-          path: 'tutorials_/hkmt_zinc/'
-        },
-        {
-          title: 'Histone methyltransferase simulation with a multisite water model (TIP4P-Ew)',
-          path: 'tutorials_/hkmt_tip4pew/',
-        },
-        {
-          title: 'HSP90 with ADP:Mg2+ simulation',
-          path: 'tutorials_/hsp90_adp_mg/'
-        },
-      ]
-    }
-  },
-  components: {
-    'tutorial': httpVueLoader('components/tutorial.vue')
-  },
-}
-</script>
