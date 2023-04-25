@@ -33,10 +33,16 @@
           The C++ API provides information about OpenMM's C++ interface.
         </v-card-text>
       </v-card>
-      <v-card href="https://openmm.github.io/openmm-cookbook" target="blank" class="ma-4" width="300" hover>
+      <v-card href="https://openmm.github.io/openmm-cookbook/latest/cookbook" target="blank" class="ma-4" width="300" hover>
         <v-card-title>Cookbook</v-card-title>
         <v-card-text>
           Short examples demonstrating many common operations in OpenMM.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://openmm.github.io/openmm-cookbook/latest/tutorials" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Tutorials</v-card-title>
+        <v-card-text>
+          Tutorials for getting started with and exploring OpenMM.
         </v-card-text>
       </v-card>
       <v-card href="https://github.com/openmm/openmm/wiki/Frequently-Asked-Questions" target="blank" class="ma-4" width="300" hover>
@@ -159,6 +165,18 @@
           The C++ API provides information about OpenMM's C++ interface.
         </v-card-text>
       </v-card>
+
+      <v-card href="https://openmm.github.io/openmm-cookbook/dev/cookbook" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Cookbook (dev)</v-card-title>
+        <v-card-text>
+          Short examples demonstrating many common operations in OpenMM.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://openmm.github.io/openmm-cookbook/dev/tutorials" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Tutorials (dev)</v-card-title>
+        <v-card-text>
+          Tutorials for getting started with and exploring OpenMM.
+        </v-card-text>
     </v-container>
   </div>
 </template>
