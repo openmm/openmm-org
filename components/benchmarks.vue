@@ -12,7 +12,7 @@
       <v-card class="mb-6">
         <v-card-title>Dihydrofolate Reductase (DHFR)</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM 7.7 was benchmarked on the dihydrofolate reductase (DHFR) models taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
+          OpenMM 8.0 was benchmarked on the dihydrofolate reductase (DHFR) models taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
           This is a 159 residue protein with 2489 atoms.
           The version used for explicit solvent simulations included 7023 TIP3P water molecules, giving a total of 23,558 atoms.
           All simulations used the AMBER99SB force field and a Langevin integrator.
@@ -50,11 +50,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the following platforms and hardware:
-                <ul>
-                  <li>CUDA platform on a variety of Volta (Titan V, V100), Turing (RTX 2080, RTX 2080 Ti), and Ampere (Quadro RTX 6000, A10, A40, A100) GPUs.</li>
-                  <li>CPU platform on a 4 core 4.3 GHz Intel Core i7-7740X CPU.</li>
-                </ul>
+                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100) and Hopper (RTX 4080, H100) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -64,7 +60,7 @@
       <v-card class="mb-6">
         <v-card-title>Apolipoprotein A1 (ApoA1)</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM 7.7 was benchmarked on Apolipoprotein A1 (ApoA1). This consists of 392 protein residues, 160 POPC lipids, and 21,458 water molecules, for a total of 92,224 atoms.
+          OpenMM 8.0 was benchmarked on Apolipoprotein A1 (ApoA1). This consists of 392 protein residues, 160 POPC lipids, and 21,458 water molecules, for a total of 92,224 atoms.
           All simulations used the AMBER14 force field.
           <v-expansion-panels class="pt-3" focusable>
             <v-expansion-panel>
@@ -99,11 +95,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the following platforms and hardware:
-                <ul>
-                  <li>CUDA platform on a variety of Volta (Titan V, V100), Turing (RTX 2080, RTX 2080 Ti), and Ampere (Quadro RTX 6000, A10, A40, A100) GPUs.</li>
-                  <li>CPU platform on a 4 core 4.3 GHz Intel Core i7-7740X CPU.</li>
-                </ul>
+                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100) and Hopper (RTX 4080, H100) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -113,7 +105,7 @@
       <v-card class="mb-6">
         <v-card-title>Cellulose</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM 7.7 was benchmarked on the cellulose model taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
+          OpenMM 8.0 was benchmarked on the cellulose model taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
           It consists of a set of cellulose molecules (91,044 atoms) solvated with 105,855 water molecules, for a total of 408,609 atoms.
           <v-expansion-panels class="pt-3" focusable>
             <v-expansion-panel>
@@ -139,8 +131,8 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on a variety of Volta (Titan V, V100), Turing (RTX 2080, RTX 2080 Ti), and Ampere (Quadro RTX 6000, A10, A40, A100) GPUs.</li>
-                  <li>CUDA platform parallelizing the simulation across up to four A100 GPUs connected by NVLink-3.</li>
+                  <li>CUDA platform on a variety of Ampere (RTX 3090, A100) and Hopper (RTX 4080, H100) GPUs.</li>
+                  <li>CUDA platform parallelizing the simulation across multiple A100 or H100 GPUs connected by NVLink-3.</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -151,7 +143,7 @@
       <v-card class="mb-6">
         <v-card-title>Satellite Tobacco Mosaic Virus (STMV)</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM 7.7 was benchmarked on the satellite tobacco mosaic virus (STMV) model taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
+          OpenMM 8.0 was benchmarked on the satellite tobacco mosaic virus (STMV) model taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
           It consists of 8820 protein residues, 949 RNA bases, 300,053 water molecules, and 649 sodium ions, for a total of 1,067,095 atoms.
           <v-expansion-panels class="pt-3" focusable>
             <v-expansion-panel>
@@ -177,8 +169,8 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on a variety of Volta (Titan V, V100), Turing (RTX 2080, RTX 2080 Ti), and Ampere (Quadro RTX 6000, A10, A40, A100) GPUs.</li>
-                  <li>CUDA platform parallelizing the simulation across up to four A100 GPUs connected by NVLink-3.</li>
+                  <li>CUDA platform on a variety of Ampere (RTX 3090, A100) and Hopper (RTX 4080, H100) GPUs.</li>
+                  <li>CUDA platform parallelizing the simulation across multiple A100 or H100 GPUs connected by NVLink-3.</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -189,7 +181,7 @@
       <v-card class="mb-6">
         <v-card-title>AMOEBA DHFR</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM 7.7 was benchmarked on the DHFR models described above with the AMOEBA polarizable force field.  Full mutual polarization was used,
+          OpenMM 8.0 was benchmarked on the DHFR models described above with the AMOEBA polarizable force field.  Full mutual polarization was used,
           with induced dipoles iterated until they converged to a tolerance of 1e-5.
           <v-expansion-panels class="pt-3" focusable>
             <v-expansion-panel>
@@ -197,16 +189,8 @@
                 Treatment of Solvent
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Two methods were used to calculate the effect of solvent:
-                <ul>
-                  <li>
-                    <b>Implicit:</b> The Generalized Kirkwood algorithm was used to model the effects of solvent. No cutoffs were used on nonbonded interactions.
-                  </li>
-                  <li>
-                    <b>Explicit:</b> Explicit water molecules were included in the simulation. The Particle Mesh Ewald method was used to model long range interactions,
-                    with the direct space cutoff set to 0.7 nm and the Ewald error tolerance set to 0.0005. Van der Waals interactions were cut off at 0.9 nm.
-                  </li>
-                </ul>
+                Explicit water molecules were included in the simulation. The Particle Mesh Ewald method was used to model long range interactions,
+                with the direct space cutoff set to 0.7 nm and the Ewald error tolerance set to 0.0005. Van der Waals interactions were cut off at 0.9 nm.
               </v-expansion-panel-content>
             </v-expansion-panel>
             <v-expansion-panel>
@@ -223,7 +207,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on a variety of Volta (Titan V, V100), Turing (RTX 2080, RTX 2080 Ti), and Ampere (Quadro RTX 6000, A10, A40, A100) GPUs.
+                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100) and Hopper (RTX 4080, H100) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
