@@ -50,7 +50,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100) and Hopper (RTX 4080, H100) GPUs.
+                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100), Ada Lovelace (RTX 4080, RTX 4090), and Hopper (H100) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -95,7 +95,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100) and Hopper (RTX 4080, H100) GPUs.
+                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100), Ada Lovelace (RTX 4080, RTX 4090), and Hopper (H100) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -131,8 +131,8 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on a variety of Ampere (RTX 3090, A100) and Hopper (RTX 4080, H100) GPUs.</li>
-                  <li>CUDA platform parallelizing the simulation across multiple A100 or H100 GPUs connected by NVLink-3.</li>
+                  <li>CUDA platform on a variety of Ampere (RTX 3090, A100), Ada Lovelace (RTX 4080, RTX 4090), and Hopper (H100) GPUs.</li>
+                  <li>CUDA platform parallelizing the simulation across multiple A100 GPUs connected by NVLink-3.</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -169,8 +169,8 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on a variety of Ampere (RTX 3090, A100) and Hopper (RTX 4080, H100) GPUs.</li>
-                  <li>CUDA platform parallelizing the simulation across multiple A100 or H100 GPUs connected by NVLink-3.</li>
+                  <li>CUDA platform on a variety of Ampere (RTX 3090, A100), Ada Lovelace (RTX 4080, RTX 4090), and Hopper (H100) GPUs.</li>
+                  <li>CUDA platform parallelizing the simulation across multiple A100 GPUs connected by NVLink-3.</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -207,7 +207,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100) and Hopper (RTX 4080, H100) GPUs.
+                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100), Ada Lovelace (RTX 4080, RTX 4090), and Hopper (H100) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
