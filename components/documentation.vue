@@ -183,22 +183,25 @@
         <v-card-title>All Documentation versions</v-card-title>
         <v-card-text>
            Here you can find all available older documentation versions.
-           The latest stable release is {{ versions.latest }}.
+           The latest stable release is {{ latest }}.
         </v-card-text>
       </v-card>
-      <v-card v-for="version of versions.versions" target="blank" class="ma-2">
-        <v-card-title>{{ version.name }}</v-card-title>
-        <v-list>
-          <v-list-item :href="version.url +'userguide/'">User Guide</v-list-item>
-          <v-list-item :href="version.url +'developerguide/'">Developer Guide</v-list-item>
-          <v-list-item :href="version.url +'api-c++/'">C++ API</v-list-item>
-          <v-list-item :href="version.url +'api-python/'">Python API</v-list-item>
-        </v-list>
-      </v-card>
+      <v-expansion-panels class="pt-3" focusable>
+        <v-expansion-panel v-for="version of versions">
+          <v-expansion-panel-header class="text--secondary">
+            {{ version.name }}
+          </v-expansion-panel-header>
+          <v-expansion-panel-content class="text--secondary">
+            <v-list>
+              <v-list-item :href="version.url +'userguide/'">User Guide</v-list-item>
+              <v-list-item :href="version.url +'developerguide/'">Developer Guide</v-list-item>
+              <v-list-item :href="version.url +'api-c++/'">C++ API</v-list-item>
+              <v-list-item :href="version.url +'api-python/'">Python API</v-list-item>
+            </v-list>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
     </v-container>
-
-
-
   </div>
 </template>
 
@@ -228,7 +231,10 @@ module.exports = {
     latest: ''
   }},
   created: function() {
-    fetch('data/versions.json').then(res => res.json()).then(versions => this.versions = versions, latest => this.latests = latest)
+    fetch('data/versions.json').then(res => res.json()).then(res => {
+      this.versions = res.versions.filter(item => item.name != 'development' && item.name != 'latest') 
+      this.latest = res.latest
+      })
   }
 }
 </script>
