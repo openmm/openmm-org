@@ -1,5 +1,5 @@
 {
-    "latest": "8.0.0",
+    "latest": "8.1.0",
     "versions":[
     {
         "name": "development",
@@ -9,6 +9,10 @@
         "name": "latest",
         "url": "http://docs.openmm.org/latest/"
     },
+    {
+        "name": "8.1.0",
+        "url": "http://docs.openmm.org/8.1.0/"
+    },  
     {
         "name": "8.0.0",
         "url": "http://docs.openmm.org/8.0.0/"
