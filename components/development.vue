@@ -28,11 +28,12 @@
         </v-card-text>
       </v-card>
       <v-card href="https://www.compscience.org/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>de Fabritiis Lab</v-card-title>
+        <v-card-title>De Fabritiis Lab</v-card-title>
         <v-card-text>
           <ul>
-            <li><a href="https://www.icrea.cat/Web/ScientificStaff/gianni-de-fabritiis-582" target="blank">Gianni de Fabritiis</a></li>
+            <li><a href="https://www.icrea.cat/Web/ScientificStaff/gianni-de-fabritiis-582" target="blank">Gianni De Fabritiis</a></li>
             <li><a href="https://www.linkedin.com/in/galvelis/" target="blank">Raimondas Galvelis</a></li>
+            <li><a href="https://www.linkedin.com/in/raulppelaez/" target="blank">Raul Perez Pelaez</a></li>
           </ul>
         </v-card-text>
       </v-card>
