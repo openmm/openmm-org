@@ -32,8 +32,8 @@
         <v-card-text>
           <ul>
             <li><a href="https://www.icrea.cat/Web/ScientificStaff/gianni-de-fabritiis-582" target="blank">Gianni De Fabritiis</a></li>
-            <li><a href="https://www.linkedin.com/in/galvelis/" target="blank">Raimondas Galvelis</a></li>
             <li><a href="https://www.linkedin.com/in/raulppelaez/" target="blank">Raul Perez Pelaez</a></li>
+            <li><a href="https://www.linkedin.com/in/stephen-farr-591569111/" target="blank">Stephen Farr</a></li>
           </ul>
         </v-card-text>
       </v-card>
@@ -42,7 +42,6 @@
         <v-card-text>
           <ul>
             <li><a href="https://www.julienmichel.net/lab/julien" target="blank">Julien Michel</a></li>
-            <li><a href="https://www.linkedin.com/in/stephen-farr-591569111/" target="blank">Stephen Farr</a></li>
           </ul>
         </v-card-text>
       </v-card>
