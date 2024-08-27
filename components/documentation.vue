@@ -123,9 +123,9 @@
       </v-card>
     </v-container>
     <v-container class="d-flex flex-wrap justify-center">
-      <v-card href="https://doi.org/10.1371/journal.pcbi.1005659" target="blank" class="ma-4" hover>
+      <v-card href="https://doi.org/10.1021/acs.jpcb.3c06662" target="blank" class="ma-4" hover>
         <v-card-text>
-          Peter Eastman, Jason Swails, John D. Chodera, Robert T. McGibbon, Yutong Zhao, Kyle A. Beauchamp, Lee-Ping Wang, Andrew C. Simmonett, Matthew P. Harrigan, Chaya D. Stern, Rafal P. Wiewiora, Bernard R. Brooks, Vijay S. Pande. OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics. PLoS Comput. Biol. 13:e1005659, 2017. DOI: <a href="https://doi.org/10.1371/journal.pcbi.1005659" target="blank">10.1371/journal.pcbi.1005659</a>
+          Peter Eastman, Raimondas Galvelis, Raúl P. Peláez, Charlles R. A. Abreu, Stephen E. Farr, Emilio Gallicchio, Anton Gorenko, Michael M. Henry, Frank Hu, Jing Huang, Andreas Krämer, Julien Michel, Joshua A. Mitchell, Vijay S. Pande, João PGLM Rodrigues, Jaime Rodriguez-Guerra, Andrew C. Simmonett, Sukrit Singh, Jason Swails, Philip Turner, Yuanqing Wang, Ivy Zhang, John D. Chodera, Gianni De Fabritiis, and Thomas E. Markland. "OpenMM 8: Molecular Dynamics Simulation with Machine Learning Potentials." J. Phys. Chem. B 128(1), pp. 109-116 (2023). DOI: <a href="https://doi.org/10.1021/acs.jpcb.3c06662" target="blank">10.1021/acs.jpcb.3c06662</a>
         </v-card-text>
       </v-card>
     </v-container>
