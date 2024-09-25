@@ -54,7 +54,7 @@
           to quickly prototype and develop new algorithms.
         </v-card-text>
       </v-card>
-      <v-card href="https://biomol.bme.utexas.edu/tinkergpu/index.php?title=Main_Page" target="blank" class="ma-4" width="300" hover>
+      <v-card href="https://github.com/TinkerTools/Tinker" target="blank" class="ma-4" width="300" hover>
         <v-card-title>TINKER</v-card-title>
         <v-card-text>
           A high-performance molecular modeling and simulation platform.
@@ -145,12 +145,6 @@
         <v-card-title>PME Optimizer</v-card-title>
         <v-card-text>
           A script to optimize the performance of PME. It runs a series of simulations and selects the parameters that give best performance for simulating a particular system on particular hardware.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://omniamd.squarespace.com/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>Omnia</v-card-title>
-        <v-card-text>
-          An open source ecosystem built around OpenMM.
         </v-card-text>
       </v-card>
     </v-container>
