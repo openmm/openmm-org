@@ -54,7 +54,7 @@
           to quickly prototype and develop new algorithms.
         </v-card-text>
       </v-card>
-      <v-card href="https://biomol.bme.utexas.edu/tinkergpu/index.php?title=Main_Page" target="blank" class="ma-4" width="300" hover>
+      <v-card href="https://github.com/TinkerTools/Tinker" target="blank" class="ma-4" width="300" hover>
         <v-card-title>TINKER</v-card-title>
         <v-card-text>
           A high-performance molecular modeling and simulation platform.
