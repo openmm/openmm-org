@@ -12,14 +12,14 @@ OpenMM allows users to model their systems using Amber and provide `prmtop`, and
 This allows users more familiar with the [Amber](http://ambermd.org) modeling environment to continue using their setup tools, while harnessing the speed and versatility of OpenMM. This also allows the use of non-standard force fields that have been published for use with Amber, such as metal ion models where dummy atoms are applied to mimic particular coordination geometries.
 Furthermore, this is facilitated by OpenMM's support for [Extra Particles](http://docs.openmm.org/7.1.0/userguide/application.html#adding-or-removing-extra-particles)---particles that are not ordinary atoms, such as these metal dummy atoms, virtual sites in many water models, etc.
 
-This example illustrates the use of Amber's `tleap` to set up a simulation of the Heat Shock Protein 90 (HSP90, Uniprot: [`P07900`](http://www.uniprot.org/uniprot/P07900), including the ADP-Mg2+ complex, where we will model the Mg2+ cation using the Sept Lab octahedral multisite model ([`DOI:10.1021/ct400177g`](https://doi.org/10.1021/ct400177g), [`Sept Lab`](http://septlab.engin.umich.edu/multisite-ions.html)), and use the Carlson parameters for ADP ([`DOI:10.1002/jcc.10262`](https://doi.org/10.1002/jcc.10262), downloaded from [`Bryce group Amber parameter database`](http://research.bmh.manchester.ac.uk/bryce/amber)).
+This example illustrates the use of Amber's `tleap` to set up a simulation of the Heat Shock Protein 90 (HSP90, Uniprot: [`P07900`](http://www.uniprot.org/uniprot/P07900), including the ADP-Mg2+ complex, where we will model the Mg2+ cation using the Sept Lab octahedral multisite model ([`DOI:10.1021/ct400177g`](https://doi.org/10.1021/ct400177g), [`Sept Lab`](http://septlab.engin.umich.edu/multisite-divalent-cation-models/)), and use the Carlson parameters for ADP ([`DOI:10.1002/jcc.10262`](https://doi.org/10.1002/jcc.10262), downloaded from [`Bryce group Amber parameter database`](http://research.bmh.manchester.ac.uk/bryce/amber)).
 
 We begin from the [1BYQ](https://www.rcsb.org/pdb/explore.do?structureId=1BYQ) PDB file, add missing residues (only those in the middle of the chain) and missing heavy atoms using PDBFixer.
 Using [MDTraj](http://mdtraj.org), residue and atom naming of the Mg2+ ion and the ADP are fixed to match those in the parameter files, and dummy atoms of the multisite Mg2+ are added.
 [`CONECT`](http://www.wwpdb.org/documentation/file-format-content/format33/sect10.html#CONECT) records for bonds between Mg2+ and ADP are deleted.
 Crystallographic waters are preserved for coordination to the Mg2+.
 
-Finally, `tleap` is run to add hydrogens and parametrize. We use the `ff99SBildn` force field, `mag.lib` and `frcmod_mg.mmg` files from the multisite Mg2+ model (downloaded from [`Sept Lab`](http://septlab.engin.umich.edu/multisite-ions.html)), `ADP.prep` and `frcmod.phos` files for the ADP parameters (downloaded from [`Bryce group Amber parameter database`](http://research.bmh.manchester.ac.uk/bryce/amber)). The `prmtop` and `inpcrd` files are saved for simulation in OpenMM.
+Finally, `tleap` is run to add hydrogens and parametrize. We use the `ff99SBildn` force field, `mag.lib` and `frcmod_mg.mmg` files from the multisite Mg2+ model (downloaded from [`Sept Lab`](http://septlab.engin.umich.edu/multisite-divalent-cation-models/)), `ADP.prep` and `frcmod.phos` files for the ADP parameters (downloaded from [`Bryce group Amber parameter database`](http://research.bmh.manchester.ac.uk/bryce/amber)). The `prmtop` and `inpcrd` files are saved for simulation in OpenMM.
 The multisite Mg2+ model requires a correction to the Lennard-Jones B-coefficients in the `prmtop` file, this is done by a short Python script (obtained by email from Prof. David Sept, [`Sept Lab`](http://septlab.engin.umich.edu)).
 ```python
 from pdbfixer import PDBFixer
@@ -61,7 +61,7 @@ for residue in traj.top.residues:
         # add dummy atoms
         central_index = residue.atom(0).index
         central_positions = traj.xyz[0,central_index]
-        # positions from magnesium_ms.pdb, Sept Lab: http://septlab.engin.umich.edu/multisite-ions.html
+        # positions from magnesium_ms.pdb, Sept Lab: http://septlab.engin.umich.edu/multisite-divalent-cation-models/
         dummy_positions = central_positions + [
             [0.0, 0.0, 0.09],
             [0.09, 0.0, 0.0],
