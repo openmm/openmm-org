@@ -15,6 +15,7 @@
           <ul>
             <li><a href="https://web.stanford.edu/group/markland/about.html" target="blank">Tom Markland</a></li>
             <li><a href="https://simtk.org/users/peastman" target="blank">Peter Eastman</a></li>
+            <li><a href="https://github.com/epretti" target="blank">Evan Pretti</a></li>
           </ul>
         </v-card-text>
       </v-card>
@@ -75,6 +76,12 @@
         <v-card-title>EPSRC</v-card-title>
         <v-card-text>
           OpenMM is currently (November 2022 - October 2025) supported by the <a href="https://www.ukri.org/councils/epsrc/" target="blank">Engineering and Physical Sciences Research Council</a> under grant <a href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/W030276/1" target="blank">EP/W030276/1</a>.
+        </v-card-text>
+      </v-card>
+      <v-card class="ma-2" width="300">
+        <v-card-title>Wellcome Trust</v-card-title>
+        <v-card-text>
+        OpenMM is currently (January 2025 - December 2026) supported by the <a href="https://wellcome.org/" target="blank">Wellcome Trust</a>.
         </v-card-text>
       </v-card>
     </v-container>
