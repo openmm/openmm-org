@@ -115,16 +115,32 @@
           If you use OpenMM for scientific research, please cite it.
         </v-card-text>
       </v-card>
-    </v-container>
-    <v-container class="d-flex flex-wrap justify-center">
-      <v-card href="https://doi.org/10.1021/acs.jpcb.3c06662" target="blank" class="ma-4" hover>
+      <v-card flat>
         <v-card-text>
-          Peter Eastman, Raimondas Galvelis, Raúl P. Peláez, Charlles R. A. Abreu, Stephen E. Farr, Emilio Gallicchio, Anton Gorenko, Michael M. Henry, Frank Hu, Jing Huang, Andreas Krämer, Julien Michel, Joshua A. Mitchell, Vijay S. Pande, João PGLM Rodrigues, Jaime Rodriguez-Guerra, Andrew C. Simmonett, Sukrit Singh, Jason Swails, Philip Turner, Yuanqing Wang, Ivy Zhang, John D. Chodera, Gianni De Fabritiis, and Thomas E. Markland. "OpenMM 8: Molecular Dynamics Simulation with Machine Learning Potentials." J. Phys. Chem. B 128(1), pp. 109-116 (2023). DOI: <a href="https://doi.org/10.1021/acs.jpcb.3c06662" target="blank">10.1021/acs.jpcb.3c06662</a>
+          <b>Primary Publication:</b>
+          <ul>
+            <li>Peter Eastman, Raimondas Galvelis, Raúl P. Peláez, Charlles R. A. Abreu, Stephen E. Farr, Emilio Gallicchio, Anton Gorenko, Michael M. Henry, Frank Hu, Jing Huang, Andreas Krämer, Julien Michel, Joshua A. Mitchell, Vijay S. Pande, João PGLM Rodrigues, Jaime Rodriguez-Guerra, Andrew C. Simmonett, Sukrit Singh, Jason Swails, Philip Turner, Yuanqing Wang, Ivy Zhang, John D. Chodera, Gianni De Fabritiis, and Thomas E. Markland. "OpenMM 8: Molecular Dynamics Simulation with Machine Learning Potentials." J. Phys. Chem. B 128(1), pp. 109-116 (2023). DOI: <a href="https://doi.org/10.1021/acs.jpcb.3c06662" target="blank">10.1021/acs.jpcb.3c06662</a></li>
+          </ul>
         </v-card-text>
       </v-card>
+      <v-expand-transition>
+        <v-card v-show="expand_publications" flat>
+          <v-card-text>
+            <b>Additional Publications:</b>
+            <ul>
+              <li>Peter Eastman, Jason Swails, John D. Chodera, Robert T. McGibbon, Yutong Zhao, Kyle A. Beauchamp, Lee-Ping Wang, Andrew C. Simmonett, Matthew P. Harrigan, Chaya D. Stern, Rafal P. Wiewiora, Bernard R. Brooks, and Vijay S. Pande. "OpenMM 7: Rapid development of high performance algorithms for molecular dynamics." PLOS Comput. Biol. 13(7): e1005659 (2017). DOI: <a href="https://doi.org/10.1371/journal.pcbi.1005659" target="blank">10.1371/journal.pcbi.1005659</a></li>
+              <li>Peter Eastman, Mark S. Friedrichs, John D. Chodera, Randall J. Radmer, Christopher M. Bruns, Joy P. Ku, Kyle A. Beauchamp, Thomas J. Lane, Lee-Ping Wang, Diwakar Shukla, Tony Tye, Mike Houston, Timo Stich, Christoph Klein, Michael R. Shirts, and Vijay S. Pande. "OpenMM 4: A Reusable, Extensible, Hardware Independent Library for High Performance Molecular Simulation." J. Chem. Theory Comput. 9(1):461-469 (2013). DOI: <a href="https://doi.org/10.1021/ct300857j" target="blank">10.1021/ct300857j</a></li>
+              <li>Peter Eastman and Vijay S. Pande. "OpenMM: A Hardware-Independent Framework for Molecular Simulations." Comput. Sci. Eng., 12:34-39 (2010).  DOI: <a href="https://doi.org/10.1109/MCSE.2010.27" target="blank">10.1109/MCSE.2010.27</a></li>
+              <li>Peter Eastman and Vijay S. Pande. "Efficient Nonbonded Interactions for Molecular Dynamics on a Graphics Processing Unit." J. Comput. Chem. 31:1268-72 (2010). DOI: <a href="https://doi.org/10.1002/jcc.21413" target="blank">10.1002/jcc.21413</a></li>
+              <li>Peter Eastman and Vijay S. Pande. "Constant Constraint Matrix Approximation: A Robust, Parallelizable Constraint Method for Molecular Simulations." J. Chem. Theory Comput. 6:434-437 (2010). DOI: <a href="https://doi.org/10.1021/ct900463w" target="blank">10.1021/ct900463w</a></li>
+              <li>Mark S. Friedrichs, Peter Eastman, Vishal Vaidyanathan, Mike Houston, Scott Legrand, Adam L. Beberg, Daniel L. Ensign, Christopher M. Bruns, Vijay S. Pande. "Accelerating Molecular Dynamic Simulation on Graphics Processing Units." J. Comput. Chem., 30(6):864-872 (2009). DOI: <a href="https://doi.org/10.1002/jcc.21209" target="blank">10.1002/jcc.21209</a></li>
+            </ul>
+          </v-card-text>
+        </v-card>
+      </v-expand-transition>
     </v-container>
     <v-container class="d-flex justify-center">
-      <v-btn href="https://simtk.org/plugins/publications/index.php/?group_id=161" target="blank">More publications</v-btn>
+      <v-btn @click="expand_publications = !expand_publications">{{ expand_publications_text }}</v-btn>
     </v-container>
     <v-container>
       <v-card flat>
@@ -192,3 +208,18 @@
     height:100%;
   }
 </style>
+
+<script>
+module.exports = {
+  data: function() {
+    return {
+      expand_publications: false
+    };
+  },
+  computed: {
+    expand_publications_text: function() {
+      return this.expand_publications ? "Hide Additional Publications" : "Show Additional Publications";
+    }
+  }
+}
+</script>
