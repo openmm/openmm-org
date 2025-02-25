@@ -159,7 +159,6 @@
           The C++ API provides information about OpenMM's C++ interface.
         </v-card-text>
       </v-card>
-
       <v-card href="https://openmm.github.io/openmm-cookbook/dev/cookbook" target="blank" class="ma-4" width="300" hover>
         <v-card-title>Cookbook (dev)</v-card-title>
         <v-card-text>
@@ -171,6 +170,31 @@
         <v-card-text>
           Tutorials for getting started with and exploring OpenMM.
         </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container>
+      <v-card flat>
+        <v-card-title>All Documentation versions</v-card-title>
+        <v-card-text>
+           Here you can find all available older documentation versions.
+           The latest stable release is {{ latest }}.
+        </v-card-text>
+      </v-card>
+      <v-expansion-panels class="pt-3" focusable>
+        <v-expansion-panel v-for="version of versions">
+          <v-expansion-panel-header class="text--secondary">
+            {{ version.name }}
+          </v-expansion-panel-header>
+          <v-expansion-panel-content class="text--secondary">
+            <v-list>
+              <v-list-item :href="version.url +'userguide/'">User Guide</v-list-item>
+              <v-list-item :href="version.url +'developerguide/'">Developer Guide</v-list-item>
+              <v-list-item :href="version.url +'api-c++/'">C++ API</v-list-item>
+              <v-list-item :href="version.url +'api-python/'">Python API</v-list-item>
+            </v-list>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
     </v-container>
   </div>
 </template>
@@ -192,3 +216,19 @@
     height:100%;
   }
 </style>
+
+
+<script>
+module.exports = {
+  data: function() { return {
+    versions: [],
+    latest: ''
+  }},
+  created: function() {
+    fetch('data/versions.json').then(res => res.json()).then(res => {
+      this.versions = res.versions.filter(item => item.name != 'development' && item.name != 'latest') 
+      this.latest = res.latest
+      })
+  }
+}
+</script>
