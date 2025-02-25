@@ -41,6 +41,12 @@
           A distributed computing infrastructure devoted to biomedical research to understand the function of biomolecules for health and disease.
         </v-card-text>
       </v-card>
+      <v-card href="https://github.com/pandegroup/pdbfixer/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>PDBFixer</v-card-title>
+        <v-card-text>
+          A powerful, flexible tool for preparing PDB files for molecular simulation or modeling, capable of running in interactive, Python-scriptable, or fully automated modes.
+        </v-card-text>
+      </v-card>
       <v-card href="https://siremol.org/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>SireMol</v-card-title>
         <v-card-text>
@@ -136,12 +142,6 @@
         <v-card-title>OpenMM-XTB</v-card-title>
         <v-card-text>
           A plugin providing a connection between OpenMM and the XTB quantum chemistry package.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://github.com/pandegroup/pdbfixer/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>PDBFixer</v-card-title>
-        <v-card-text>
-          A powerful, flexible tool for preparing PDB files for molecular simulation or modeling, capable of running in interactive, Python-scriptable, or fully automated modes.
         </v-card-text>
       </v-card>
       <v-card href="https://simtk.org/svn/pyopenmm/trunk/simtk/pyopenmm/extras/optimizepme.py" target="blank" class="ma-4" width="300" hover>
