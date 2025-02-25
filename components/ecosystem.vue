@@ -75,10 +75,11 @@
     </v-container>
     <v-container>
       <v-card flat>
-        <v-card-title>OpenMM Plugins</v-card-title>
+        <v-card-title>OpenMM Tools and Plugins</v-card-title>
         <v-card-text>
-          Expand OpenMM capabilities by interfacing with other software. The plugins are developed
-          and released independetly from OpenMM.
+          Resources that make it easier to use OpenMM, and plugins that expand
+          OpenMM capabilities by interfacing with other software. The plugins
+          are developed and released independently from OpenMM.
         </v-card-text>
       </v-card>
     </v-container>
@@ -95,12 +96,6 @@
           Provides a connection between OpenMM and PLUMED. It allows you to bias or analyze an OpenMM simulation based on collective variables.
         </v-card-text>
       </v-card>
-      <v-card href="https://github.com/amd/openmm-hip" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>OpenMM-HIP</v-card-title>
-        <v-card-text>
-          A high performance OpenMM platform for AMD GPUs.
-        </v-card-text>
-      </v-card>
       <v-card href="https://github.com/openmm/openmm-tensorflow/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>OpenMM-TensorFlow</v-card-title>
         <v-card-text>
@@ -113,16 +108,24 @@
           This is a plugin for OpenMM that allows neural networks to be used for defining forces. It is implemented with TensorRT.
         </v-card-text>
       </v-card>
-    </v-container>
-    <v-container>
-      <v-card flat>
-        <v-card-title>OpenMM Tools</v-card-title>
+      <v-card href="https://github.com/openmm/openmm-ml/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>OpenMM-ML</v-card-title>
         <v-card-text>
-          Resources that make it easier to use OpenMM.
+          A high-level API for using machine learning models, including ANI-1ccx, ANI-2x, and MACE-OFF23, in OpenMM simulations.
         </v-card-text>
       </v-card>
-    </v-container>
-    <v-container class="d-flex flex-wrap justify-center">
+      <v-card href="https://github.com/openmm/openmm-xtb/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>OpenMM-XTB</v-card-title>
+        <v-card-text>
+          A plugin providing a connection between OpenMM and the XTB quantum chemistry package.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/openmm/openmmforcefields/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>openmmforcefields</v-card-title>
+        <v-card-text>
+          OpenMM support for AMBER, CHARMM, OpenFF, and Espaloma force fields, and small molecule parameterization with GAFF, Espaloma and the OpenFF Toolkit.
+        </v-card-text>
+      </v-card>
       <v-card href="https://openmmtools.readthedocs.io/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>OpenMMTools</v-card-title>
         <v-card-text>

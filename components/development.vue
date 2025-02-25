@@ -14,7 +14,7 @@
         <v-card-text>
           <ul>
             <li><a href="https://web.stanford.edu/group/markland/about.html" target="blank">Tom Markland</a></li>
-            <li><a href="https://simtk.org/users/peastman" target="blank">Peter Eastman</a></li>
+            <li><a href="https://github.com/peastman" target="blank">Peter Eastman</a></li>
             <li><a href="https://github.com/epretti" target="blank">Evan Pretti</a></li>
           </ul>
         </v-card-text>

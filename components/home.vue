@@ -46,22 +46,6 @@
     </v-container>
     <v-container>
       <v-card flat>
-        <v-card-title>Announcements</v-card-title>
-      </v-card>
-    </v-container>
-    <v-container class="d-flex justify-center">
-      <v-card href="https://www.compscience.org/assets/jobs/PDPHD2021MD.pdf" target="blank" class="ma-4" width="800" hover>
-        <v-card-title>PhD and post-doctoral positions</v-card-title>
-        <v-card-text>
-          We are looking to recruit multiple positions at PhD and post-doctoral levels to work
-          on OpenMM.
-          The projects are about the next generation molecular simulations and neural network potentials.
-          The positions are at the Computational Science Laboratory, University Pompeu Fabra, Barcelona.
-        </v-card-text>
-      </v-card>
-    </v-container>
-    <v-container>
-      <v-card flat>
         <v-card-title>The Power of Python Scripting</v-card-title>
         <v-card-text>
           Use Python scripting to create your own simulation protocols in just a few lines of code.

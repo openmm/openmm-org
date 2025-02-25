@@ -54,9 +54,31 @@
     </v-container>
     <v-container>
       <v-card flat>
+        <v-card-title>Support</v-card-title>
+        <v-card-text>
+          For bug reports, feature requests, specific questions, etc.
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container class="d-flex flex-wrap justify-center">
+      <v-card href="https://github.com/openmm/openmm/issues" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Issue Tracker</v-card-title>
+        <v-card-text>
+          Report bugs and request features. Please describe clearly what you want to achieve.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/openmm/openmm/discussions" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Forum</v-card-title>
+        <v-card-text>
+          General discussion on using and developing OpenMM.
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container>
+      <v-card flat>
         <v-card-title>Workshop Videos</v-card-title>
         <v-card-text>
-           Every year, we hold several OpenMM workshops at Stanford University. After you have successfully installed OpenMM, here are some introductory videos from previous workshops.
+           After you have successfully installed OpenMM, here are some introductory videos from previous OpenMM workshops held at Stanford University.
         </v-card-text>
       </v-card>
     </v-container>
@@ -83,28 +105,6 @@
           <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLGL4XGw8noUwrh16gsC9H_D03fED3IcHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
-        </v-card-text>
-      </v-card>
-    </v-container>
-    <v-container>
-      <v-card flat>
-        <v-card-title>Support</v-card-title>
-        <v-card-text>
-          For bug reports, feature requests, specific questions, etc.
-        </v-card-text>
-      </v-card>
-    </v-container>
-    <v-container class="d-flex flex-wrap justify-center">
-      <v-card href="https://github.com/openmm/openmm/issues" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>Issue Tracker</v-card-title>
-        <v-card-text>
-          Report bugs and request features. Please describe clearly what you want to achieve.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://github.com/openmm/openmm/discussions" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>Forum</v-card-title>
-        <v-card-text>
-          General discussion on using and developing OpenMM.
         </v-card-text>
       </v-card>
     </v-container>
