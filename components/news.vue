@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-container class="d-flex justify-center">
-      <a class="twitter-timeline" href="https://twitter.com/openmm_toolkit?ref_src=twsrc%5Etfw" width="600"></a>
+      <bsky-embed username="openmm.org" limit="5" load-more="true"></bsky-embed>
     </v-container>
     <v-container class="d-flex justify-center">
-      <v-btn href="https://twitter.com/openmm_toolkit?ref_src=twsrc%5Etfw" target="blank">Read Tweets</v-btn>
+      <v-btn href="https://bsky.app/profile/openmm.org" target="blank">Read posts on Bluesky</v-btn>
     </v-container>
   </div>
 </template>
@@ -13,7 +13,7 @@
 module.exports = {
   mounted: function() {
     const script = document.createElement('script');
-    script.src = 'https://platform.twitter.com/widgets.js';
+    script.src = 'https://cdn.jsdelivr.net/npm/bsky-embed@0.2.3/dist/bsky-embed.es.min.js';
     this.$el.appendChild(script)
   }  
 }
