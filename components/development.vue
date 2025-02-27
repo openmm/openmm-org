@@ -9,7 +9,7 @@
       </v-card>
     </v-container>
     <v-container class="d-flex flex-wrap justify-center">
-      <v-card href="https://web.stanford.edu/group/markland/" target="blank" class="ma-4" width="300" hover>
+      <v-card href="https://www.marklandlab.com/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>Markland Lab</v-card-title>
         <v-card-text>
           <ul>
