@@ -144,10 +144,16 @@
           A plugin providing a connection between OpenMM and the XTB quantum chemistry package.
         </v-card-text>
       </v-card>
-      <v-card href="https://simtk.org/svn/pyopenmm/trunk/simtk/pyopenmm/extras/optimizepme.py" target="blank" class="ma-4" width="300" hover>
+      <v-card href="https://raw.githubusercontent.com/openmm/openmm/refs/heads/master/examples/extras/optimizepme.py" target="blank" class="ma-4" width="300" hover>
         <v-card-title>PME Optimizer</v-card-title>
         <v-card-text>
           A script to optimize the performance of PME. It runs a series of simulations and selects the parameters that give best performance for simulating a particular system on particular hardware.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://raw.githubusercontent.com/openmm/openmm/refs/heads/master/examples/extras/rigid.py" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Rigid Body Creator</v-card-title>
+        <v-card-text>
+          A script implementing rigid bodies in OpenMM by adding appropriate constraints and converting particles to virtual sites.
         </v-card-text>
       </v-card>
     </v-container>
