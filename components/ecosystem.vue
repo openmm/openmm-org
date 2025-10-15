@@ -15,12 +15,6 @@
           The next generation molecular dynamic simulation engine designed to accelerate drug discovery process by providing all necessary capabilities.
         </v-card-text>
       </v-card>
-      <v-card href="https://github.com/Gallicchio-Lab/AToM-OpenMM" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>AToM-OpenMM</v-card-title>
-        <v-card-text>
-          An OpenMM-based framework for absolute and relative binding free energy calculations with the Alchemical Transfer Method
-        </v-card-text>
-      </v-card>
       <v-card href="https://www.charmm.org/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>CHARMM</v-card-title>
         <v-card-text>
