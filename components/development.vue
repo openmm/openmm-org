@@ -13,7 +13,7 @@
         <v-card-title>Markland Lab</v-card-title>
         <v-card-text>
           <ul>
-            <li><a href="https://web.stanford.edu/group/markland/about.html" target="blank">Tom Markland</a></li>
+            <li><a href="https://www.marklandlab.com/" target="blank">Tom Markland</a></li>
             <li><a href="https://github.com/peastman" target="blank">Peter Eastman</a></li>
             <li><a href="https://github.com/epretti" target="blank">Evan Pretti</a></li>
           </ul>
