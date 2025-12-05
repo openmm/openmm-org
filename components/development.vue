@@ -69,7 +69,7 @@
       <v-card class="ma-2" width="300">
         <v-card-title>National Institutes of Health</v-card-title>
         <v-card-text>
-        OpenMM is currently (July 2021 - Mar 2025) supported by the <a href="https://www.nigms.nih.gov/" target="blank">National Institute of General Medical Sciences</a> of the <a href="https://www.nih.gov/" target="blank">National Institutes of Health</a> under award number <a href="https://reporter.nih.gov/search/XnJncpjxUkSKiIFzf9su9A/project-details/10100573" target="blank">R01GM140090</a>.
+        OpenMM is currently (July 2021 - May 2029) supported by the <a href="https://www.nigms.nih.gov/" target="blank">National Institute of General Medical Sciences</a> of the <a href="https://www.nih.gov/" target="blank">National Institutes of Health</a> under award number <a href="https://reporter.nih.gov/search/XnJncpjxUkSKiIFzf9su9A/project-details/10979091" target="blank">2R01GM140090-05</a>.
         </v-card-text>
       </v-card>
       <v-card target="blank" class="ma-2" width="300">
