@@ -75,7 +75,7 @@
       <v-card target="blank" class="ma-2" width="300">
         <v-card-title>EPSRC</v-card-title>
         <v-card-text>
-          OpenMM was supported (November 2022 - October 2025) by the <a href="https://www.ukri.org/councils/epsrc/" target="blank">Engineering and Physical Sciences Research Council</a> under grant <a href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/W030276/1" target="blank">EP/W030276/1</a>.
+          OpenMM is currently (November 2022 - January 2026) supported by the <a href="https://www.ukri.org/councils/epsrc/" target="blank">Engineering and Physical Sciences Research Council</a> under grant <a href="https://gtr.ukri.org/project/86A94FF4-98E1-4E38-8CF6-BE51079A53AD" target="blank">EP/W030276/1</a>.
         </v-card-text>
       </v-card>
       <v-card class="ma-2" width="300">
