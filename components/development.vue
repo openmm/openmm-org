@@ -63,25 +63,31 @@
       <v-card href="https://chanzuckerberg.com/eoss/proposals/openmm-key-infrastructure-for-biomolecular-modeling-and-simulation/" target="blank" class="ma-2" width="300" hover>
         <v-card-title>Chan Zuckerberg Initiative</v-card-title>
         <v-card-text>
-          OpenMM was supported (May 2020 - Apr 2021) by the CZI Essential Open Source Software for Science grant.
+          OpenMM was supported (May 2020 - April 2021) by the CZI Essential Open Source Software for Science grant.
         </v-card-text>
       </v-card>
       <v-card class="ma-2" width="300">
         <v-card-title>National Institutes of Health</v-card-title>
         <v-card-text>
-        OpenMM is currently (July 2021 - Mar 2025) supported by the <a href="https://www.nigms.nih.gov/" target="blank">National Institute of General Medical Sciences</a> of the <a href="https://www.nih.gov/" target="blank">National Institutes of Health</a> under award number <a href="https://reporter.nih.gov/search/XnJncpjxUkSKiIFzf9su9A/project-details/10100573" target="blank">R01GM140090</a>.
+        OpenMM was supported (July 2021 - March 2025) by the <a href="https://www.nigms.nih.gov/" target="blank">National Institute of General Medical Sciences</a> of the <a href="https://www.nih.gov/" target="blank">National Institutes of Health</a> under award number <a href="https://reporter.nih.gov/search/XnJncpjxUkSKiIFzf9su9A/project-details/10100573" target="blank">1R01GM140090</a>.
         </v-card-text>
       </v-card>
       <v-card target="blank" class="ma-2" width="300">
         <v-card-title>EPSRC</v-card-title>
         <v-card-text>
-          OpenMM is currently (November 2022 - October 2025) supported by the <a href="https://www.ukri.org/councils/epsrc/" target="blank">Engineering and Physical Sciences Research Council</a> under grant <a href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/W030276/1" target="blank">EP/W030276/1</a>.
+          OpenMM is currently (November 2022 - January 2026) supported by the <a href="https://www.ukri.org/councils/epsrc/" target="blank">Engineering and Physical Sciences Research Council</a> under grant <a href="https://gtr.ukri.org/project/86A94FF4-98E1-4E38-8CF6-BE51079A53AD" target="blank">EP/W030276/1</a>.
         </v-card-text>
       </v-card>
       <v-card class="ma-2" width="300">
         <v-card-title>Wellcome Trust</v-card-title>
         <v-card-text>
         OpenMM is currently (January 2025 - December 2026) supported by the <a href="https://wellcome.org/" target="blank">Wellcome Trust</a>.
+        </v-card-text>
+      </v-card>
+      <v-card class="ma-2" width="300">
+        <v-card-title>National Institutes of Health</v-card-title>
+        <v-card-text>
+        OpenMM is currently (September 2025 - May 2029) supported by the <a href="https://www.nigms.nih.gov/" target="blank">National Institute of General Medical Sciences</a> of the <a href="https://www.nih.gov/" target="blank">National Institutes of Health</a> under award number <a href="https://reporter.nih.gov/search/XnJncpjxUkSKiIFzf9su9A/project-details/10979091" target="blank">2R01GM140090</a>.
         </v-card-text>
       </v-card>
     </v-container>
