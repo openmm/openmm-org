@@ -2,9 +2,10 @@
   <div>
     <v-container>
       <v-card flat>
-        <v-card-title>Simulation speed</v-card-title>
+        <v-card-title>Simulation Speed</v-card-title>
         <v-card-text>
-          Benchmarks of simulation speed on typical biochemical systems.
+          <p>Benchmarks of simulation speed on typical biochemical systems.</p>
+          <p>We acknowledge NVIDIA for providing compute support used to run these benchmarks.</p>
         </v-card-text>
       </v-card>
     </v-container>
