@@ -236,7 +236,7 @@ module.exports = {
         minValue: '0'
       },
       vAxis: {
-        title: 'Benckmark',
+        title: 'Benchmark',
         textStyle: { fontSize: 14, color: '#616161' },
         titleTextStyle: { bold: true, italic: false, fontSize: 14, color: '#616161' }
       },
@@ -245,13 +245,34 @@ module.exports = {
         textStyle: { fontSize: 14, color: '#616161' }
       }
     };
+    const colors = {
+      "GB10": "#3366CC",
+      "RTX 5070 Ti": "#DC3912",
+      "RTX 4080": "#FF9900",
+      "RTX 6000 Ada": "#109618",
+      "L40": "#990099",
+      "L40S": "#0099C6",
+      "A100": "#DD4477",
+      "H100": "#66AA00",
+      "1x H100": "#66AA00",
+      "2x H100": "#8CBF00",
+      "3x H100": "#B2D400",
+      "4x H100": "#D9EA00",
+      "H200": "#B82E2E",
+      "B200": "#316395"
+    };
     google.charts.setOnLoadCallback(() => {
       fetch('data/benchmarks.json').then(res => {
         res.json().then(json => {
           Object.entries(json).forEach(([name, data]) => {
             const chart = new google.visualization.BarChart(document.getElementById(name));
             data = google.visualization.arrayToDataTable(data);
-            chart.draw(data, options)
+            var rowColors = [];
+            for(var column = 1; column < data.getNumberOfColumns(); column++) {
+              rowColors.push(colors[data.getColumnLabel(column)]);
+            }
+            var drawOptions = {colors: rowColors};
+            chart.draw(data, Object.assign(drawOptions, options));
           });
         })
       })
