@@ -51,7 +51,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (GB10, RTX 5070 Ti, B200) GPUs.
+                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -96,7 +96,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (GB10, RTX 5070 Ti, B200) GPUs.
+                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -132,7 +132,7 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (GB10, RTX 5070 Ti, B200) GPUs.</li>
+                  <li>CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.</li>
                   <li>CUDA platform parallelizing the simulation across multiple H100 GPUs connected by NVLink-4.</li>
                 </ul>
               </v-expansion-panel-content>
@@ -170,7 +170,7 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (GB10, RTX 5070 Ti, B200) GPUs.</li>
+                  <li>CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.</li>
                   <li>CUDA platform parallelizing the simulation across multiple H100 GPUs connected by NVLink-4.</li>
                 </ul>
               </v-expansion-panel-content>
@@ -208,7 +208,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (GB10, RTX 5070 Ti, B200) GPUs.
+                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -246,7 +246,7 @@ module.exports = {
       }
     };
     const colors = {
-      "GB10": "#3366CC",
+      "DGX Spark": "#3366CC",
       "RTX 5070 Ti": "#DC3912",
       "RTX 4080": "#FF9900",
       "RTX 6000 Ada": "#109618",
