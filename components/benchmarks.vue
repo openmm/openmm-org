@@ -2,9 +2,10 @@
   <div>
     <v-container>
       <v-card flat>
-        <v-card-title>Simulation speed</v-card-title>
+        <v-card-title>Simulation Speed</v-card-title>
         <v-card-text>
-          Benchmarks of simulation speed on typical biochemical systems.
+          <p>Benchmarks of simulation speed on typical biochemical systems.</p>
+          <p>We acknowledge NVIDIA for providing compute support used to run these benchmarks.</p>
         </v-card-text>
       </v-card>
     </v-container>
@@ -12,7 +13,7 @@
       <v-card class="mb-6">
         <v-card-title>Dihydrofolate Reductase (DHFR)</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM 8.0 was benchmarked on the dihydrofolate reductase (DHFR) models taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
+          OpenMM 8.4 was benchmarked on the dihydrofolate reductase (DHFR) models taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
           This is a 159 residue protein with 2489 atoms.
           The version used for explicit solvent simulations included 7023 TIP3P water molecules, giving a total of 23,558 atoms.
           All simulations used the AMBER99SB force field and a Langevin integrator.
@@ -50,7 +51,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100), Ada Lovelace (RTX 4080, RTX 4090), and Hopper (H100) GPUs.
+                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -60,7 +61,7 @@
       <v-card class="mb-6">
         <v-card-title>Apolipoprotein A1 (ApoA1)</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM 8.0 was benchmarked on Apolipoprotein A1 (ApoA1). This consists of 392 protein residues, 160 POPC lipids, and 21,458 water molecules, for a total of 92,224 atoms.
+          OpenMM 8.4 was benchmarked on Apolipoprotein A1 (ApoA1). This consists of 392 protein residues, 160 POPC lipids, and 21,458 water molecules, for a total of 92,224 atoms.
           All simulations used the AMBER14 force field.
           <v-expansion-panels class="pt-3" focusable>
             <v-expansion-panel>
@@ -95,7 +96,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100), Ada Lovelace (RTX 4080, RTX 4090), and Hopper (H100) GPUs.
+                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -105,7 +106,7 @@
       <v-card class="mb-6">
         <v-card-title>Cellulose</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM 8.0 was benchmarked on the cellulose model taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
+          OpenMM 8.4 was benchmarked on the cellulose model taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
           It consists of a set of cellulose molecules (91,044 atoms) solvated with 105,855 water molecules, for a total of 408,609 atoms.
           <v-expansion-panels class="pt-3" focusable>
             <v-expansion-panel>
@@ -131,8 +132,8 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on a variety of Ampere (RTX 3090, A100), Ada Lovelace (RTX 4080, RTX 4090), and Hopper (H100) GPUs.</li>
-                  <li>CUDA platform parallelizing the simulation across multiple A100 GPUs connected by NVLink-3.</li>
+                  <li>CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.</li>
+                  <li>CUDA platform parallelizing the simulation across multiple H100 GPUs connected by NVLink-4.</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -143,7 +144,7 @@
       <v-card class="mb-6">
         <v-card-title>Satellite Tobacco Mosaic Virus (STMV)</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM 8.0 was benchmarked on the satellite tobacco mosaic virus (STMV) model taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
+          OpenMM 8.4 was benchmarked on the satellite tobacco mosaic virus (STMV) model taken from the <a href="https://ambermd.org/GPUPerformance.php" target="blank">Joint Amber/Charmm</a> benchmark.
           It consists of 8820 protein residues, 949 RNA bases, 300,053 water molecules, and 649 sodium ions, for a total of 1,067,095 atoms.
           <v-expansion-panels class="pt-3" focusable>
             <v-expansion-panel>
@@ -169,8 +170,8 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on a variety of Ampere (RTX 3090, A100), Ada Lovelace (RTX 4080, RTX 4090), and Hopper (H100) GPUs.</li>
-                  <li>CUDA platform parallelizing the simulation across multiple A100 GPUs connected by NVLink-3.</li>
+                  <li>CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.</li>
+                  <li>CUDA platform parallelizing the simulation across multiple H100 GPUs connected by NVLink-4.</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -181,7 +182,7 @@
       <v-card class="mb-6">
         <v-card-title>AMOEBA DHFR</v-card-title>
         <v-card-text class="text-justify">
-          OpenMM 8.0 was benchmarked on the DHFR models described above with the AMOEBA polarizable force field.  Full mutual polarization was used,
+          OpenMM 8.4 was benchmarked on the DHFR models described above with the AMOEBA polarizable force field.  Full mutual polarization was used,
           with induced dipoles iterated until they converged to a tolerance of 1e-5.
           <v-expansion-panels class="pt-3" focusable>
             <v-expansion-panel>
@@ -207,7 +208,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on a variety of Ampere (RTX 3090, A100), Ada Lovelace (RTX 4080, RTX 4090), and Hopper (H100) GPUs.
+                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -235,7 +236,7 @@ module.exports = {
         minValue: '0'
       },
       vAxis: {
-        title: 'Benckmark',
+        title: 'Benchmark',
         textStyle: { fontSize: 14, color: '#616161' },
         titleTextStyle: { bold: true, italic: false, fontSize: 14, color: '#616161' }
       },
@@ -244,13 +245,34 @@ module.exports = {
         textStyle: { fontSize: 14, color: '#616161' }
       }
     };
+    const colors = {
+      "DGX Spark": "#3366CC",
+      "RTX 5070 Ti": "#DC3912",
+      "RTX 4080": "#FF9900",
+      "RTX 6000 Ada": "#109618",
+      "L40": "#990099",
+      "L40S": "#0099C6",
+      "A100": "#DD4477",
+      "H100": "#66AA00",
+      "1x H100": "#66AA00",
+      "2x H100": "#8CBF00",
+      "3x H100": "#B2D400",
+      "4x H100": "#D9EA00",
+      "H200": "#B82E2E",
+      "B200": "#316395"
+    };
     google.charts.setOnLoadCallback(() => {
       fetch('data/benchmarks.json').then(res => {
         res.json().then(json => {
           Object.entries(json).forEach(([name, data]) => {
             const chart = new google.visualization.BarChart(document.getElementById(name));
             data = google.visualization.arrayToDataTable(data);
-            chart.draw(data, options)
+            var rowColors = [];
+            for(var column = 1; column < data.getNumberOfColumns(); column++) {
+              rowColors.push(colors[data.getColumnLabel(column)]);
+            }
+            var drawOptions = {colors: rowColors};
+            chart.draw(data, Object.assign(drawOptions, options));
           });
         })
       })
