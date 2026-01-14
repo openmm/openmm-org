@@ -51,7 +51,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.
+                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, RTX PRO 6000, B200) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -96,7 +96,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.
+                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, RTX PRO 6000, B200) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -132,7 +132,7 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.</li>
+                  <li>CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, RTX PRO 6000, B200) GPUs.</li>
                   <li>CUDA platform parallelizing the simulation across multiple H100 GPUs connected by NVLink-4.</li>
                 </ul>
               </v-expansion-panel-content>
@@ -170,7 +170,7 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.</li>
+                  <li>CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, RTX PRO 6000, B200) GPUs.</li>
                   <li>CUDA platform parallelizing the simulation across multiple H100 GPUs connected by NVLink-4.</li>
                 </ul>
               </v-expansion-panel-content>
@@ -208,7 +208,7 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, B200) GPUs.
+                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, RTX PRO 6000, B200) GPUs.
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -250,16 +250,17 @@ module.exports = {
       "RTX 5070 Ti": "#DC3912",
       "RTX 4080": "#FF9900",
       "RTX 6000 Ada": "#109618",
-      "L40": "#990099",
-      "L40S": "#0099C6",
-      "A100": "#DD4477",
+      "RTX PRO 6000": "#990099",
+      "L40": "#0099C6",
+      "L40S": "#DD4477",
+      "A100": "#316395",
       "H100": "#66AA00",
       "1x H100": "#66AA00",
       "2x H100": "#8CBF00",
       "3x H100": "#B2D400",
       "4x H100": "#D9EA00",
       "H200": "#B82E2E",
-      "B200": "#316395"
+      "B200": "#22AA99"
     };
     google.charts.setOnLoadCallback(() => {
       fetch('data/benchmarks.json').then(res => {
