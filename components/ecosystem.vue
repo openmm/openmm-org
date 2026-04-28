@@ -72,12 +72,6 @@
           A Weighted Ensemble (WE) simulation framework in Python with first class support for OpenMM.
         </v-card-text>
       </v-card>
-      <v-card href="http://getyank.org/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>YANK</v-card-title>
-        <v-card-text>
-          A GPU-accelerated Python framework for exploring algorithms for alchemical free energy calculations.
-        </v-card-text>
-      </v-card>
     </v-container>
     <v-container>
       <v-card flat>
