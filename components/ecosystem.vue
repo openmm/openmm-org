@@ -72,12 +72,6 @@
           A Weighted Ensemble (WE) simulation framework in Python with first class support for OpenMM.
         </v-card-text>
       </v-card>
-      <v-card href="http://getyank.org/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>YANK</v-card-title>
-        <v-card-text>
-          A GPU-accelerated Python framework for exploring algorithms for alchemical free energy calculations.
-        </v-card-text>
-      </v-card>
     </v-container>
     <v-container>
       <v-card flat>
@@ -118,18 +112,6 @@
         <v-card-title>OpenMM Setup</v-card-title>
         <v-card-text>
           A graphical application to set up and run simulations with OpenMM. Includes pull-down menus, pop-up tips, error checking, and live script building
-        </v-card-text>
-      </v-card>
-      <v-card href="https://github.com/openmm/openmm-tensorflow/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>OpenMM-TensorFlow</v-card-title>
-        <v-card-text>
-          This is a plugin for OpenMM that allows neural networks to be used for defining forces. It is implemented with TensorFlow.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://github.com/openmm/openmm-tensorrt/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>OpenMM-TensorRT</v-card-title>
-        <v-card-text>
-          This is a plugin for OpenMM that allows neural networks to be used for defining forces. It is implemented with TensorRT.
         </v-card-text>
       </v-card>
       <v-card href="https://openmmtools.readthedocs.io/" target="blank" class="ma-4" width="300" hover>

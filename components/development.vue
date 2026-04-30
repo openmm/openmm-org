@@ -24,7 +24,7 @@
         <v-card-text>
           <ul>
             <li><a href="https://www.choderalab.org/members#john-chodera" target="blank">John Chodera</a></li>
-            <li><a href="https://www.choderalab.org/members#jaime-rodriguez-guerra" target="blank">Jaime Rodriguez-Guerra</a></li>
+            <li><a href="https://chrisiacovella.github.io/" target="blank">Chris Iacovella</a></li>
           </ul>
         </v-card-text>
       </v-card>
@@ -41,15 +41,7 @@
         <v-card-text>
           <ul>
             <li><a href="https://www.julienmichel.net/lab/julien" target="blank">Julien Michel</a></li>
-          </ul>
-        </v-card-text>
-      </v-card>
-      <v-card href="https://www.lobos.nih.gov/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>NIH</v-card-title>
-        <v-card-text>
-          <ul>
-            <li><a href="https://www.lobos.nih.gov/cbs/bbrooks.shtml" target="blank">Bernard Brooks</a></li>
-            <li><a href="https://scholar.google.com/citations?user=nucvqKoAAAAJ&hl=en" target="blank">Andrew Simmonett</a></li>
+            <li><a href="https://github.com/JMorado" target="blank">João Morado</a></li>
           </ul>
         </v-card-text>
       </v-card>
@@ -69,13 +61,13 @@
       <v-card class="ma-2" width="300">
         <v-card-title>Wellcome Trust</v-card-title>
         <v-card-text>
-        OpenMM is currently (January 2025 - December 2026) supported by the <a href="https://wellcome.org/" target="blank">Wellcome Trust</a>.
+        OpenMM is currently (January 2025 - December 2027) supported by the <a href="https://wellcome.org/" target="blank">Wellcome Trust</a>.
         </v-card-text>
       </v-card>
       <v-card target="blank" class="ma-2" width="300">
         <v-card-title>EPSRC</v-card-title>
         <v-card-text>
-          OpenMM is currently (November 2022 - January 2026) supported by the <a href="https://www.ukri.org/councils/epsrc/" target="blank">Engineering and Physical Sciences Research Council</a> under grant <a href="https://gtr.ukri.org/project/86A94FF4-98E1-4E38-8CF6-BE51079A53AD" target="blank">EP/W030276/1</a>.
+          OpenMM was supported (November 2022 - January 2026) by the <a href="https://www.ukri.org/councils/epsrc/" target="blank">Engineering and Physical Sciences Research Council</a> under grant <a href="https://gtr.ukri.org/project/86A94FF4-98E1-4E38-8CF6-BE51079A53AD" target="blank">EP/W030276/1</a>.
         </v-card-text>
       </v-card>
       <v-card class="ma-2" width="300">
