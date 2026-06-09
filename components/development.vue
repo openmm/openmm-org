@@ -83,29 +83,5 @@
         </v-card-text>
       </v-card>
     </v-container>
-    <v-container>
-      <v-card flat>
-        <v-card-title>OpenMM Consortium</v-card-title>
-        <v-card-text>
-          A community of researchers and developers supporting OpenMM.
-        </v-card-text>
-      </v-card>
-    </v-container>
-    <v-container class="d-flex flex-wrap justify-center">
-      <v-card v-for="person of people.consortium" :key="person" :href="person.url" target="blank" class="ma-2" width="300" hover>
-        <v-card-text>{{ person.name }}</v-card-text>
-      </v-card>
-    </v-container>
   </div>
 </template>
-
-<script>
-module.exports = {
-  data: function() { return {
-    people: []
-  }},
-  created: function() {
-    fetch('data/people.json').then(res => res.json()).then(people => this.people = people)
-  }
-}
-</script>
