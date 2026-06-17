@@ -48,6 +48,19 @@
     </v-container>
     <v-container>
       <v-card flat>
+        <v-card-title>Collaborations</v-card-title>
+        <v-card-text>
+          We are open to collaborating with individuals and groups interested in
+          improving the OpenMM ecosystem's support for various molecular
+          simulation methods and applications.  Please reach out to a member of
+          the Markland Lab (see above) or contact us via our
+          <a href="https://github.com/openmm/openmm/discussions">discussion forum</a>
+          for more information.
+        </v-card-text>
+      </v-card>
+    </v-container>
+    <v-container>
+      <v-card flat>
         <v-card-title>Funding Sources</v-card-title>
       </v-card>
     </v-container>
