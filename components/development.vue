@@ -50,12 +50,12 @@
       <v-card flat>
         <v-card-title>Collaborations</v-card-title>
         <v-card-text>
-          We are open to collaborating with individuals and groups interested in
-          improving the OpenMM ecosystem's support for various molecular
-          simulation methods and applications.  Please reach out to a member of
-          the Markland Lab (see above) or contact us via our
-          <a href="https://github.com/openmm/openmm/discussions">discussion forum</a>
-          for more information.
+          We are consistently working with groups ranging from academic
+          researchers to industry to improve and extend the OpenMM ecosystem. If
+          you have features or improvement suggestions, please contact us via
+          our <a href="https://github.com/openmm/openmm/discussions">discussion forum</a>
+          or reach out to a member of the OpenMM Development team at the
+          Markland Lab (see above).
         </v-card-text>
       </v-card>
     </v-container>
