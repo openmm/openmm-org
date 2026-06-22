@@ -16,7 +16,7 @@
       <v-card href="https://github.com/openmm/openmm-ml/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>OpenMM-ML</v-card-title>
         <v-card-text>
-          A high-level API for using machine learning models, including ANI-1ccx, ANI-2x, and MACE-OFF23, in OpenMM simulations.
+          A high-level API for using machine learning models, including AceFF, AIMNet2, ANI, FeNNix, MACE, Orb, and more, in OpenMM simulations.
         </v-card-text>
       </v-card>
       <v-card href="https://github.com/openmm/openmmforcefields/" target="blank" class="ma-4" width="300" hover>
