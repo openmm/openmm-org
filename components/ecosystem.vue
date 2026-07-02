@@ -13,28 +13,34 @@
       </v-card>
     </v-container>
     <v-container class="d-flex flex-wrap justify-center">
-      <v-card href="https://github.com/openmm/openmmforcefields/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>openmmforcefields</v-card-title>
-        <v-card-text>
-          OpenMM support for AMBER, CHARMM, OpenFF, and Espaloma force fields, and small molecule parameterization with GAFF, Espaloma and the OpenFF Toolkit.
-        </v-card-text>
-      </v-card>
       <v-card href="https://github.com/openmm/openmm-ml/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>OpenMM-ML</v-card-title>
         <v-card-text>
-          A high-level API for using machine learning models, including ANI-1ccx, ANI-2x, and MACE-OFF23, in OpenMM simulations.
+          A high-level API for using machine learning models, including AceFF, AIMNet2, ANI, FeNNix, MACE, Orb, and more, in OpenMM simulations.
         </v-card-text>
       </v-card>
-      <v-card href="https://github.com/openmm/openmm-plumed/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>OpenMM-PLUMED</v-card-title>
+      <v-card href="https://github.com/openmm/openmmforcefields/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>OpenMMForceFields</v-card-title>
         <v-card-text>
-          Provides a connection between OpenMM and PLUMED. It allows you to bias or analyze an OpenMM simulation based on collective variables.
+          OpenMM support for AMBER, CHARMM, OpenFF, and Espaloma force fields, and small molecule parameterization with GAFF, Espaloma and the OpenFF Toolkit.
         </v-card-text>
       </v-card>
       <v-card href="https://github.com/openmm/openmm-setup" target="blank" class="ma-4" width="300" hover>
         <v-card-title>OpenMM Setup</v-card-title>
         <v-card-text>
           A graphical application to set up and run simulations with OpenMM. Includes pull-down menus, pop-up tips, error checking, and live script building
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/pandegroup/pdbfixer/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>PDBFixer</v-card-title>
+        <v-card-text>
+          A powerful, flexible tool for preparing PDB files for molecular simulation or modeling, capable of running in interactive, Python-scriptable, or fully automated modes.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/openmm/openmm-plumed/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>OpenMM-PLUMED</v-card-title>
+        <v-card-text>
+          Provides a connection between OpenMM and PLUMED. It allows you to bias or analyze an OpenMM simulation based on collective variables.
         </v-card-text>
       </v-card>
       <v-card href="https://github.com/openmm/openmm-torch/" target="blank" class="ma-4" width="300" hover>
@@ -47,12 +53,6 @@
         <v-card-title>OpenMM-XTB</v-card-title>
         <v-card-text>
           A plugin providing a connection between OpenMM and the XTB quantum chemistry package.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://github.com/pandegroup/pdbfixer/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>PDBFixer</v-card-title>
-        <v-card-text>
-          A powerful, flexible tool for preparing PDB files for molecular simulation or modeling, capable of running in interactive, Python-scriptable, or fully automated modes.
         </v-card-text>
       </v-card>
       <v-card href="https://raw.githubusercontent.com/openmm/openmm/refs/heads/master/examples/extras/optimizepme.py" target="blank" class="ma-4" width="300" hover>
@@ -78,42 +78,16 @@
       </v-card>
     </v-container>
     <v-container class="d-flex flex-wrap justify-center">
-      <v-card href="https://www.acellera.com/products/molecular-dynamics-software-gpu-acemd/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>ACEMD</v-card-title>
+      <v-card href="https://github.com/google-deepmind/alphafold" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>AlphaFold 2</v-card-title>
         <v-card-text>
-          The next generation molecular dynamic simulation engine designed to accelerate drug discovery process by providing all necessary capabilities.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://github.com/Gallicchio-Lab/AToM-OpenMM" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>AToM-OpenMM</v-card-title>
-        <v-card-text>
-          An OpenMM-based framework for absolute and relative binding free energy calculations with the Alchemical Transfer Method
-        </v-card-text>
-      </v-card>
-      <v-card href="https://www.charmm.org/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>CHARMM</v-card-title>
-        <v-card-text>
-          A molecular simulation program with many energy functions, enhanced
-          sampling methods, implicit solvent models, and support for multi-scale
-          modeling.
+          Machine learning pipeline for predicting protein structures from amino acid sequences.
         </v-card-text>
       </v-card>
       <v-card href="https://foldingathome.org/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>Folding@home</v-card-title>
         <v-card-text>
           A distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://github.com/leeping/forcebalance/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>ForceBalance</v-card-title>
-        <v-card-text>
-          A powerful and highly versatile software package for force field optimization.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://www.gpugrid.net/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>GPUGRID.net</v-card-title>
-        <v-card-text>
-          A distributed computing infrastructure devoted to biomedical research to understand the function of biomolecules for health and disease.
         </v-card-text>
       </v-card>
       <v-card href="https://openforcefield.org/software" target="blank" class="ma-4" width="300" hover>
@@ -126,6 +100,30 @@
         <v-card-title>Open Free Energy</v-card-title>
         <v-card-text>
           Tools for performing alchemical free energy calculations.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://www.acellera.com/products/molecular-dynamics-software-gpu-acemd/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>ACEMD</v-card-title>
+        <v-card-text>
+          The next generation molecular dynamic simulation engine designed to accelerate drug discovery process by providing all necessary capabilities.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/Gallicchio-Lab/AToM-OpenMM" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>AToM-OpenMM</v-card-title>
+        <v-card-text>
+          An OpenMM-based framework for absolute and relative binding free energy calculations with the Alchemical Transfer Method
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/leeping/forcebalance/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>ForceBalance</v-card-title>
+        <v-card-text>
+          A powerful and highly versatile software package for force field optimization.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://www.gpugrid.net/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>GPUGRID.net</v-card-title>
+        <v-card-text>
+          A distributed computing infrastructure devoted to biomedical research to understand the function of biomolecules for health and disease.
         </v-card-text>
       </v-card>
       <v-card href="https://github.com/leeping/OpenMM-MD/" target="blank" class="ma-4" width="300" hover>
@@ -145,12 +143,6 @@
         <v-card-text>
           An advanced, multiscale, molecular simulation framework. It allows
           to quickly prototype and develop new algorithms.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://github.com/TinkerTools/Tinker" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>TINKER</v-card-title>
-        <v-card-text>
-          A high-performance molecular modeling and simulation platform.
         </v-card-text>
       </v-card>
       <v-card href="https://github.com/ADicksonLab/wepy" target="blank" class="ma-4" width="300" hover>
