@@ -126,6 +126,12 @@
           A distributed computing infrastructure devoted to biomedical research to understand the function of biomolecules for health and disease.
         </v-card-text>
       </v-card>
+      <v-card href="https://github.com/mitkotak/openmm-jax" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>OpenMM-JAX</v-card-title>
+        <v-card-text>
+          An OpenMM plugin for running machine learning force fields implemented in JAX.
+        </v-card-text>
+      </v-card>
       <v-card href="https://github.com/leeping/OpenMM-MD/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>OpenMM-MD</v-card-title>
         <v-card-text>
