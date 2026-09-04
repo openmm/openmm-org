@@ -31,10 +31,16 @@
           A graphical application to set up and run simulations with OpenMM. Includes pull-down menus, pop-up tips, error checking, and live script building
         </v-card-text>
       </v-card>
-      <v-card href="https://github.com/pandegroup/pdbfixer/" target="blank" class="ma-4" width="300" hover>
+      <v-card href="https://github.com/openmm/pdbfixer/" target="blank" class="ma-4" width="300" hover>
         <v-card-title>PDBFixer</v-card-title>
         <v-card-text>
           A powerful, flexible tool for preparing PDB files for molecular simulation or modeling, capable of running in interactive, Python-scriptable, or fully automated modes.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/openmm/mlipops/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>MLIPOps</v-card-title>
+        <v-card-text>
+          A suite of optimized operations for building machine learning interatomic potentials, implemented in pure Python using PyTorch and Triton.
         </v-card-text>
       </v-card>
       <v-card href="https://github.com/openmm/openmm-plumed/" target="blank" class="ma-4" width="300" hover>
