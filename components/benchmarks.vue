@@ -6,6 +6,22 @@
         <v-card-text>
           <p>OpenMM 8.6 benchmarks of simulation speed on typical biochemical systems.</p>
           <p>We acknowledge NVIDIA for providing compute support used to run these benchmarks.</p>
+          <v-expansion-panels class="pt-3" focusable>
+            <v-expansion-panel>
+              <v-expansion-panel-header class="text--secondary">
+                Benchmarking Instructions
+              </v-expansion-panel-header>
+              <v-expansion-panel-content class="text--secondary">
+                To run the standard OpenMM benchmark suite on your own hardware,
+                <a href="https://docs.openmm.org/latest/userguide/application/01_getting_started.html#installing-openmm">install OpenMM from a package</a>
+                or <a href="https://docs.openmm.org/latest/userguide/library/02_compiling.html">compile it from source</a>,
+                then run the <a href="https://github.com/openmm/openmm/blob/master/examples/benchmarks/benchmark.py">benchmarking script</a>
+                that can be found in the OpenMM repository.  Various options are available; run:
+                <highlightjs class="text--primary py-2" language='bash' code="python benchmark.py --help"></highlightjs>
+                for more information.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
         </v-card-text>
       </v-card>
     </v-container>
