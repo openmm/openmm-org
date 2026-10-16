@@ -6,6 +6,24 @@
         <v-card-text>
           <p>OpenMM 8.6 benchmarks of simulation speed on typical biochemical systems.</p>
           <p>We acknowledge NVIDIA for providing compute support used to run these benchmarks.</p>
+          <v-expansion-panels class="pt-3" focusable>
+            <v-expansion-panel>
+              <v-expansion-panel-header class="text--secondary">
+                Benchmarking Instructions
+              </v-expansion-panel-header>
+              <v-expansion-panel-content class="text--secondary">
+                To run the standard OpenMM benchmark suite on your own hardware,
+                <a href="https://docs.openmm.org/latest/userguide/application/01_getting_started.html#installing-openmm">install OpenMM from a package</a>
+                or <a href="https://docs.openmm.org/latest/userguide/library/02_compiling.html">compile it from source</a>,
+                then run the <a href="https://github.com/openmm/openmm/blob/master/examples/benchmarks/benchmark.py">benchmarking script</a>
+                that can be found in the OpenMM repository.  To run the full set of standard benchmarks, use
+                <highlightjs class="text--primary py-2" language='bash' code="python benchmark.py platform=&lt;platform&gt; --style=table"></highlightjs>
+                where <code>&lt;platform&gt;</code> should be replaced with the name of the platform to benchmark.  Various other options are also available; run:
+                <highlightjs class="text--primary py-2" language='bash' code="python benchmark.py --help"></highlightjs>
+                for more information.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
         </v-card-text>
       </v-card>
     </v-container>
@@ -53,9 +71,9 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>OpenCL platform on an Apple M4 Max with 40 GPU cores.</li>
                   <li>CUDA platform on various NVIDIA Ampere (A100), Ada Lovelace (RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (RTX 5070 Ti, RTX PRO 6000) GPUs.</li>
-                  <li>HIP platform on an AMD RX 9070 XT GPU.</li>
+                  <li>HIP platform on AMD RX 9070 XT, AI PRO R9700, and MI355X GPUs.</li>
+                  <li>OpenCL platform on an Apple M4 Max with 40 GPU cores.</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -104,9 +122,9 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
-                  <li>OpenCL platform on an Apple M4 Max with 40 GPU cores.</li>
                   <li>CUDA platform on various NVIDIA Ampere (A100), Ada Lovelace (RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (RTX 5070 Ti, RTX PRO 6000) GPUs.</li>
-                  <li>HIP platform on an AMD RX 9070 XT GPU.</li>
+                  <li>HIP platform on AMD RX 9070 XT, AI PRO R9700, and MI355X GPUs.</li>
+                  <li>OpenCL platform on an Apple M4 Max with 40 GPU cores.</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -143,10 +161,9 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
+                  <li>CUDA platform on various NVIDIA Ampere (A100), Ada Lovelace (RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (RTX 5070 Ti, RTX PRO 6000) GPUs.  Parallel H100 benchmarks used NVLink-4.</li>
+                  <li>HIP platform on AMD RX 9070 XT, AI PRO R9700, and MI355X GPUs.</li>
                   <li>OpenCL platform on an Apple M4 Max with 40 GPU cores.</li>
-                  <li>CUDA platform on various NVIDIA Ampere (A100), Ada Lovelace (RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (RTX 5070 Ti, RTX PRO 6000) GPUs.</li>
-                  <li>CUDA platform parallelizing the simulation across multiple H100 GPUs connected by NVLink-4.</li>
-                  <li>HIP platform on an AMD RX 9070 XT GPU.</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -183,10 +200,9 @@
               <v-expansion-panel-content class="text--secondary">
                 Simulations were run using the following platforms and hardware:
                 <ul>
+                  <li>CUDA platform on various NVIDIA Ampere (A100), Ada Lovelace (RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (RTX 5070 Ti, RTX PRO 6000) GPUs.  Parallel H100 benchmarks used NVLink-4.</li>
+                  <li>HIP platform on AMD RX 9070 XT, AI PRO R9700, and MI355X GPUs.</li>
                   <li>OpenCL platform on an Apple M4 Max with 40 GPU cores.</li>
-                  <li>CUDA platform on various NVIDIA Ampere (A100), Ada Lovelace (RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (RTX 5070 Ti, RTX PRO 6000) GPUs.</li>
-                  <li>CUDA platform parallelizing the simulation across multiple H100 GPUs connected by NVLink-4.</li>
-                  <li>HIP platform on an AMD RX 9070 XT GPU.</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -223,7 +239,12 @@
                 Platforms
               </v-expansion-panel-header>
               <v-expansion-panel-content class="text--secondary">
-                Simulations were run using the CUDA platform on various Ampere (A100), Ada Lovelace (RTX 4080, RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (DGX Spark GB10, RTX 5070 Ti, RTX PRO 6000, B200) GPUs.
+                Simulations were run using the following platforms and hardware:
+                <ul>
+                  <li>CUDA platform on various NVIDIA Ampere (A100), Ada Lovelace (RTX 6000 Ada, L40, and L40S), Hopper (H100, H200), and Blackwell (RTX 5070 Ti, RTX PRO 6000) GPUs.</li>
+                  <li>HIP platform on AMD RX 9070 XT, AI PRO R9700, and MI355X GPUs.</li>
+                  <li>OpenCL platform on an Apple M4 Max with 40 GPU cores.</li>
+                </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -260,21 +281,34 @@ module.exports = {
         textStyle: { fontSize: 14, color: '#616161' }
       }
     };
+    // All default Google Charts colors.
+    const colorList = [
+      "#3366CC", "#DC3912", "#FF9900", "#109618", "#990099", "#0099C6", "#DD4477", "#66AA00",
+      "#B82E2E", "#316395", "#994499", "#22AA99", "#AAAA11", "#6633CC", "#E67300", "#8B0707",
+      "#651067", "#329262", "#5574A6", "#3B3EAC", "#B77322", "#16D620", "#B91383", "#F4359E",
+      "#9C5935", "#A9C413", "#2A778D", "#668D1C", "#BEA413", "#0C5922", "#743411"
+    ];
     const colors = {
-      "M4 Max (OpenCL)": "#3366CC",
-      "RTX 5070 Ti": "#DC3912",
-      "RTX 6000 Ada": "#FF9900",
-      "RTX PRO 6000": "#109618",
-      "L40": "#990099",
-      "L40S": "#0099C6",
-      "A100": "#DD4477",
-      "H100": "#316395",
-      "1x H100": "#316395",
-      "2x H100": "#648AB0",
-      "3x H100": "#98B1CA",
-      "4x H100": "#CCD8E4",
-      "H200": "#66AA00",
-      "RX 9070 XT (HIP)": "#B82E2E"
+      "RTX 5070 Ti": colorList[0],
+      "RTX 6000 Ada": colorList[1],
+      "RTX PRO 6000": colorList[2],
+      "L40": colorList[3],
+      "L40S": colorList[4],
+      "A100": colorList[5],
+      "H100": colorList[6],
+      "1x H100": colorList[6],
+      "2x H100": "#E67399",
+      "3x H100": "#EEA2BB",
+      "4x H100": "#F6D0DD",
+      "H200": colorList[7],
+      "RX 9070 XT (HIP)": colorList[8],
+      "AI PRO R9700 (HIP)": colorList[9],
+      "MI355X (HIP)": colorList[10],
+      "1x MI355X (HIP)": colorList[10],
+      "2x MI355X (HIP)": "#B273B2",
+      "3x MI355X (HIP)": "#CCA2CC",
+      "4x MI355X (HIP)": "#E6D0E6",
+      "M4 Max (OpenCL)": colorList[11]
     };
     google.charts.setOnLoadCallback(() => {
       fetch('data/benchmarks.json').then(res => {
