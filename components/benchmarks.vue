@@ -16,7 +16,9 @@
                 <a href="https://docs.openmm.org/latest/userguide/application/01_getting_started.html#installing-openmm">install OpenMM from a package</a>
                 or <a href="https://docs.openmm.org/latest/userguide/library/02_compiling.html">compile it from source</a>,
                 then run the <a href="https://github.com/openmm/openmm/blob/master/examples/benchmarks/benchmark.py">benchmarking script</a>
-                that can be found in the OpenMM repository.  Various options are available; run:
+                that can be found in the OpenMM repository.  To run the full set of standard benchmarks, use
+                <highlightjs class="text--primary py-2" language='bash' code="python benchmark.py platform=&lt;platform&gt; --style=table"></highlightjs>
+                where <code>&lt;platform&gt;</code> should be replaced with the name of the platform to benchmark.  Various other options are also available; run:
                 <highlightjs class="text--primary py-2" language='bash' code="python benchmark.py --help"></highlightjs>
                 for more information.
               </v-expansion-panel-content>
