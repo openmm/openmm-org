@@ -15,10 +15,22 @@
           Start here if it's your first time using OpenMM. These documents will get you up and running simulations in short order.
         </v-card-text>
       </v-card>
-      <v-card href="http://docs.openmm.org/latest/developerguide/" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>Developer Guide</v-card-title>
+      <v-card href="https://openmm.github.io/openmm-cookbook/latest/tutorials" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Tutorials</v-card-title>
         <v-card-text>
-          This section provides in-depth information on the code-base and how to contribute to the development of OpenMM itself.
+          Tutorials for getting started with and exploring OpenMM.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://openmm.github.io/openmm-cookbook/latest/cookbook" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Cookbook</v-card-title>
+        <v-card-text>
+          Short examples demonstrating many common operations in OpenMM.
+        </v-card-text>
+      </v-card>
+      <v-card href="https://github.com/openmm/openmm/wiki/Frequently-Asked-Questions" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>FAQ</v-card-title>
+        <v-card-text>
+          Frequently asked questions about OpenMM.
         </v-card-text>
       </v-card>
       <v-card href="http://docs.openmm.org/latest/api-python/" target="blank" class="ma-4" width="300" hover>
@@ -33,22 +45,10 @@
           The C++ API provides information about OpenMM's C++ interface.
         </v-card-text>
       </v-card>
-      <v-card href="https://openmm.github.io/openmm-cookbook/latest/cookbook" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>Cookbook</v-card-title>
+      <v-card href="http://docs.openmm.org/latest/developerguide/" target="blank" class="ma-4" width="300" hover>
+        <v-card-title>Developer Guide</v-card-title>
         <v-card-text>
-          Short examples demonstrating many common operations in OpenMM.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://openmm.github.io/openmm-cookbook/latest/tutorials" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>Tutorials</v-card-title>
-        <v-card-text>
-          Tutorials for getting started with and exploring OpenMM.
-        </v-card-text>
-      </v-card>
-      <v-card href="https://github.com/openmm/openmm/wiki/Frequently-Asked-Questions" target="blank" class="ma-4" width="300" hover>
-        <v-card-title>FAQ</v-card-title>
-        <v-card-text>
-          Frequently asked questions about OpenMM.
+          This section provides in-depth information on the code-base and how to contribute to the development of OpenMM itself.
         </v-card-text>
       </v-card>
     </v-container>
